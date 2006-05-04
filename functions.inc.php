@@ -39,8 +39,19 @@ function disa_get_config($engine) {
 					
                                         $thisitem = disa_get(ltrim($item['disa_id']));
                                         // add dialplan
+
+					if ($thisitem['needconf'] == 'CHECKED') {
+						$ext->add('disa', $item['disa_id'], '', new ext_setvar('RESCOUNT', '1'));
+						$ext->add('disa', $item['disa_id'], 'loop',  new ext_gotoif('$[ ${RESCOUNT} > 5]', 'end'));
+						$ext->add('disa', $item['disa_id'], '',  new ext_read('RRES', 'press-1', '1', ',1,3'));
+						$ext->add('disa', $item['disa_id'], '', new ext_setvar('RESCOUNT', '$[${RESCOUNT}+1]'));
+						$ext->add('disa', $item['disa_id'], '', new ext_gotoif('$["x${RRES}"="x"]', 'loop'));
+					}
+                                        $ext->add('disa', $item['disa_id'], '', new ext_setvar('TIMEOUT(digit)', $thisitem['digittimeout']));
+                                        $ext->add('disa', $item['disa_id'], '', new ext_setvar('TIMEOUT(response)', $thisitem['resptimeout']));
                                         $ext->add('disa', $item['disa_id'], '', new ext_playback('enter-password'));
                                         $ext->add('disa', $item['disa_id'], '', new ext_disa('/etc/asterisk/disa-'.$item['disa_id'].'.conf|from-internal'));
+					$ext->add('disa', $item['disa_id'], 'end', new ext_hangup(''));
                                 }
                         }
                 break;
@@ -80,8 +91,10 @@ function disa_add($post) {
         if(!disa_chk($post))
                 return null;
         extract($post);
+	if (!isset($needconf)) 
+		$needconf = '';
         if(empty($displayname)) $displayname = "unnamed";
-        $results = sql("INSERT INTO disa (displayname,pin,cid,context) values (\"".str_replace("\"", "\"\"",$displayname)."\",\"".$pin."\",\"".str_replace("\"", "\"\"", $cid)."\",\"".$context."\")");
+        $results = sql("INSERT INTO disa (displayname,pin,cid,context,resptimeout,digittimeout,needconf) values (\"".str_replace("\"", "\"\"",$displayname)."\",\"".$pin."\",\"".str_replace("\"", "\"\"", $cid)."\",\"".$context."\", \"$resptimeout\", \"$digittimeout\", \"$needconf\")");
 }
 
 function disa_del($id) {
@@ -93,7 +106,9 @@ function disa_edit($id, $post) {
 	if (!disa_chk($post))
 		return null;
 	extract($post);
+	if (!isset($needconf)) 
+		$needconf = '';
         if(empty($displayname)) $displayname = "unnamed";
-        $results = sql("UPDATE disa  set displayname = \"".str_replace("\"", "\"\"",$displayname)."\", pin = \"$pin\", cid = \"".str_replace("\"", "\"\"",$cid)."\", context = \"$context\" where disa_id = \"$id\"");
+        $results = sql("UPDATE disa  set displayname = \"".str_replace("\"", "\"\"",$displayname)."\", pin = \"$pin\", cid = \"".str_replace("\"", "\"\"",$cid)."\", context = \"$context\", resptimeout = \"$resptimeout\", digittimeout = \"$digittimeout\", needconf = \"$needconf\" where disa_id = \"$id\"");
 }
 ?>
