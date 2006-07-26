@@ -24,20 +24,23 @@ function disa_get_config($engine) {
                         $disalist = disa_list();
                         if(is_array($disalist)) {
                                 foreach($disalist as $item) {
-					// Create the disa-$id.conf file
-					$fh = fopen("/etc/asterisk/disa-".$item['disa_id'].".conf", "w+");
-					$pinarr = explode(',' , $item['pin'] );
-					foreach($pinarr as $pin) {
-						// empty password should be 'no-password'
-						if ( (isset($pin) ? $pin : '') == '' )
-							$pin = 'no-password';
-						
-						// Don't support remote MWI, too easy for users to break.
-						fwrite($fh, "$pin|".$item['context']."|".$item['cid']."\n");
-					}
-					fclose($fh);
+					$nopass = false;
 					
-                                        $thisitem = disa_get(ltrim($item['disa_id']));
+					if (isset($item['pin']) && !empty($item['pin']) && (strtolower($item['pin']) != 'no-password')) {
+						// Create the disa-$id.conf file
+						$fh = fopen("/etc/asterisk/disa-".$item['disa_id'].".conf", "w+");
+						$pinarr = explode(',' , $item['pin'] );
+						foreach($pinarr as $pin) {
+						
+							// Don't support remote MWI, too easy for users to break.
+							fwrite($fh, "$pin|".$item['context']."|".$item['cid']."\n");
+						}
+						fclose($fh);
+					} else {
+						$nopass = true;
+					}
+                                        
+					$thisitem = disa_get(ltrim($item['disa_id']));
                                         // add dialplan
 
 					if ($thisitem['needconf'] == 'CHECKED') {
@@ -47,10 +50,16 @@ function disa_get_config($engine) {
 						$ext->add('disa', $item['disa_id'], '', new ext_setvar('RESCOUNT', '$[${RESCOUNT}+1]'));
 						$ext->add('disa', $item['disa_id'], '', new ext_gotoif('$["x${RRES}"="x"]', 'loop'));
 					}
-                                        $ext->add('disa', $item['disa_id'], '', new ext_setvar('TIMEOUT(digit)', $thisitem['digittimeout']));
-                                        $ext->add('disa', $item['disa_id'], '', new ext_setvar('TIMEOUT(response)', $thisitem['resptimeout']));
-                                        $ext->add('disa', $item['disa_id'], '', new ext_playback('enter-password'));
-                                        $ext->add('disa', $item['disa_id'], '', new ext_disa('/etc/asterisk/disa-'.$item['disa_id'].'.conf|from-internal'));
+					$ext->add('disa', $item['disa_id'], '', new ext_setvar('TIMEOUT(digit)', $thisitem['digittimeout']));
+					$ext->add('disa', $item['disa_id'], '', new ext_setvar('TIMEOUT(response)', $thisitem['resptimeout']));
+					
+					if ($nopass) {
+						$ext->add('disa', $item['disa_id'], '', new ext_disa('no-password|'.$item['context']));
+					} else {
+						$ext->add('disa', $item['disa_id'], '', new ext_playback('enter-password'));
+						$ext->add('disa', $item['disa_id'], '', new ext_disa('/etc/asterisk/disa-'.$item['disa_id'].'.conf'));
+					}
+					
 					$ext->add('disa', $item['disa_id'], 'end', new ext_hangup(''));
                                 }
                         }
