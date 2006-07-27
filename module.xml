@@ -7,7 +7,7 @@
 	<menuitems>
 		<disa>DISA</disa>
 	</menuitems>
-	<location>release/disa-2.0.tgz</location>
+	<location>release/disa-2.1.tgz</location>
 	<info>http://aussievoip.com.au/wiki/freePBX-DISA</info>
-	<md5sum>e2c240ed8177e4e78e947e0781eead65</md5sum>
+	<md5sum>a1e2d4d5b2160f4285f664f6604ddd81</md5sum>
 </module>
