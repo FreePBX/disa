@@ -28,7 +28,7 @@ function disa_get_config($engine) {
 					
 					if (isset($item['pin']) && !empty($item['pin']) && (strtolower($item['pin']) != 'no-password')) {
 						// Create the disa-$id.conf file
-						$filename = "/etc/asterisk/disa-".$item['disa_id'].".conf"
+						$filename = "/etc/asterisk/disa-".$item['disa_id'].".conf";
 						$fh = fopen($filename, "w+");
 						$pinarr = explode(',' , $item['pin'] );
 						foreach($pinarr as $pin) {
