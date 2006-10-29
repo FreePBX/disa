@@ -39,7 +39,7 @@ $disas = disa_list();
 </div> <!-- end content div so we can display rnav properly-->
 
 <!-- right side menu -->
-<div class="rnav">
+<div class="rnav"><ul>
     <li><a id="<?php echo ($itemid=='' ? 'current':'std') ?>" href="config.php?display=<?php echo urlencode($dispnum)?>"><?php echo _("Add")." DISA" ?></a></li>
 <?php
 if (isset($disas)) {
@@ -48,7 +48,7 @@ if (isset($disas)) {
 	}
 }
 ?>
-</div>
+</ul></div>
 
 <div class="content">
 <?php
