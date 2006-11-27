@@ -20,13 +20,13 @@ switch ($action) {
 	case "add":
 		disa_add($_POST);
 		needreload();
-		redirect_standard('itemid');
+		redirect_standard();
 	break;
 	case "delete":
 		$oldItem = disa_get($itemid);
 		disa_del($itemid);
 		needreload();
-		redirect_standard('itemid');
+		redirect_standard();
 	break;
 	case "edit":  //just delete and re-add
 		disa_edit($itemid,$_POST);
