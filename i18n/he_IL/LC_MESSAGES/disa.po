@@ -1,0 +1,102 @@
+# Hebrew version for DISA FreePBX Module.
+# Copyright (C) 2006
+# This file is distributed under the same license as the PACKAGE package.
+# Shimi <shimi@shimi.net>, 2006.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: FreePBX 2.2.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2006-10-17 17:20+0300\n"
+"PO-Revision-Date: 2006-10-17 17:30+0300\n"
+"Last-Translator: Shimi <shimi@shimi.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: page.disa.php:43 page.disa.php:63 page.disa.php:72
+msgid "Add"
+msgstr "הוסף"
+
+#: page.disa.php:56
+msgid "deleted"
+msgstr "נמחק"
+
+#: page.disa.php:65
+msgid "Delete"
+msgstr "מחק"
+
+#: page.disa.php:72
+msgid "Edit"
+msgstr "ערוך"
+
+#: page.disa.php:75
+msgid "name:"
+msgstr "שם:"
+
+#: page.disa.php:75
+msgid "Give this DISA a brief name to help you identify it."
+msgstr "תן ל-DISA זה שם קצר שיעזור לך לזהות אותו."
+
+#: page.disa.php:80
+msgid "PIN"
+msgstr "סיסמא"
+
+#: page.disa.php:80
+msgid "The user will be prompted for this number."
+msgstr "המשתמש יתבקש להכניס מספר זה"
+
+#: page.disa.php:80
+msgid "If you wish to have multiple PIN's, seperate them with commas"
+msgstr "אם ברצונך ליצור מספר סיסמאות, הפרד אותן בפסיקים"
+
+#: page.disa.php:84
+msgid "Response Timeout"
+msgstr "זמן המתנה לתגובה"
+
+#: page.disa.php:84
+msgid ""
+"The maximum amount of time it will wait before hanging up if the user has "
+"dialled an incomplete or invalid number. Default of 10 seconds"
+msgstr "הזמן המקסימלי שהמערכת תמתין לפני ניתוק אוטומטי אם המשתמש חייג מספר לא שלם או שגוי. ברירת המחדל היא 10 שניות"
+
+#: page.disa.php:88
+msgid "Digit Timeout"
+msgstr "זמן המתנה לספרה"
+
+#: page.disa.php:88
+msgid ""
+"The maximum amount of time permitted between digits when the user is typing "
+"in an extension. Default of 5"
+msgstr "הזמן המקסימלי המותר בין ספרות כשהמשתמש מחייג לשלוחה. ברירת המחדל היא 5"
+
+#: page.disa.php:92
+msgid "Require Confirmation"
+msgstr "דרוש אישור"
+
+#: page.disa.php:92
+msgid ""
+"Require Confirmation before prompting for password. Used when your PSTN "
+"connection appears to answer the call immediately"
+msgstr "דרוש אישור לפני בקשת סיסמא. נמצא בשימוש כאשר נראה שהשיחה נענתה באופן מיידי"
+
+#: page.disa.php:96
+msgid "Caller ID"
+msgstr "שיחה מזוהה"
+
+#: page.disa.php:96
+msgid ""
+"(Optional) When using this DISA, the users CallerID will be set to this. "
+"Format is \"User Name\" <5551234>"
+msgstr "(רשות) כאשר משתמשים ב DISA זה, השיחות שתצאנה דרך ה DISA יוצגו עם זיהוי שיחה מזוהה שתקבע כאן. הפורמט הוא \"User Name\" <5551234>"
+
+#: page.disa.php:100
+msgid "Context"
+msgstr "הקשר (context)"
+
+#: page.disa.php:100
+msgid ""
+"(Experts Only) Sets the context that calls will originate from. Leave this "
+"as from-internal unless you know what you're doing."
+msgstr "(למומחים בלבד) מגדיר את ההקשר (context( שממנו יראה מקור השיחה. השאר ערך זה בתור from-internal אלא אם כן אתה באמת יודע מה אתה עושה."
