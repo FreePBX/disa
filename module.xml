@@ -13,6 +13,6 @@
 		*2.2.2* bump so higher that 2.2 branch
 		*2.2*   First release for FreePBX 2.2 - Fixed compatibility issue with new UI
 	</changelog>
-	<location>release/2.3/disa-2.2.2.tgz</location>
-	<md5sum>0f9a9e72beeb3d01bde4801555a85cdc</md5sum>
+	<location>release/2.3/disa-2.2.2.1.tgz</location>
+	<md5sum>827b32dcbc8b6c6131c1c714f25d5b2f</md5sum>
 </module>
