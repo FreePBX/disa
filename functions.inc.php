@@ -56,7 +56,7 @@ function disa_get_config($engine) {
 					$ext->add('disa', $item['disa_id'], '', new ext_setvar('TIMEOUT(response)', $thisitem['resptimeout']));
 					
 					if ($nopass) {
-						$ext->add('disa', $item['disa_id'], '', new ext_disa('no-password|'.$item['context']));
+						$ext->add('disa', $item['disa_id'], '', new ext_disa('no-password,'.$item['context']));
 					} else {
 						$ext->add('disa', $item['disa_id'], '', new ext_playback('enter-password'));
 						$ext->add('disa', $item['disa_id'], '', new ext_disa('/etc/asterisk/disa-'.$item['disa_id'].'.conf'));
