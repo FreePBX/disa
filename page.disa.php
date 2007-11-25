@@ -65,7 +65,17 @@ if ($action == 'delete') {
 
 	<h2><?php echo ($itemid ? "DISA: ".$thisItem["displayname"]." ($itemid)" : _("Add")." DISA"); ?></h2>
 <?php		if ($itemid){ ?>
-	<p><a href="<?php echo $delURL ?>"><?php echo _("Delete")." DISA"?> <?php echo $thisItem["displayname"]; ?></a></p>
+	<a href="<?php echo $delURL ?>"><?php echo _("Delete")." DISA"?> <?php echo $thisItem["displayname"]; ?></a>
+
+<?php
+					$usage_list = framework_display_destination_usage(disa_getdest($itemid));
+					if (!empty($usage_list)) {
+?>
+						<br /><a href="#" class="info"><?php echo $usage_list['text']?>:<span><?php echo $usage_list['tooltip']?></span></a>
+<?php
+			}
+?>
+
 <?php		} ?>
 	<form autocomplete="off" name="edit" action="<?php $_SERVER['PHP_SELF'] ?>" method="post" onsubmit="return edit_onsubmit();">
 	<input type="hidden" name="display" value="<?php echo $dispnum?>">

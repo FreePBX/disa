@@ -16,6 +16,30 @@ function disa_destinations() {
         }
 }
 
+function disa_getdest($exten) {
+	return array('disa,'.$exten.',1');
+}
+
+function disa_getdestinfo($dest) {
+	global $active_modules;
+
+	if (substr(trim($dest),0,5) == 'disa,') {
+		$exten = explode(',',$dest);
+		$exten = $exten[1];
+		$thisexten = disa_get($exten);
+		if (empty($thisexten)) {
+			return array();
+		} else {
+			//$type = isset($active_modules['announcement']['type'])?$active_modules['announcement']['type']:'setup';
+			return array('description' => 'DISA : '.$thisexten['displayname'],
+			             'edit_url' => 'config.php?display=disa&itemid='.urlencode($exten),
+								  );
+		}
+	} else {
+		return false;
+	}
+}
+
 // This actually generates the dialplan
 function disa_get_config($engine) {
         global $ext; 
