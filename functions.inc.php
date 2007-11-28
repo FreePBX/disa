@@ -80,6 +80,9 @@ function disa_get_config($engine) {
 					$ext->add('disa', $item['disa_id'], '', new ext_setvar('TIMEOUT(response)', $thisitem['resptimeout']));
 					
 					if ($nopass) {
+						if ($item['cid']) {
+						 	$ext->add('disa', $item['disa_id'], '', new ext_setvar('CALLERID(all)', $item['cid'])); 
+						}
 						$ext->add('disa', $item['disa_id'], '', new ext_disa('no-password,'.$item['context']));
 					} else {
 						$ext->add('disa', $item['disa_id'], '', new ext_playback('enter-password'));
