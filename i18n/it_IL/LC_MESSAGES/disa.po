@@ -1,0 +1,106 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-01-26 10:40+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Francesco Romano\n"
+"Language-Team: Italian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: page.disa.php:46 page.disa.php:66 page.disa.php:75
+msgid "Add"
+msgstr "Aggiungi"
+
+#: page.disa.php:59
+msgid "deleted"
+msgstr "eliminato"
+
+#: page.disa.php:68
+msgid "Delete"
+msgstr "Elimina"
+
+#: page.disa.php:75
+msgid "Edit"
+msgstr "Modifica"
+
+#: page.disa.php:78
+msgid "name:"
+msgstr "Nome:"
+
+#: page.disa.php:78
+msgid "Give this DISA a brief name to help you identify it."
+msgstr "Dare al DISA un nome breve per una facile identificazione."
+
+#: page.disa.php:83
+msgid "PIN"
+msgstr "PIN"
+
+#: page.disa.php:83
+msgid "The user will be prompted for this number."
+msgstr "All'utente sarà richiesto questo numero."
+
+#: page.disa.php:83
+msgid "If you wish to have multiple PIN's, seperate them with commas"
+msgstr "Si possono anche inserire più PIN, da separare con le virgole"
+
+#: page.disa.php:87
+msgid "Response Timeout"
+msgstr "Timeout Risposta"
+
+#: page.disa.php:87
+msgid ""
+"The maximum amount of time it will wait before hanging up if the user has "
+"dialled an incomplete or invalid number. Default of 10 seconds"
+msgstr "Il tempo massimo di tempo che il sistema attende prima di riagganciare se un utente ha digitato un numero incompleto o sbagliato. Predefinito è 10 secondi."
+
+#: page.disa.php:91
+msgid "Digit Timeout"
+msgstr "Timeout Digitazione"
+
+#: page.disa.php:91
+msgid ""
+"The maximum amount of time permitted between digits when the user is typing "
+"in an extension. Default of 5"
+msgstr "Il tempo massimo tra una digitazione e l'altra. Predefinito è 5 secondi."
+
+#: page.disa.php:95
+msgid "Require Confirmation"
+msgstr "Richiedi Conferma"
+
+#: page.disa.php:95
+msgid ""
+"Require Confirmation before prompting for password. Used when your PSTN "
+"connection appears to answer the call immediately"
+msgstr "Richiede Conferma prima della password. E' utilizzato quando la propria connessione PSTN sembra rispondere immediatamente alla chiamata."
+
+#: page.disa.php:99
+msgid "Caller ID"
+msgstr "ID Chiamante"
+
+#: page.disa.php:99
+msgid ""
+"(Optional) When using this DISA, the users CallerID will be set to this. "
+"Format is \"User Name\" <5551234>"
+msgstr "(Opzionale) Quando viene utilizzato il DISA, l'utente avrà questo ID Chiamante. Il Formato è \"Nome Utente\" <5551234>"
+
+#: page.disa.php:103
+msgid "Context"
+msgstr "Contesto"
+
+#: page.disa.php:103
+msgid ""
+"(Experts Only) Sets the context that calls will originate from. Leave this "
+"as from-internal unless you know what you're doing."
+msgstr "(Solo Esperti) Impostare il contesto da cui partiranno le chiamate. Lasciare questo su 'from-internal' se non si è sicuri."
+
+msgid "Submit Changes"
+msgstr "Invia"
