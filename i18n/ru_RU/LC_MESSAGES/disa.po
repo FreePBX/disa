@@ -1,0 +1,115 @@
+# Russian freePBX ver. translation
+# Copyright (c) 2006-2008 PostMet Corporation
+# This file is distributed under the same license as the freePBX package.
+# Alexander Kozyrev <ceo@postmet.com>, Sergey Nikolayev <sergey@postmet.com>, 2006-2008.
+#
+# Использовать iconv amp.new -f UTF-8 -t ISO-8859-5 -o amp.po
+# fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-04-19 21:45+0100\n"
+"PO-Revision-Date: 2008-01-16 16:38+0100\n"
+"Last-Translator: Alexander Kozyrev <ceo@postmet.com>\n"
+"Language-Team: Russian <faq@postmet.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-5\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: page.disa.php:46 page.disa.php:66 page.disa.php:75
+msgid "Add"
+msgstr "Добавить"
+
+#: page.disa.php:59
+msgid "deleted"
+msgstr "удалено"
+
+#: page.disa.php:68
+msgid "Delete"
+msgstr "Удалить"
+
+#: page.disa.php:75
+msgid "Edit"
+msgstr "Изменить"
+
+#: page.disa.php:78
+msgid "name:"
+msgstr "название:"
+
+#: page.disa.php:78
+msgid "Give this DISA a brief name to help you identify it."
+msgstr "Присвойте короткое название для DISA для идентификации."
+
+#: page.disa.php:83
+msgid "PIN"
+msgstr "PIN"
+
+#: page.disa.php:83
+msgid "The user will be prompted for this number."
+msgstr "Пользователь будет вводить этот номер."
+
+#: page.disa.php:83
+msgid "If you wish to have multiple PIN's, seperate them with commas"
+msgstr "Если хотите использовать несколько номеров PIN, укажите их разделяя запятой."
+
+#: page.disa.php:87
+msgid "Response Timeout"
+msgstr "Таймаут на ответ"
+
+#: page.disa.php:87
+msgid ""
+"The maximum amount of time it will wait before hanging up if the user has "
+"dialled an incomplete or invalid number. Default of 10 seconds"
+msgstr ""
+"Максимальное время ожидания для пользователя, при вводе номеров PIN. По умолчанию - 10 сек."
+
+#: page.disa.php:91
+msgid "Digit Timeout"
+msgstr "Таймаут между цифрами"
+
+#: page.disa.php:91
+msgid ""
+"The maximum amount of time permitted between digits when the user is typing "
+"in an extension. Default of 5"
+msgstr ""
+"Максимальное время между цифрами в процессе набора. ПО умолчанию - 5 сек." 
+
+#: page.disa.php:95
+msgid "Require Confirmation"
+msgstr "Требуется подтверждение"
+
+#: page.disa.php:95
+msgid ""
+"Require Confirmation before prompting for password. Used when your PSTN "
+"connection appears to answer the call immediately"
+msgstr ""
+"Требуется подтверждение прежде чем предлагать набрать пароль. Используется, когда входящий "
+"вызов из ТФОП немедленно соединяется."
+
+#: page.disa.php:99
+msgid "Caller ID"
+msgstr "Номер ИД"
+
+#: page.disa.php:99
+msgid ""
+"(Optional) When using this DISA, the users CallerID will be set to this. "
+"Format is \"User Name\" <5551234>"
+msgstr ""
+"(Опционально) Если используется эта DISA, то Номер ИД будет изменён на указанный здесь. "
+"Формат \"Имя Фамилия\" <5551234>"
+
+#: page.disa.php:103
+msgid "Context"
+msgstr "Контекст"
+
+#: page.disa.php:103
+msgid ""
+"(Experts Only) Sets the context that calls will originate from. Leave this "
+"as from-internal unless you know what you're doing."
+msgstr ""
+"(Только для экспертов) Установить контекст, из которого будут оригинироваться звонки. "
+"Оставить как есть - from-internal означает, что вы знаете, что делаете."
+
+msgid "Submit Changes"
+msgstr "Применить изменения"
