@@ -78,6 +78,7 @@ function disa_get_config($engine) {
 					}
 					$ext->add('disa', $item['disa_id'], '', new ext_setvar('TIMEOUT(digit)', $thisitem['digittimeout']));
 					$ext->add('disa', $item['disa_id'], '', new ext_setvar('TIMEOUT(response)', $thisitem['resptimeout']));
+					$ext->add('disa', $item['disa_id'], '', new ext_setvar('__KEEPCID', 'TRUE'));
 					
 					if ($nopass) {
 						if ($item['cid']) {
