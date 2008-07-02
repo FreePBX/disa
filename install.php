@@ -1,6 +1,26 @@
 <?php
 
 global $db;
+global $amp_conf; 
+
+$autoincrement = (($amp_conf["AMPDBENGINE"] == "sqlite") || ($amp_conf["AMPDBENGINE"] == "sqlite3")) ? "AUTOINCREMENT":"AUTO_INCREMENT";
+
+$sql = "CREATE TABLE IF NOT EXISTS disa ( 
+	disa_id INTEGER NOT NULL PRIMARY KEY $autoincrement,
+	displayname VARCHAR( 50 ), 
+	pin VARCHAR ( 50 ), 
+	cid VARCHAR ( 50 ), 
+	context VARCHAR ( 50 ), 
+	digittimeout INTEGER, 
+	resptimeout INTEGER, 
+	needconf VARCHAR( 10 ) 
+);";
+
+$check = $db->query($sql);
+if (DB::IsError($check)) {
+	die( "Can not create `disa` table: " . $check->getMessage() .  "\n");
+}
+
 
 // Manage upgrade from DISA 1.0
 // r2.0 Add Timeouts and add wait for confirmation
