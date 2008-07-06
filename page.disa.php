@@ -87,34 +87,34 @@ if ($action == 'delete') {
 	<tr>
 		<td><a href="#" class="info"><?php echo "DISA "._("name:")?><span><?php echo _("Give this DISA a brief name to help you identify it.")?></span></a></td>
 
-		<td><input type="text" name="displayname" value="<?php echo htmlspecialchars(isset($thisItem['displayname']) ? $thisItem['displayname'] : ''); ?>"></td>
+		<td><input type="text" name="displayname" value="<?php echo htmlspecialchars(isset($thisItem['displayname']) ? $thisItem['displayname'] : ''); ?>" tabindex="<?php echo ++$tabindex;?>"></td>
 	</tr>
 	<tr>
 		<td><a href="#" class="info"><?php echo _("PIN"); ?><span><?php echo _("The user will be prompted for this number.")." "._("If you wish to have multiple PIN's, seperate them with commas"); ?></span></a></td>
-		<td><input type="text" name="pin" value="<?php echo htmlspecialchars(isset($thisItem['pin']) ? $thisItem['pin'] : ''); ?>"></td>
+		<td><input type="text" name="pin" value="<?php echo htmlspecialchars(isset($thisItem['pin']) ? $thisItem['pin'] : ''); ?>" tabindex="<?php echo ++$tabindex;?>"></td>
 	</tr>
 	<tr>
 		<td><a href="#" class="info"><?php echo _("Response Timeout"); ?><span><?php echo _("The maximum amount of time it will wait before hanging up if the user has dialled an incomplete or invalid number. Default of 10 seconds"); ?></span></a></td>
-		<td><input type="text" name="resptimeout" value="<?php echo htmlspecialchars(isset($thisItem['resptimeout']) ? $thisItem['resptimeout'] : '10'); ?>"></td>
+		<td><input type="text" name="resptimeout" value="<?php echo htmlspecialchars(isset($thisItem['resptimeout']) ? $thisItem['resptimeout'] : '10'); ?>" tabindex="<?php echo ++$tabindex;?>"></td>
 	</tr>
 	<tr>
 		<td><a href="#" class="info"><?php echo _("Digit Timeout"); ?><span><?php echo _("The maximum amount of time permitted between digits when the user is typing in an extension. Default of 5"); ?></span></a></td>
-		<td><input type="text" name="digittimeout" value="<?php echo htmlspecialchars(isset($thisItem['digittimeout']) ? $thisItem['digittimeout'] : '5'); ?>"></td>
+		<td><input type="text" name="digittimeout" value="<?php echo htmlspecialchars(isset($thisItem['digittimeout']) ? $thisItem['digittimeout'] : '5'); ?>" tabindex="<?php echo ++$tabindex;?>"></td>
 	</tr>
 	<tr>
 		<td><a href="#" class="info"><?php echo _("Require Confirmation"); ?><span><?php echo _("Require Confirmation before prompting for password. Used when your PSTN connection appears to answer the call immediately"); ?></span></a></td>
-		<td><input type="checkbox" name="needconf" value="CHECKED" <?php echo $thisItem['needconf'] ?>  /></td>
+		<td><input type="checkbox" name="needconf" value="CHECKED" <?php echo $thisItem['needconf'] ?>   tabindex="<?php echo ++$tabindex;?>"/></td>
 	</tr>
 	<tr>
 		<td><a href="#" class="info"><?php echo _("Caller ID"); ?><span><?php echo _("(Optional) When using this DISA, the users CallerID will be set to this. Format is \"User Name\" <5551234>"); ?></span></a></td>
-		<td><input type="text" name="cid" value="<?php echo htmlspecialchars(isset($thisItem['cid']) ? $thisItem['cid'] : ''); ?>"></td>
+		<td><input type="text" name="cid" value="<?php echo htmlspecialchars(isset($thisItem['cid']) ? $thisItem['cid'] : ''); ?>" tabindex="<?php echo ++$tabindex;?>"></td>
 	</tr>
 	<tr>
 		<td><a href="#" class="info"><?php echo _("Context"); ?><span><?php echo _("(Experts Only) Sets the context that calls will originate from. Leave this as from-internal unless you know what you're doing."); ?></span></a></td>
-		<td><input type="text" name="context" value="<?php echo htmlspecialchars(isset($thisItem['context']) ? $thisItem['context'] : 'from-internal'); ?>"></td>
+		<td><input type="text" name="context" value="<?php echo htmlspecialchars(isset($thisItem['context']) ? $thisItem['context'] : 'from-internal'); ?>" tabindex="<?php echo ++$tabindex;?>"></td>
 	</tr>
         <tr>
-                <td colspan="2"><br><h6><input name="Submit" type="submit" value="<?php echo _("Submit Changes")?>"></h6></td>
+                <td colspan="2"><br><h6><input name="Submit" type="submit" value="<?php echo _("Submit Changes")?>" tabindex="<?php echo ++$tabindex;?>"></h6></td>
         </tr>
         </table>
 
