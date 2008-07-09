@@ -60,13 +60,15 @@ if ($action == 'delete') {
 } else { 
 	//get details for this time condition
 	$thisItem = disa_get($itemid);
-	$delURL = $_SERVER['PHP_SELF'].'?'.$_SERVER['QUERY_STRING'].'&action=delete';
 ?>
 
 	<h2><?php echo ($itemid ? "DISA: ".$thisItem["displayname"]." ($itemid)" : _("Add")." DISA"); ?></h2>
-<?php		if ($itemid){ ?>
-	<a href="<?php echo $delURL ?>"><?php echo _("Delete")." DISA"?> <?php echo $thisItem["displayname"]; ?></a>
-
+<?php		if ($itemid){ 
+					$delURL = $_SERVER['PHP_SELF'].'?'.$_SERVER['QUERY_STRING'].'&action=delete';
+					$tlabel = sprintf(_("Delete DISA %s"),$thisItem["displayname"]);
+					$label = '<span><img width="16" height="16" border="0" title="'.$tlabel.'" alt="" src="images/core_delete.png"/>&nbsp;'.$tlabel.'</span>';
+?>
+					<a href="<?php echo $delURL ?>"><?php echo $label; ?></a>
 <?php
 					$usage_list = framework_display_destination_usage(disa_getdest($itemid));
 					if (!empty($usage_list)) {
