@@ -78,7 +78,7 @@ function disa_get_config($engine) {
 					}
 					$ext->add('disa', $item['disa_id'], '', new ext_setvar('__DISA', '"disa,'.$item['disa_id'].',1"'));
 					$ext->add('disa', $item['disa_id'], '', new ext_setvar('__DISACONTEXT', $thisitem['context']));
-					
+					$ext->add('disa', $item['disa_id'], '', new ext_setvar('__KEEPCID', 'TRUE')); 
 					$ext->add('disa', $item['disa_id'], '', new ext_setvar('TIMEOUT(digit)', $thisitem['digittimeout']));
 					$ext->add('disa', $item['disa_id'], '', new ext_setvar('TIMEOUT(response)', $thisitem['resptimeout']));
 					
