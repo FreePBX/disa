@@ -58,7 +58,7 @@ function disa_get_config($engine) {
 						foreach($pinarr as $pin) {
 						
 							// Don't support remote MWI, too easy for users to break.
-							fwrite($fh, "$pin|".$item['context']."|".$item['cid']."\n");
+							fwrite($fh, "$pin|disa-dial|".$item['cid']."\n");
 						}
 						fclose($fh);
 						chmod($filename, 0660);
@@ -76,21 +76,23 @@ function disa_get_config($engine) {
 						$ext->add('disa', $item['disa_id'], '', new ext_setvar('RESCOUNT', '$[${RESCOUNT}+1]'));
 						$ext->add('disa', $item['disa_id'], '', new ext_gotoif('$["x${RRES}"="x"]', 'loop'));
 					}
+					$ext->add('disa', $item['disa_id'], '', new ext_setvar('__DISA', '"disa,'.$item['disa_id'].',1"'));
+					$ext->add('disa', $item['disa_id'], '', new ext_setvar('__DISACONTEXT', $thisitem['context']));
+					
 					$ext->add('disa', $item['disa_id'], '', new ext_setvar('TIMEOUT(digit)', $thisitem['digittimeout']));
 					$ext->add('disa', $item['disa_id'], '', new ext_setvar('TIMEOUT(response)', $thisitem['resptimeout']));
-					$ext->add('disa', $item['disa_id'], '', new ext_setvar('__KEEPCID', 'TRUE'));
 					
 					if ($nopass) {
 						if ($item['cid']) {
 						 	$ext->add('disa', $item['disa_id'], '', new ext_setvar('CALLERID(all)', $item['cid'])); 
 						}
-						$ext->add('disa', $item['disa_id'], '', new ext_disa('no-password,'.$item['context']));
+						$ext->add('disa', $item['disa_id'], '', new ext_disa('no-password,disa-dial'));
 					} else {
 						$ext->add('disa', $item['disa_id'], '', new ext_playback('enter-password'));
 						$ext->add('disa', $item['disa_id'], '', new ext_disa('/etc/asterisk/disa-'.$item['disa_id'].'.conf'));
 					}
-					
-					$ext->add('disa', $item['disa_id'], 'end', new ext_hangup(''));
+			
+				//	$ext->add('disa', $item['disa_id'], 'end', new ext_hangup(''));
                                 }
                         }
                 break;
