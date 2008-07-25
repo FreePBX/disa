@@ -50,17 +50,26 @@ function disa_get_config($engine) {
 			foreach($disalist as $item) {
 				$nopass = false;
 					
+				// delete it incase there was one from before (of course if it was deleted???
+				// this should all be done properly in class, see pinsets, but for now ...
+				//
+				$filename = "/etc/asterisk/disa-".$item['disa_id'].".conf";
+				unlink($filename);
 				if (isset($item['pin']) && !empty($item['pin']) && (strtolower($item['pin']) != 'no-password')) {
 					// Create the disa-$id.conf file
-					$filename = "/etc/asterisk/disa-".$item['disa_id'].".conf";
 					$fh = fopen($filename, "w+");
 					$pinarr = explode(',' , $item['pin'] );
-					foreach($pinarr as $pin) {
-						// Don't support remote MWI, too easy for users to break.
-						fwrite($fh, "$pin|disa-dial|".$item['cid']."\n");
+					if (count($pinarr) > 1) {
+						$is_file = true;
+						foreach($pinarr as $pin) {
+							// Don't support remote MWI, too easy for users to break.
+							fwrite($fh, "$pin\n");
+						}
+						fclose($fh);
+						chmod($filename, 0660);
+					} else {
+						$is_file = false;
 					}
-					fclose($fh);
-					chmod($filename, 0660);
 				} else {
 					$nopass = true;
 				}
@@ -75,8 +84,15 @@ function disa_get_config($engine) {
 					$ext->add('disa', $item['disa_id'], '', new ext_setvar('RESCOUNT', '$[${RESCOUNT}+1]'));
 					$ext->add('disa', $item['disa_id'], '', new ext_gotoif('$["x${RRES}"="x"]', 'loop'));
 				}
-				$ext->add('disa', $item['disa_id'], '', new ext_setvar('_DISA', '"disa,'.$item['disa_id'].',1"'));
-				$ext->add('disa', $item['disa_id'], '', new ext_setvar('_DISACONTEXT', $thisitem['context']));
+				if (!$nopass) {
+					if ($is_file) {
+						$ext->add('disa', $item['disa_id'], '', new ext_authenticate('/etc/asterisk/disa-'.$item['disa_id'].'.conf'));
+					} else {
+						$ext->add('disa', $item['disa_id'], '', new ext_authenticate($item['pin']));
+					}
+				}
+				$ext->add('disa', $item['disa_id'], '', new ext_setvar('_DISA', '"disa,'.$item['disa_id'].',newcall"'));
+				$ext->add('disa', $item['disa_id'], 'newcall', new ext_setvar('_DISACONTEXT', $thisitem['context']));
 				$ext->add('disa', $item['disa_id'], '', new ext_setvar('_KEEPCID', 'TRUE')); 
 				if ($thisitem['hangup'] == 'CHECKED') {
 					$ext->add('disa', $item['disa_id'], '', new ext_setvar('_HANGUP', 'Hg'));
@@ -84,15 +100,10 @@ function disa_get_config($engine) {
 				$ext->add('disa', $item['disa_id'], '', new ext_setvar('TIMEOUT(digit)', $thisitem['digittimeout']));
 				$ext->add('disa', $item['disa_id'], '', new ext_setvar('TIMEOUT(response)', $thisitem['resptimeout']));
 					
-				if ($nopass) {
-					if ($item['cid']) {
-						$ext->add('disa', $item['disa_id'], '', new ext_setvar('CALLERID(all)', $item['cid'])); 
-					}
-					$ext->add('disa', $item['disa_id'], '', new ext_disa('no-password,disa-dial'));
-				} else {
-					$ext->add('disa', $item['disa_id'], '', new ext_playback('enter-password'));
-					$ext->add('disa', $item['disa_id'], '', new ext_disa('/etc/asterisk/disa-'.$item['disa_id'].'.conf'));
+				if ($item['cid']) {
+					$ext->add('disa', $item['disa_id'], '', new ext_setvar('CALLERID(all)', $item['cid'])); 
 				}
+				$ext->add('disa', $item['disa_id'], '', new ext_disa('no-password,disa-dial'));
 		
 				//	$ext->add('disa', $item['disa_id'], 'end', new ext_hangup(''));
 			}

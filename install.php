@@ -13,7 +13,7 @@ $sql = "CREATE TABLE IF NOT EXISTS disa (
 	context VARCHAR ( 50 ), 
 	digittimeout INTEGER, 
 	resptimeout INTEGER, 
-	needconf VARCHAR( 10 ) 
+	needconf VARCHAR( 10 ),
 	hangup VARCHAR( 10 ) 
 );";
 
@@ -53,7 +53,7 @@ if(DB::IsError($check)) {
 $sql = "SELECT hangup FROM disa";
 $check = $db->getRow($sql, DB_FETCHMODE_ASSOC);
 if(DB::IsError($check)) {
-$sql = 'ALTER TABLE `disa` CHANGE `hangup` `hangup` VARCHAR( 10 )';
+	$sql = 'ALTER TABLE `disa` ADD COLUMN `hangup` VARCHAR( 10 )';
 	$result = $db->query($sql);
 	if(DB::IsError($result)) {
 		die_freepbx($result->getDebugInfo());
