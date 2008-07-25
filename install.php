@@ -22,18 +22,6 @@ if (DB::IsError($check)) {
 	die( "Can not create `disa` table: " . $check->getMessage() .  "\n");
 }
 
-//update to 2.5, add hangup
-//  ALTER TABLE `disa` CHANGE `hangup` `hangup` VARCHAR( 10 )
-
-$sql = "SELECT hangup FROM disa";
-$check = $db->getRow($sql, DB_FETCHMODE_ASSOC);
-if(DB::IsError($check)) {
-$sql = 'ALTER TABLE `disa` CHANGE `hangup` `hangup` VARCHAR( 10 )';
-	$result = $db->query($sql);
-	if(DB::IsError($result)) {
-		die_freepbx($result->getDebugInfo());
-	}
-}
 	
 // Manage upgrade from DISA 1.0
 // r2.0 Add Timeouts and add wait for confirmation
@@ -59,5 +47,17 @@ if(DB::IsError($check)) {
 	}
 }
 
+//update to 2.5, add hangup
+//  ALTER TABLE `disa` CHANGE `hangup` `hangup` VARCHAR( 10 )
+
+$sql = "SELECT hangup FROM disa";
+$check = $db->getRow($sql, DB_FETCHMODE_ASSOC);
+if(DB::IsError($check)) {
+$sql = 'ALTER TABLE `disa` CHANGE `hangup` `hangup` VARCHAR( 10 )';
+	$result = $db->query($sql);
+	if(DB::IsError($result)) {
+		die_freepbx($result->getDebugInfo());
+	}
+}
 
 ?>
