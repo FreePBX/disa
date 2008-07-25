@@ -115,6 +115,10 @@ if ($action == 'delete') {
 		<td><a href="#" class="info"><?php echo _("Context"); ?><span><?php echo _("(Experts Only) Sets the context that calls will originate from. Leave this as from-internal unless you know what you're doing."); ?></span></a></td>
 		<td><input type="text" name="context" value="<?php echo htmlspecialchars(isset($thisItem['context']) ? $thisItem['context'] : 'from-internal'); ?>" tabindex="<?php echo ++$tabindex;?>"></td>
 	</tr>
+	<tr>
+		<td><a href="#" class="info"><?php echo _("Allow Hangup"); ?><span><?php echo _("Allow the current call to be ended and return the caller to the dial tone by presseing the Hangup feature code"); ?></span></a></td>
+		<td><input type="checkbox" name="hangup" value="CHECKED" <?php echo $thisItem['hangup'] ?>   tabindex="<?php echo ++$tabindex;?>"/></td>
+	</tr>
         <tr>
                 <td colspan="2"><br><h6><input name="Submit" type="submit" value="<?php echo _("Submit Changes")?>" tabindex="<?php echo ++$tabindex;?>"></h6></td>
         </tr>

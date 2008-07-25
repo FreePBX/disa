@@ -75,11 +75,14 @@ function disa_get_config($engine) {
 						$ext->add('disa', $item['disa_id'], '',  new ext_read('RRES', 'press-1', '1', ',1,3'));
 						$ext->add('disa', $item['disa_id'], '', new ext_setvar('RESCOUNT', '$[${RESCOUNT}+1]'));
 						$ext->add('disa', $item['disa_id'], '', new ext_gotoif('$["x${RRES}"="x"]', 'loop'));
-					}
-					$ext->add('disa', $item['disa_id'], '', new ext_setvar('__DISA', '"disa,'.$item['disa_id'].',1"'));
-					$ext->add('disa', $item['disa_id'], '', new ext_setvar('__DISACONTEXT', $thisitem['context']));
-					$ext->add('disa', $item['disa_id'], '', new ext_setvar('__KEEPCID', 'TRUE')); 
-					$ext->add('disa', $item['disa_id'], '', new ext_setvar('TIMEOUT(digit)', $thisitem['digittimeout']));
+					  }
+					$ext->add('disa', $item['disa_id'], '', new ext_setvar('_DISA', '"disa,'.$item['disa_id'].',1"'));
+					$ext->add('disa', $item['disa_id'], '', new ext_setvar('_DISACONTEXT', $thisitem['context']));
+					$ext->add('disa', $item['disa_id'], '', new ext_setvar('_KEEPCID', 'TRUE')); 
+					if ($thisitem['hangup'] == 'CHECKED') {
+					 $ext->add('disa', $item['disa_id'], '', new ext_setvar('_HANGUP', 'Hg'));
+					  }
+          $ext->add('disa', $item['disa_id'], '', new ext_setvar('TIMEOUT(digit)', $thisitem['digittimeout']));
 					$ext->add('disa', $item['disa_id'], '', new ext_setvar('TIMEOUT(response)', $thisitem['resptimeout']));
 					
 					if ($nopass) {
@@ -135,7 +138,7 @@ function disa_add($post) {
 	if (!isset($needconf)) 
 		$needconf = '';
         if(empty($displayname)) $displayname = "unnamed";
-        $results = sql("INSERT INTO disa (displayname,pin,cid,context,resptimeout,digittimeout,needconf) values (\"".str_replace("\"", "\"\"",$displayname)."\",\"".$pin."\",\"".str_replace("\"", "\"\"", $cid)."\",\"".$context."\", \"$resptimeout\", \"$digittimeout\", \"$needconf\")");
+        $results = sql("INSERT INTO disa (displayname,pin,cid,context,resptimeout,digittimeout,needconf,hangup) values (\"".str_replace("\"", "\"\"",$displayname)."\",\"".$pin."\",\"".str_replace("\"", "\"\"", $cid)."\",\"".$context."\", \"$resptimeout\", \"$digittimeout\", \"$needconf\", \"$hangup\")");
 }
 
 function disa_del($id) {
@@ -150,6 +153,6 @@ function disa_edit($id, $post) {
 	if (!isset($needconf)) 
 		$needconf = '';
         if(empty($displayname)) $displayname = "unnamed";
-        $results = sql("UPDATE disa  set displayname = \"".str_replace("\"", "\"\"",$displayname)."\", pin = \"$pin\", cid = \"".str_replace("\"", "\"\"",$cid)."\", context = \"$context\", resptimeout = \"$resptimeout\", digittimeout = \"$digittimeout\", needconf = \"$needconf\" where disa_id = \"$id\"");
+        $results = sql("UPDATE disa  set displayname = \"".str_replace("\"", "\"\"",$displayname)."\", pin = \"$pin\", cid = \"".str_replace("\"", "\"\"",$cid)."\", context = \"$context\", resptimeout = \"$resptimeout\", digittimeout = \"$digittimeout\", needconf = \"$needconf\", hangup = \"$hangup\" where disa_id = \"$id\"");
 }
 ?>
