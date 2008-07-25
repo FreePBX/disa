@@ -107,6 +107,32 @@ function disa_get_config($engine) {
 		
 				//	$ext->add('disa', $item['disa_id'], 'end', new ext_hangup(''));
 			}
+
+
+			$context = 'disa-dial';
+			$exten = '_X.';
+			$ext->add($context, $exten, '', new ext_noop('called ${EXTEN} in ${DISACONTEXT} by ${DISA}'));
+			$ext->add($context, $exten, '', new ext_dial('Local/${EXTEN}@${DISACONTEXT}', '300,${HANGUP}'));  // Regular Trunk Dial
+			$ext->add($context, $exten, '', new ext_gosub('1', 's-${DIALSTATUS}'));
+			$ext->add($context, $exten, '', new ext_goto('${DISA}'));
+
+			$exten = 's-ANSWER';
+			$ext->add($context, $exten, '', new ext_return());
+
+			$exten = 's-CANCEL';
+			$ext->add($context, $exten, '', new ext_return());
+
+			$exten = 's-BUSY';
+			$ext->add($context, $exten, '', new ext_playtones('busy'));
+			$ext->add($context, $exten, '', new ext_busy('3'));
+			$ext->add($context, $exten, '', new ext_return());
+
+			$exten = '_s-.';
+			$ext->add($context, $exten, '', new ext_noop('DISA Dial failed due to ${DIALSTATUS} - returning to dial tone'));
+			$ext->add($context, $exten, '', new ext_playtones('congestion'));
+			$ext->add($context, $exten, '', new ext_wait('3'));
+			$ext->add($context, $exten, '', new ext_stopplaytones());
+			$ext->add($context, $exten, '', new ext_return());
 		}
 		break;
 	}
