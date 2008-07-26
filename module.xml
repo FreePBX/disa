@@ -24,6 +24,6 @@
 	<depends>
 		<version>2.4.0</version>
 	</depends>
-	<location>release/2.5/disa-2.5.0.tgz</location>
-	<md5sum>331a2f8435525db978e13fddcf64684a</md5sum>
+	<location>release/2.5/disa-2.5.1.tgz</location>
+	<md5sum>79aa80db47af5eddc03716339f31ece5</md5sum>
 </module>
