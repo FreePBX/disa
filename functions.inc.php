@@ -54,7 +54,9 @@ function disa_get_config($engine) {
 				// this should all be done properly in class, see pinsets, but for now ...
 				//
 				$filename = "/etc/asterisk/disa-".$item['disa_id'].".conf";
-				unlink($filename);
+				if (file_exists($filename)) {
+					unlink($filename);
+				}
 				if (isset($item['pin']) && !empty($item['pin']) && (strtolower($item['pin']) != 'no-password')) {
 					// Create the disa-$id.conf file
 					$fh = fopen($filename, "w+");
