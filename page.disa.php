@@ -64,9 +64,11 @@ if ($action == 'delete') {
 
 	<h2><?php echo ($itemid ? "DISA: ".$thisItem["displayname"]." ($itemid)" : _("Add")." DISA"); ?></h2>
 <?php		if ($itemid){ 
-					$delURL = $_SERVER['PHP_SELF'].'?'.$_SERVER['QUERY_STRING'].'&action=delete';
-					$tlabel = sprintf(_("Delete DISA %s"),$thisItem["displayname"]);
-					$label = '<span><img width="16" height="16" border="0" title="'.$tlabel.'" alt="" src="images/core_delete.png"/>&nbsp;'.$tlabel.'</span>';
+
+
+	$delURL = $_SERVER['PHP_SELF'].'?'.$_SERVER['QUERY_STRING'].'&action=delete';
+	$tlabel = sprintf(_("Delete DISA %s"),$thisItem["displayname"]);
+	$label = '<span><img width="16" height="16" border="0" title="'.$tlabel.'" alt="" src="images/core_delete.png"/>&nbsp;'.$tlabel.'</span>';
 ?>
 					<a href="<?php echo $delURL ?>"><?php echo $label; ?></a>
 <?php
@@ -78,7 +80,16 @@ if ($action == 'delete') {
 			}
 ?>
 
-<?php		} ?>
+<?php		}
+	// Get hangup code for tooltip
+	//
+	$fcc = new featurecode('core', 'disconnect');
+	$hangup_code = $fcc->getCodeActive();
+	unset($fcc);
+	if ($hangup_code == "") {
+		$hangup_code = '*';
+	} 
+?>
 	<form autocomplete="off" name="edit" action="<?php $_SERVER['PHP_SELF'] ?>" method="post" onsubmit="return edit_onsubmit();">
 	<input type="hidden" name="display" value="<?php echo $dispnum?>">
 	<input type="hidden" name="action" value="<?php echo ($itemid ? 'edit' : 'add') ?>">
@@ -116,7 +127,7 @@ if ($action == 'delete') {
 		<td><input type="text" name="context" value="<?php echo htmlspecialchars(isset($thisItem['context']) ? $thisItem['context'] : 'from-internal'); ?>" tabindex="<?php echo ++$tabindex;?>"></td>
 	</tr>
 	<tr>
-		<td><a href="#" class="info"><?php echo _("Allow Hangup"); ?><span><?php echo _("Allow the current call to be ended and return the caller to the dial tone by presseing the Hangup feature code"); ?></span></a></td>
+		<td><a href="#" class="info"><?php echo _("Allow Hangup"); ?><span><?php echo sprintf(_("Allow the current call to be disconnected and dial tone presented for a new call by pressing the Hangup feature code: %s while in a call"),$hangup_code); ?></span></a></td>
 		<td><input type="checkbox" name="hangup" value="CHECKED" <?php echo $thisItem['hangup'] ?>   tabindex="<?php echo ++$tabindex;?>"/></td>
 	</tr>
         <tr>
