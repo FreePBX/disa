@@ -112,7 +112,7 @@ function disa_get_config($engine) {
 
 
 			$context = 'disa-dial';
-			$exten = '_X.';
+			$exten = '_.';
 			$ext->add($context, $exten, '', new ext_noop('called ${EXTEN} in ${DISACONTEXT} by ${DISA}'));
 			$ext->add($context, $exten, '', new ext_dial('Local/${EXTEN}@${DISACONTEXT}', '300,${HANGUP}'));  // Regular Trunk Dial
 			$ext->add($context, $exten, '', new ext_gosub('1', 's-${DIALSTATUS}'));
