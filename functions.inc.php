@@ -107,7 +107,7 @@ function disa_get_config($engine) {
 				}
 				$ext->add('disa', $item['disa_id'], '', new ext_disa('no-password,disa-dial'));
 		
-				//	$ext->add('disa', $item['disa_id'], 'end', new ext_hangup(''));
+				$ext->add('disa', $item['disa_id'], 'end', new ext_hangup(''));
 			}
 
 
@@ -126,7 +126,7 @@ function disa_get_config($engine) {
 
 			$exten = 's-BUSY';
 			$ext->add($context, $exten, '', new ext_playtones('busy'));
-			$ext->add($context, $exten, '', new ext_busy('3'));
+			$ext->add($context, $exten, '', new ext_wait('3'));
 			$ext->add($context, $exten, '', new ext_return());
 
 			$exten = '_s-.';
