@@ -169,6 +169,7 @@ function disa_chk($post) {
 }
 
 function disa_add($post) {
+	global $db;
 	if(!disa_chk($post)) {
 		return null;
 	}
@@ -178,7 +179,7 @@ function disa_add($post) {
 		if(empty($displayname)) { 
 			$displayname = "unnamed";
 		}
-		$results = sql("INSERT INTO disa (displayname,pin,cid,context,resptimeout,digittimeout,needconf,hangup) values ('".addslashes($displayname)."','".addslashes($pin)."','".addslashes($cid)."','".addslashes($context)."', '".addslashes($resptimeout)."', '".addslashes($digittimeout)."', '$needconf', '$hangup')");
+		$results = sql("INSERT INTO disa (displayname,pin,cid,context,resptimeout,digittimeout,needconf,hangup) values ('".$db->escapeSimple($displayname)."','".$db->escapeSimple($pin)."','".$db->escapeSimple($cid)."','".$db->escapeSimple($context)."', '".$db->escapeSimple($resptimeout)."', '".$db->escapeSimple($digittimeout)."', '$needconf', '$hangup')");
 }
 
 function disa_del($id) {
@@ -187,6 +188,7 @@ function disa_del($id) {
 }
 
 function disa_edit($id, $post) {
+	global $db;
 	if (!disa_chk($post)) {
 		return null;
 	}
@@ -197,6 +199,6 @@ function disa_edit($id, $post) {
 	if(empty($displayname)) {
 	 	$displayname = "unnamed";
 	}
-	$results = sql("UPDATE disa  set displayname = '".addslashes($displayname)."', pin = '".addslashes($pin)."', cid = '".addslashes($cid)."', context = '".addslashes($context)."', resptimeout = '".addslashes($resptimeout)."', digittimeout = '".addslashes($digittimeout)."', needconf = \"$needconf\", hangup = \"$hangup\" where disa_id = '$id'");
+	$results = sql("UPDATE disa  set displayname = '".$db->escapeSimple($displayname)."', pin = '".$db->escapeSimple($pin)."', cid = '".$db->escapeSimple($cid)."', context = '".$db->escapeSimple($context)."', resptimeout = '".$db->escapeSimple($resptimeout)."', digittimeout = '".$db->escapeSimple($digittimeout)."', needconf = \"$needconf\", hangup = \"$hangup\" where disa_id = '$id'");
 }
 ?>
