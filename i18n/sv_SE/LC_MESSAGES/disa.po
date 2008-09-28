@@ -1,0 +1,127 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: FreePBX disa\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-09-28 02:20+0200\n"
+"PO-Revision-Date: 2008-09-28 11:22+0100\n"
+"Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Swedish\n"
+"X-Poedit-Country: SWEDEN\n"
+
+#: page.disa.php:46
+#: page.disa.php:65
+#: page.disa.php:98
+msgid "Add DISA"
+msgstr "Lägg till DISA"
+
+#: page.disa.php:59
+msgid "deleted"
+msgstr "borttagen"
+
+#: page.disa.php:70
+#, php-format
+msgid "Delete DISA %s"
+msgstr "Ta bort DISA %s"
+
+#: page.disa.php:98
+msgid "Edit DISA"
+msgstr "Redigera DISA"
+
+#: page.disa.php:101
+msgid "DISA name:"
+msgstr "Namn på DISA:"
+
+#: page.disa.php:101
+msgid "Give this DISA a brief name to help you identify it."
+msgstr "Skriv in ett kortfattat namn för denna DISA."
+
+#: page.disa.php:106
+msgid "PIN"
+msgstr "PIN-kod"
+
+#: page.disa.php:106
+msgid "The user will be prompted for this number."
+msgstr "Användaren kommer att få en fråga om detta nummer"
+
+#: page.disa.php:106
+msgid "If you wish to have multiple PIN's, seperate them with commas"
+msgstr "Om du vill ha flera PIN-koder, separera dom med komma"
+
+#: page.disa.php:110
+msgid "Response Timeout"
+msgstr "Tidsutlösning för svar"
+
+#: page.disa.php:110
+msgid "The maximum amount of time it will wait before hanging up if the user has dialled an incomplete or invalid number. Default of 10 seconds"
+msgstr "Den maximala tiden innan samtalet avslutas om användaren har tryckt felaktiga eller ofullständiga siffror. Standard är 10 sekunder."
+
+#: page.disa.php:114
+msgid "Digit Timeout"
+msgstr "Tidsutlösning för siffra"
+
+#: page.disa.php:114
+msgid "The maximum amount of time permitted between digits when the user is typing in an extension. Default of 5"
+msgstr "Det maximalt antal sekunder som tillåts mellan siffrorna när en användare trycker in en anknytning. Standard är 5 sekunder."
+
+#: page.disa.php:118
+msgid "Require Confirmation"
+msgstr "Kräver bekräftelse"
+
+#: page.disa.php:118
+msgid "Require Confirmation before prompting for password. Used when your PSTN connection appears to answer the call immediately"
+msgstr "Kräver bekräftelse innan fråga om lösenord. Används när din koppling mot telenätet verkar svara omedelbart på samtalet."
+
+#: page.disa.php:122
+msgid "Caller ID"
+msgstr "Nummerpresentation"
+
+#: page.disa.php:122
+msgid "(Optional) When using this DISA, the users CallerID will be set to this. Format is \"User Name\" <5551234>"
+msgstr "(Valfritt) När du använder denna DISA kommer nummerpresentationen sättas till detta. Formatet är \"Namn\" <123456>"
+
+#: page.disa.php:126
+msgid "Context"
+msgstr "Sammanhang"
+
+#: page.disa.php:126
+msgid "(Experts Only) Sets the context that calls will originate from. Leave this as from-internal unless you know what you're doing."
+msgstr "(Endast experter) Sätter sammanhanget samtalet ska komma från. Om du inte vet något om detta, lämna detta till from-internal."
+
+#: page.disa.php:130
+msgid "Allow Hangup"
+msgstr "Tillåt avsluta"
+
+#: page.disa.php:130
+#, php-format
+msgid "Allow the current call to be disconnected and dial tone presented for a new call by pressing the Hangup feature code: %s while in a call"
+msgstr "Tillåter att pågående samtal kopplas ner och ett nytt samtal kan påbörjas genom att trycka funktionskoden Avsluta samtal: %s"
+
+#: page.disa.php:134
+msgid "Submit Changes"
+msgstr "Spara ändringar"
+
+#: page.disa.php:145
+msgid "Please enter a valid DISA Name"
+msgstr "Skriv in ett giltigt namn för denna DISA"
+
+#: page.disa.php:146
+msgid "Please enter a valid DISA PIN"
+msgstr "Skriv in en giltig PIN-kod för denna DISA"
+
+#: page.disa.php:147
+msgid "Please enter a valid Caller ID or leave it blank"
+msgstr "Skriv in en giltig nummerpresentation eller lämna fältet tomt"
+
+#: page.disa.php:148
+msgid "Context cannot be blank"
+msgstr "Sammanhanget kan inte vara tomt"
+

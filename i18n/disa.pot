@@ -1,0 +1,135 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-09-28 02:20+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: page.disa.php:46 page.disa.php:65 page.disa.php:98
+msgid "Add DISA"
+msgstr ""
+
+#: page.disa.php:59
+msgid "deleted"
+msgstr ""
+
+#: page.disa.php:70
+#, php-format
+msgid "Delete DISA %s"
+msgstr ""
+
+#: page.disa.php:98
+msgid "Edit DISA"
+msgstr ""
+
+#: page.disa.php:101
+msgid "DISA name:"
+msgstr ""
+
+#: page.disa.php:101
+msgid "Give this DISA a brief name to help you identify it."
+msgstr ""
+
+#: page.disa.php:106
+msgid "PIN"
+msgstr ""
+
+#: page.disa.php:106
+msgid "The user will be prompted for this number."
+msgstr ""
+
+#: page.disa.php:106
+msgid "If you wish to have multiple PIN's, seperate them with commas"
+msgstr ""
+
+#: page.disa.php:110
+msgid "Response Timeout"
+msgstr ""
+
+#: page.disa.php:110
+msgid ""
+"The maximum amount of time it will wait before hanging up if the user has "
+"dialled an incomplete or invalid number. Default of 10 seconds"
+msgstr ""
+
+#: page.disa.php:114
+msgid "Digit Timeout"
+msgstr ""
+
+#: page.disa.php:114
+msgid ""
+"The maximum amount of time permitted between digits when the user is typing "
+"in an extension. Default of 5"
+msgstr ""
+
+#: page.disa.php:118
+msgid "Require Confirmation"
+msgstr ""
+
+#: page.disa.php:118
+msgid ""
+"Require Confirmation before prompting for password. Used when your PSTN "
+"connection appears to answer the call immediately"
+msgstr ""
+
+#: page.disa.php:122
+msgid "Caller ID"
+msgstr ""
+
+#: page.disa.php:122
+msgid ""
+"(Optional) When using this DISA, the users CallerID will be set to this. "
+"Format is \"User Name\" <5551234>"
+msgstr ""
+
+#: page.disa.php:126
+msgid "Context"
+msgstr ""
+
+#: page.disa.php:126
+msgid ""
+"(Experts Only) Sets the context that calls will originate from. Leave this "
+"as from-internal unless you know what you're doing."
+msgstr ""
+
+#: page.disa.php:130
+msgid "Allow Hangup"
+msgstr ""
+
+#: page.disa.php:130
+#, php-format
+msgid ""
+"Allow the current call to be disconnected and dial tone presented for a new "
+"call by pressing the Hangup feature code: %s while in a call"
+msgstr ""
+
+#: page.disa.php:134
+msgid "Submit Changes"
+msgstr ""
+
+#: page.disa.php:145
+msgid "Please enter a valid DISA Name"
+msgstr ""
+
+#: page.disa.php:146
+msgid "Please enter a valid DISA PIN"
+msgstr ""
+
+#: page.disa.php:147
+msgid "Please enter a valid Caller ID or leave it blank"
+msgstr ""
+
+#: page.disa.php:148
+msgid "Context cannot be blank"
+msgstr ""

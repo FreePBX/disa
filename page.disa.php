@@ -43,7 +43,7 @@ $disas = disa_list();
 
 <!-- right side menu -->
 <div class="rnav"><ul>
-    <li><a id="<?php echo ($itemid=='' ? 'current':'std') ?>" href="config.php?display=<?php echo urlencode($dispnum)?>"><?php echo _("Add")." DISA" ?></a></li>
+    <li><a id="<?php echo ($itemid=='' ? 'current':'std') ?>" href="config.php?display=<?php echo urlencode($dispnum)?>"><?php echo _("Add DISA") ?></a></li>
 <?php
 if (isset($disas)) {
 	foreach ($disas as $d) {
@@ -62,7 +62,7 @@ if ($action == 'delete') {
 	$thisItem = disa_get($itemid);
 ?>
 
-	<h2><?php echo ($itemid ? "DISA: ".$thisItem["displayname"]." ($itemid)" : _("Add")." DISA"); ?></h2>
+	<h2><?php echo ($itemid ? "DISA: ".$thisItem["displayname"]." ($itemid)" : _("Add DISA")); ?></h2>
 <?php		if ($itemid){ 
 
 
@@ -95,10 +95,10 @@ if ($action == 'delete') {
 	<input type="hidden" name="action" value="<?php echo ($itemid ? 'edit' : 'add') ?>">
 	<input type="hidden" name="deptname" value="<?php echo $_SESSION["AMP_user"]->_deptname ?>">
 	<table>
-	<tr><td colspan="2"><h5><?php echo ($itemid ? _("Edit")." DISA" : _("Add")." DISA") ?><hr></h5></td></tr>
+	<tr><td colspan="2"><h5><?php echo ($itemid ? _("Edit DISA") : _("Add DISA")) ?><hr></h5></td></tr>
 
 	<tr>
-		<td><a href="#" class="info"><?php echo "DISA "._("name:")?><span><?php echo _("Give this DISA a brief name to help you identify it.")?></span></a></td>
+		<td><a href="#" class="info"><?php echo _("DISA name:")?><span><?php echo _("Give this DISA a brief name to help you identify it.")?></span></a></td>
 
 		<td><input type="text" name="displayname" value="<?php echo htmlspecialchars(isset($thisItem['displayname']) ? $thisItem['displayname'] : ''); ?>" tabindex="<?php echo ++$tabindex;?>"></td>
 	</tr>
