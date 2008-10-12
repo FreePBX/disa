@@ -31,7 +31,7 @@ function disa_getdestinfo($dest) {
 			return array();
 		} else {
 			//$type = isset($active_modules['announcement']['type'])?$active_modules['announcement']['type']:'setup';
-			return array('description' => 'DISA : '.$thisexten['displayname'],
+			return array('description' => sprintf(_("DISA: %s"),$thisexten['displayname']),
 			             'edit_url' => 'config.php?display=disa&itemid='.urlencode($exten),
 								  );
 		}
