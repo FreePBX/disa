@@ -73,7 +73,7 @@ msgid ""
 "The maximum amount of time permitted between digits when the user is typing "
 "in an extension. Default of 5"
 msgstr ""
-"Максимальное время между цифрами в процессе набора. ПО умолчанию - 5 сек." 
+"Максимальное время между цифрами в процессе набора. По умолчанию - 5 сек." 
 
 #: page.disa.php:95
 msgid "Require Confirmation"
@@ -111,5 +111,34 @@ msgstr ""
 "(Только для экспертов) Установить контекст, из которого будут оригинироваться звонки. "
 "Оставить как есть - from-internal означает, что вы знаете, что делаете."
 
+#: page.disa.php:130
+msgid "Allow Hangup"
+msgstr "Разрешить прерывание звонка"
+
+#: page.disa.php:130
+#, php-format
+msgid ""
+"Allow the current call to be disconnected and dial tone presented for a new "
+"call by pressing the Hangup feature code: %s while in a call"
+msgstr ""
+"Разрешить прерывать текущий звонок и предоставить длинный гудок (КПВ) для нового "
+"звонка набором сервисного кода Положить трубку: %s "
+
 msgid "Submit Changes"
 msgstr "Применить изменения"
+
+#: page.disa.php:145
+msgid "Please enter a valid DISA Name"
+msgstr "Введите разрешённое название для DISA "
+
+#: page.disa.php:146
+msgid "Please enter a valid DISA PIN"
+msgstr "Введите разрешённый PIN для DISA "
+
+#: page.disa.php:147
+msgid "Please enter a valid Caller ID or leave it blank"
+msgstr "Введите разрешённый Номер ИД для DISA "
+
+#: page.disa.php:148
+msgid "Context cannot be blank"
+msgstr "Контекст не может быть пустым"
