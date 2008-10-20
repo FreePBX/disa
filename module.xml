@@ -1,7 +1,7 @@
 <module>
 	<rawname>disa</rawname>
 	<name>DISA</name>
-	<version>2.5.1.5</version>
+	<version>2.5.1.6</version>
 	<type>setup</type>
 	<category>Internal Options &amp; Configuration</category>
 	<menuitems>
@@ -9,6 +9,7 @@
 	</menuitems>
 	<description>DISA Allows you 'Direct Inward System Access'. This gives you the ability to have an option on an IVR that gives you a dial tone, and you're able to dial out from the freePBX machine as if you were connected to a standard extension. It appears as a Destination.</description>
 	<changelog>
+		*2.5.1.6* localizatoin string enclosures
 		*2.5.1.5* #3138 Sqlite3 fixes
 		*2.5.1.4* #3090 replace str_replace with addslashes to better protect all input in sql
 		*2.5.1.3* #3074 play busy and allow another call when trunk reports busy
@@ -29,6 +30,6 @@
 	<depends>
 		<version>2.4.0</version>
 	</depends>
-	<location>release/2.5/disa-2.5.1.5.tgz</location>
-	<md5sum>0d5add3b3b69990f43843652bde4fadb</md5sum>
+	<location>release/2.5/disa-2.5.1.6.tgz</location>
+	<md5sum>b96cb2e1d6ccea253e1803eb08e1f8a3</md5sum>
 </module>
