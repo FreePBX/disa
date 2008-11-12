@@ -1,0 +1,133 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: FreePBX v2.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-10-06 12:57+0200\n"
+"PO-Revision-Date: 2008-11-03 17:10+0200\n"
+"Last-Translator: \n"
+"Language-Team: Chavdar Iliev <chavdar_75@yahoo.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Bulgarian\n"
+"X-Poedit-Country: BULGARIA\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: functions.inc.php:34
+#, php-format
+msgid "DISA: %s"
+msgstr "DISA: %s"
+
+#: page.disa.php:46
+#: page.disa.php:65
+#: page.disa.php:98
+msgid "Add DISA"
+msgstr "Добави DISA"
+
+#: page.disa.php:59
+msgid "deleted"
+msgstr "изтритa"
+
+#: page.disa.php:70
+#, php-format
+msgid "Delete DISA %s"
+msgstr "Изтрий DISA %s"
+
+#: page.disa.php:98
+msgid "Edit DISA"
+msgstr "Редактирай DISA"
+
+#: page.disa.php:101
+msgid "DISA name:"
+msgstr "Име на DISA:"
+
+#: page.disa.php:101
+msgid "Give this DISA a brief name to help you identify it."
+msgstr "Дайте на DISA описващо име за да ви помогне при идентифицирането"
+
+#: page.disa.php:106
+msgid "PIN"
+msgstr "PIN"
+
+#: page.disa.php:106
+msgid "The user will be prompted for this number."
+msgstr "Потребителят ще бъде запитан за този номер."
+
+#: page.disa.php:106
+msgid "If you wish to have multiple PIN's, seperate them with commas"
+msgstr "Ако искате да имате наколко PIN кода, разделете ги с запетая"
+
+#: page.disa.php:110
+msgid "Response Timeout"
+msgstr "Време на Изчакване на Отговор"
+
+#: page.disa.php:110
+msgid "The maximum amount of time it will wait before hanging up if the user has dialled an incomplete or invalid number. Default of 10 seconds"
+msgstr "Максималното време за което да изчаква преди да затвори ако потребителят е набрал непълен или неправилен номер. По-подразбиране 10 секунди."
+
+#: page.disa.php:114
+msgid "Digit Timeout"
+msgstr "Време на Изчакване Между Цифрите"
+
+#: page.disa.php:114
+msgid "The maximum amount of time permitted between digits when the user is typing in an extension. Default of 5"
+msgstr "Максималното разрешено време между цифрите когато потребителя набира на телефона. По-подразбиране 5 "
+
+#: page.disa.php:118
+msgid "Require Confirmation"
+msgstr "Изисква Потвърждение"
+
+#: page.disa.php:118
+msgid "Require Confirmation before prompting for password. Used when your PSTN connection appears to answer the call immediately"
+msgstr "Изисква Потвърждение преди да поиска парола. Използва се когато вашата PSTN връзка изглежда че отговаря на обаждането веднага."
+
+#: page.disa.php:122
+msgid "Caller ID"
+msgstr "Caller ID"
+
+#: page.disa.php:122
+msgid "(Optional) When using this DISA, the users CallerID will be set to this. Format is \"User Name\" <5551234>"
+msgstr "(Незадължително) Когато използвате тази DISA, потребителските CallerID ще се установяват на това. Формат: \"Потребителско Име\" <5551234>"
+
+#: page.disa.php:126
+msgid "Context"
+msgstr "Контекст"
+
+#: page.disa.php:126
+msgid "(Experts Only) Sets the context that calls will originate from. Leave this as from-internal unless you know what you're doing."
+msgstr "(Само за Експерти) Установете контекст от който ще се извършват обажданията. Оставете from-internal освен ако знаете какво точно правите."
+
+#: page.disa.php:130
+msgid "Allow Hangup"
+msgstr "Позволи Прекъсване на Разговора"
+
+#: page.disa.php:130
+#, php-format
+msgid "Allow the current call to be disconnected and dial tone presented for a new call by pressing the Hangup feature code: %s while in a call"
+msgstr "Позволи на текущото обаждане да се разкачи и да се появи тон за избиране на ново  обаждане като се натисне специален код за Прекъсване на Разговора: %s докато говорите"
+
+#: page.disa.php:134
+msgid "Submit Changes"
+msgstr "Приеми Промените"
+
+#: page.disa.php:145
+msgid "Please enter a valid DISA Name"
+msgstr "Моля въведете правилно DISA Име"
+
+#: page.disa.php:146
+msgid "Please enter a valid DISA PIN"
+msgstr "Моля въведете правилен DISA PIN"
+
+#: page.disa.php:147
+msgid "Please enter a valid Caller ID or leave it blank"
+msgstr "Моля въведете правилен CallerID или оставете празно"
+
+#: page.disa.php:148
+msgid "Context cannot be blank"
+msgstr "Трябва да има въведен контекст"
+
