@@ -1,7 +1,7 @@
 <module>
 	<rawname>disa</rawname>
 	<name>DISA</name>
-	<version>2.5.1.6</version>
+	<version>2.5.1.8</version>
 	<type>setup</type>
 	<category>Internal Options &amp; Configuration</category>
 	<menuitems>
@@ -32,6 +32,6 @@
 	<depends>
 		<version>2.4.0</version>
 	</depends>
-	<location>release/2.5/disa-2.5.1.6.tgz</location>
-	<md5sum>b96cb2e1d6ccea253e1803eb08e1f8a3</md5sum>
+	<location>release/2.6/disa-2.5.1.8.tgz</location>
+	<md5sum>12b13104200fdc1959621af14a4d503f</md5sum>
 </module>
