@@ -11,6 +11,7 @@
 //GNU General Public License for more details.
 
 
+$tabindex = 0;
 $action = isset($_REQUEST['action'])?$_REQUEST['action']:'';
 $itemid = isset($_REQUEST['itemid'])?$_REQUEST['itemid']:'';
 $dispnum = "disa"; //used for switch on config.php
