@@ -1,9 +1,26 @@
+# This file is part of FreePBX.
+#
+#    FreePBX is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 2 of the License, or
+#    (at your option) any later version.
+#
+#    FreePBX is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with FreePBX.  If not, see <http://www.gnu.org/licenses/>.
+#
+# Copyright (C) 2008, 2009 Juan Asensio Sánchez <okelet@gmail.com>
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX - módulo disa module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-10-06 12:57+0200\n"
-"PO-Revision-Date: 2009-01-22 13:59+0100\n"
+"PO-Revision-Date: 2010-01-23 00:00+0100\n"
 "Last-Translator: Juan Asensio Sánchez <okelet@gmail.com>\n"
 "Language-Team: Juan Asensio Sánchez <okelet@gmail.com>\n"
 "MIME-Version: 1.0\n"
@@ -54,7 +71,7 @@ msgid "The user will be prompted for this number."
 msgstr "Se solicitará al usuario este PIN para acceder al DISA."
 
 #: page.disa.php:106
-msgid "If you wish to have multiple PIN's, seperate them with commas"
+msgid "If you wish to have multiple PIN's, separate them with commas"
 msgstr "Si desea tener varios PIN, sepárelos con comas."
 
 #: page.disa.php:110
@@ -62,7 +79,7 @@ msgid "Response Timeout"
 msgstr "Tiempo de espera para la respuesta:"
 
 #: page.disa.php:110
-msgid "The maximum amount of time it will wait before hanging up if the user has dialled an incomplete or invalid number. Default of 10 seconds"
+msgid "The maximum amount of time it will wait before hanging up if the user has dialed an incomplete or invalid number. Default of 10 seconds"
 msgstr "El tiempo máximo que se esperará abtes de colgar si el usuario ha marcado un número incompleto o no válido. Su valor por defecto es de 10 segundos."
 
 #: page.disa.php:114

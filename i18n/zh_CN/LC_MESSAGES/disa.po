@@ -1,14 +1,26 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# This file is part of FreePBX.
+#
+#    FreePBX is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 2 of the License, or
+#    (at your option) any later version.
+#
+#    FreePBX is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with FreePBX.  If not, see <http://www.gnu.org/licenses/>.
+#
+# Copyright (C) 2008, 2009 EdwardBadBoy <zhougongjizhe@163.com>
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.5 Chinese Translation\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-10-06 12:57+0200\n"
-"PO-Revision-Date: 2009-02-01 11:51+0800\n"
+"PO-Revision-Date: 2010-01-23 00:00+0800\n"
 "Last-Translator: 周征晟 <zhougongjizhe@163.com>\n"
 "Language-Team: EdwardBadBoy <zhougongjizhe@163.com>\n"
 "MIME-Version: 1.0\n"
@@ -59,7 +71,7 @@ msgid "The user will be prompted for this number."
 msgstr "用户将被要求输入这个号码。"
 
 #: page.disa.php:106
-msgid "If you wish to have multiple PIN's, seperate them with commas"
+msgid "If you wish to have multiple PIN's, separate them with commas"
 msgstr "如果你想设置多个PIN码，请用逗号分隔它们"
 
 #: page.disa.php:110
@@ -67,7 +79,7 @@ msgid "Response Timeout"
 msgstr "应答超时"
 
 #: page.disa.php:110
-msgid "The maximum amount of time it will wait before hanging up if the user has dialled an incomplete or invalid number. Default of 10 seconds"
+msgid "The maximum amount of time it will wait before hanging up if the user has dialed an incomplete or invalid number. Default of 10 seconds"
 msgstr "如果用户拨打了不完整的或者无效的号码，系统在挂端前需要等待的最长的时间。默认设置是10秒。"
 
 #: page.disa.php:114
