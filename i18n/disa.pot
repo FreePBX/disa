@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-02-27 13:45+0100\n"
+"POT-Creation-Date: 2010-02-27 17:34+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,18 +28,15 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: disa/disa.i18n.php:5 disa/disa.i18n.php:13
 msgid "DISA"
 msgstr ""
 
-#: disa/disa.i18n.php:7
 msgid ""
 "Internal Options \n"
 "&\n"
 " Configuration"
 msgstr ""
 
-#: disa/disa.i18n.php:11
 msgid ""
 "DISA Allows you 'Direct Inward System Access'. This gives you the ability to "
 "have an option on an IVR that gives you a dial tone, and you're able to dial "
@@ -47,125 +44,98 @@ msgid ""
 "extension. It appears as a Destination."
 msgstr ""
 
-#: disa/functions.inc.php:34
 #, php-format
 msgid "DISA: %s"
 msgstr ""
 
-#: disa/page.disa.php:47 disa/page.disa.php:66 disa/page.disa.php:99
 msgid "Add DISA"
 msgstr ""
 
-#: disa/page.disa.php:60
 msgid "deleted"
 msgstr ""
 
-#: disa/page.disa.php:71
 #, php-format
 msgid "Delete DISA %s"
 msgstr ""
 
-#: disa/page.disa.php:99
 msgid "Edit DISA"
 msgstr ""
 
-#: disa/page.disa.php:102
 msgid "DISA name:"
 msgstr ""
 
-#: disa/page.disa.php:102
 msgid "Give this DISA a brief name to help you identify it."
 msgstr ""
 
-#: disa/page.disa.php:107
 msgid "PIN"
 msgstr ""
 
-#: disa/page.disa.php:107
 msgid "The user will be prompted for this number."
 msgstr ""
 
-#: disa/page.disa.php:107
 msgid "If you wish to have multiple PIN's, separate them with commas"
 msgstr ""
 
-#: disa/page.disa.php:111
 msgid "Response Timeout"
 msgstr ""
 
-#: disa/page.disa.php:111
 msgid ""
 "The maximum amount of time it will wait before hanging up if the user has "
 "dialed an incomplete or invalid number. Default of 10 seconds"
 msgstr ""
 
-#: disa/page.disa.php:115
 msgid "Digit Timeout"
 msgstr ""
 
-#: disa/page.disa.php:115
 msgid ""
 "The maximum amount of time permitted between digits when the user is typing "
 "in an extension. Default of 5"
 msgstr ""
 
-#: disa/page.disa.php:119
 msgid "Require Confirmation"
 msgstr ""
 
-#: disa/page.disa.php:119
 msgid ""
 "Require Confirmation before prompting for password. Used when your PSTN "
 "connection appears to answer the call immediately"
 msgstr ""
 
-#: disa/page.disa.php:123
 msgid "Caller ID"
 msgstr ""
 
-#: disa/page.disa.php:123
 msgid ""
 "(Optional) When using this DISA, the users CallerID will be set to this. "
 "Format is \"User Name\" <5551234>"
 msgstr ""
 
-#: disa/page.disa.php:127
 msgid "Context"
 msgstr ""
 
-#: disa/page.disa.php:127
 msgid ""
 "(Experts Only) Sets the context that calls will originate from. Leave this "
 "as from-internal unless you know what you're doing."
 msgstr ""
 
-#: disa/page.disa.php:131
 msgid "Allow Hangup"
 msgstr ""
 
-#: disa/page.disa.php:131
 #, php-format
 msgid ""
 "Allow the current call to be disconnected and dial tone presented for a new "
 "call by pressing the Hangup feature code: %s while in a call"
 msgstr ""
 
-#: disa/page.disa.php:135
 msgid "Submit Changes"
 msgstr ""
 
-#: disa/page.disa.php:146
 msgid "Please enter a valid DISA Name"
 msgstr ""
 
-#: disa/page.disa.php:147
 msgid "Please enter a valid DISA PIN"
 msgstr ""
 
-#: disa/page.disa.php:148
 msgid "Please enter a valid Caller ID or leave it blank"
 msgstr ""
 
-#: disa/page.disa.php:149
 msgid "Context cannot be blank"
 msgstr ""
