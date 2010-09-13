@@ -97,8 +97,10 @@ function disa_get_config($engine) {
 				$ext->add('disa', $item['disa_id'], 'newcall', new ext_setvar('_DISACONTEXT', $thisitem['context']));
 				$ext->add('disa', $item['disa_id'], '', new ext_setvar('_KEEPCID', 'TRUE')); 
 				if ($thisitem['hangup'] == 'CHECKED') {
-					$ext->add('disa', $item['disa_id'], '', new ext_setvar('_HANGUP', 'Hg'));
-				}
+					$ext->add('disa', $item['disa_id'], '', new ext_setvar('_HANGUP', '${TRUNK_OPTIONS}Hg'));
+				} else {
+					$ext->add('disa', $item['disa_id'], '', new ext_setvar('_HANGUP', '${TRUNK_OPTIONS}'));
+        }
 				$ext->add('disa', $item['disa_id'], '', new ext_setvar('TIMEOUT(digit)', $thisitem['digittimeout']));
 				$ext->add('disa', $item['disa_id'], '', new ext_setvar('TIMEOUT(response)', $thisitem['resptimeout']));
 					
