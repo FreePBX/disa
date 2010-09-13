@@ -38,6 +38,6 @@
 	<depends>
 		<version>2.4.0</version>
 	</depends>
-	<location>release/2.8/disa-2.8.0.0.tgz</location>
-	<md5sum>b467def039af2a199269d7eb9c8c6bf9</md5sum>
+	<location>release/2.9/disa-2.8.0.1.tgz</location>
+	<md5sum>2169a81fc219257015862960dd4f813a</md5sum>
 </module>
