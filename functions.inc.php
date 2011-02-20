@@ -92,7 +92,9 @@ function disa_get_config($engine) {
 					} else {
 						$ext->add('disa', $item['disa_id'], '', new ext_authenticate($item['pin']));
 					}
-				}
+				} else {
+				  $ext->add('disa', $item['disa_id'], '', new ext_answer(''));
+        }
 				$ext->add('disa', $item['disa_id'], '', new ext_setvar('_DISA', '"disa,'.$item['disa_id'].',newcall"'));
 				$ext->add('disa', $item['disa_id'], 'newcall', new ext_setvar('_DISACONTEXT', $thisitem['context']));
 				$ext->add('disa', $item['disa_id'], '', new ext_setvar('_KEEPCID', 'TRUE')); 
