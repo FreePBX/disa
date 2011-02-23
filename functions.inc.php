@@ -95,7 +95,7 @@ function disa_get_config($engine) {
 				} else {
 				  $ext->add('disa', $item['disa_id'], '', new ext_answer(''));
         }
-				$ext->add('disa', $item['disa_id'], '', new ext_setvar('_DISA', '"disa,'.$item['disa_id'].',newcall"'));
+				$ext->add('disa', $item['disa_id'], '', new ext_setvar('_DISA', 'disa^'.$item['disa_id'].'^newcall'));
 				$ext->add('disa', $item['disa_id'], 'newcall', new ext_setvar('_DISACONTEXT', $thisitem['context']));
 				$ext->add('disa', $item['disa_id'], '', new ext_setvar('_KEEPCID', 'TRUE')); 
 				if ($thisitem['hangup'] == 'CHECKED') {
@@ -117,10 +117,10 @@ function disa_get_config($engine) {
 
 			$context = 'disa-dial';
 			$exten = '_[0-9a-zA-Z*#].';
-			$ext->add($context, $exten, '', new ext_noop('called ${EXTEN} in ${DISACONTEXT} by ${DISA}'));
+			$ext->add($context, $exten, '', new ext_noop('called ${EXTEN} in ${DISACONTEXT} by ID: ${CUT(DISA,^,2)}'));
 			$ext->add($context, $exten, '', new ext_dial('Local/${EXTEN}@${DISACONTEXT}', '300,${HANGUP}'));  // Regular Trunk Dial
 			$ext->add($context, $exten, '', new ext_gosub('1', 's-${DIALSTATUS}'));
-			$ext->add($context, $exten, '', new ext_goto('${DISA}'));
+		  $ext->add($context, $exten, '', new ext_goto('${CUT(DISA,^,1)},${CUT(DISA,^,2)},${CUT(DISA,^,3)}'));
 
 			$exten = 's-ANSWER';
 			$ext->add($context, $exten, '', new ext_return());
