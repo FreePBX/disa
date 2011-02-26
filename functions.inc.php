@@ -108,6 +108,7 @@ function disa_get_config($engine) {
 					
 				if ($item['cid']) {
 					$ext->add('disa', $item['disa_id'], '', new ext_setvar('CALLERID(all)', $item['cid'])); 
+					$ext->add('disa', $item['disa_id'], '', new ext_setvar('__REALCALLERIDNUM','${CALLERID(number):0:40}')); 
 				}
 				$ext->add('disa', $item['disa_id'], '', new ext_disa('no-password,disa-dial'));
 		
