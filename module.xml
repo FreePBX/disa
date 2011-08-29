@@ -5,8 +5,7 @@
 	<version>2.9.0.4</version>
 	<publisher>FreePBX</publisher>
 	<license>GPLv2+</license>
-	<type>setup</type>
-	<category>Internal Options &amp; Configuration</category>
+	<category>Apps</category>
 	<menuitems>
 		<disa>DISA</disa>
 	</menuitems>
@@ -17,29 +16,6 @@
 		*2.9.0.2* #4783
 		*2.9.0.1* set repo
 		*2.9.0.0* 2.9 Update
-		*2.8.0.1* #4537
-		*2.8.0.0* published 2.8 version
-		*2.7.0.0* spelling errors, localization
-		*2.6.0.0* init tabindex
-		*2.5.1.8* #3457
-		*2.5.1.7* localization updates
-		*2.5.1.6* localizatoin string enclosures
-		*2.5.1.5* #3138 Sqlite3 fixes
-		*2.5.1.4* #3090 replace str_replace with addslashes to better protect all input in sql
-		*2.5.1.3* #3074 play busy and allow another call when trunk reports busy
-		*2.5.1.2* #2996, #3056 allow all numbers to be dialed and update tooltip
-		*2.5.1.1* #2955 check if pinset file exists to avoid warnings
-		*2.5.1* #2922, #2949 allow consecutive calls once DISA is entered
-		*2.5.0* #1784, #2845 tabindex, added delete and add icons
-		*2.4.0.3* #2859 DISA CID not being set on trunks with default trunk CID set
-		*2.4.0.2* #2843 Russian Translation
-		*2.4.0.1* added depends on 2.4.0
-		*2.4.0* #2463 no password cid fix, extension/dest registry, it translation
-		*2.2.3* #2463 Set CID when no pin, added support for Destination Registry
-		*2.2.2.2* #2172 deprecated use of |, changed category
-		*2.2.2.1* bump for rc1
-		*2.2.2* bump so higher that 2.2 branch
-		*2.2*   First release for FreePBX 2.2 - Fixed compatibility issue with new UI
 	</changelog>
 	<depends>
 		<version>2.4.0</version>

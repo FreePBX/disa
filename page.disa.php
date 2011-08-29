@@ -1,4 +1,4 @@
-<?php /* $Id */
+ <?php /* $Id */
 //Copyright (C) 2006 Rob Thomas <xrobau@gmail.com>
 //
 //This program is free software; you can redistribute it and/or
@@ -40,9 +40,6 @@ switch ($action) {
 $disas = disa_list();
 ?>
 
-</div> <!-- end content div so we can display rnav properly-->
-
-<!-- right side menu -->
 <div class="rnav"><ul>
     <li><a id="<?php echo ($itemid=='' ? 'current':'std') ?>" href="config.php?display=<?php echo urlencode($dispnum)?>"><?php echo _("Add DISA") ?></a></li>
 <?php
@@ -54,7 +51,6 @@ if (isset($disas)) {
 ?>
 </ul></div>
 
-<div class="content">
 <?php
 if ($action == 'delete') {
 	echo '<br><h3>DISA '.$oldItem["displayname"].' '._("deleted").'!</h3>';
