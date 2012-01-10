@@ -95,7 +95,7 @@ if ($action == 'delete') {
 	<table>
 		<tr>			
 			<td colspan="2">			
-			    <?php echo _('DISA is used to allow people from the outside world to call into your PBX and than be able to dial out of the PBX so it appears that their call is coming from the office which can be handy when traveling. You can set a destination in an IVR that points to the DISA or set a DID. Make sure you password protect this to keep people from dialing in and using your PBX to make calls out.'); ?>			
+			    <?php echo _('DISA is used to allow people from the outside world to call into your PBX and then be able to dial out of the PBX so it appears that their call is coming from the office which can be handy when traveling. You can set a destination in an IVR that points to the DISA or set a DID. Make sure you password protect this to keep people from dialing in and using your PBX to make calls out.'); ?>			
 			</td>			
 		</tr>
 	<tr><td colspan="2"><h5><?php echo ($itemid ? _("Edit DISA") : _("Add DISA")) ?><hr></h5></td></tr>
