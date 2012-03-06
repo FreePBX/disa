@@ -118,11 +118,13 @@ function disa_get_config($engine) {
 
 
 			$context = 'disa-dial';
-			$exten = '_[0-9a-zA-Z*#].';
-			$ext->add($context, $exten, '', new ext_noop('called ${EXTEN} in ${DISACONTEXT} by ID: ${CUT(DISA,^,2)}'));
-			$ext->add($context, $exten, '', new ext_dial('Local/${EXTEN}@${DISACONTEXT}', '300,${HANGUP}'));  // Regular Trunk Dial
-			$ext->add($context, $exten, '', new ext_gosub('1', 's-${DIALSTATUS}'));
-		  $ext->add($context, $exten, '', new ext_goto('${CUT(DISA,^,1)},${CUT(DISA,^,2)},${CUT(DISA,^,3)}'));
+
+			foreach (array('_[0-9a-zA-Z]','_[0-9a-zA-Z*#].') as $exten) {
+				$ext->add($context, $exten, '', new ext_noop('called ${EXTEN} in ${DISACONTEXT} by ID: ${CUT(DISA,^,2)}'));
+				$ext->add($context, $exten, '', new ext_dial('Local/${EXTEN}@${DISACONTEXT}', '300,${HANGUP}'));  // Regular Trunk Dial
+				$ext->add($context, $exten, '', new ext_gosub('1', 's-${DIALSTATUS}'));
+				$ext->add($context, $exten, '', new ext_goto('${CUT(DISA,^,1)},${CUT(DISA,^,2)},${CUT(DISA,^,3)}'));
+			}
 
 			$exten = 's-ANSWER';
 			$ext->add($context, $exten, '', new ext_return());
