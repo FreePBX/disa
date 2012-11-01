@@ -178,6 +178,7 @@ function disa_chk($post) {
 
 function disa_add($post) {
 	global $db;
+	global $amp_conf;
 	if(!disa_chk($post)) {
 		return null;
 	}
