@@ -20,9 +20,9 @@ $dispnum = "disa"; //used for switch on config.php
 //if submitting form, update database
 switch ($action) {
 	case "add":
-		disa_add($_POST);
+		$_REQUEST['itemid'] = disa_add($_POST);
 		needreload();
-		redirect_standard();
+		redirect_standard('itemid');
 	break;
 	case "delete":
 		$oldItem = disa_get($itemid);

@@ -182,12 +182,15 @@ function disa_add($post) {
 		return null;
 	}
 	extract($post);
-	if (!isset($needconf)) 
+	if (!isset($needconf)) {
 		$needconf = '';
-		if(empty($displayname)) { 
-			$displayname = "unnamed";
-		}
-		$results = sql("INSERT INTO disa (displayname,pin,cid,context,resptimeout,digittimeout,needconf,hangup) values ('".$db->escapeSimple($displayname)."','".$db->escapeSimple($pin)."','".$db->escapeSimple($cid)."','".$db->escapeSimple($context)."', '".$db->escapeSimple($resptimeout)."', '".$db->escapeSimple($digittimeout)."', '$needconf', '$hangup')");
+	}
+	if(empty($displayname)) { 
+		$displayname = "unnamed";
+	}
+	$results = sql("INSERT INTO disa (displayname,pin,cid,context,resptimeout,digittimeout,needconf,hangup) values ('".$db->escapeSimple($displayname)."','".$db->escapeSimple($pin)."','".$db->escapeSimple($cid)."','".$db->escapeSimple($context)."', '".$db->escapeSimple($resptimeout)."', '".$db->escapeSimple($digittimeout)."', '$needconf', '$hangup')");
+	$id = $amp_conf["AMPDBENGINE"] == "sqlite3" ? sqlite_last_insert_rowid($db->connection) : mysql_insert_id($db->connection);
+	return($id);
 }
 
 function disa_del($id) {
