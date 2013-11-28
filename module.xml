@@ -25,4 +25,4 @@
 	</depends>
 	<location>release/2.11/disa-2.10.0.2.tgz</location>
 	<md5sum>9b0bd9fe099b6a1a6c70f1e629893403</md5sum>
-</module>
+<supported><version>2.10</version></supported></module>
