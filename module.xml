@@ -29,6 +29,9 @@
 	<depends>
 		<version>2.4.0</version>
 	</depends>
+	<supported>
+		<version>2.10</version>
+	</supported>
 	<location>release/2.11/disa-2.11.0.0.tgz</location>
 	<md5sum>6a8d45072dd789d278a8bf42d083ebf0</md5sum>
 </module>
