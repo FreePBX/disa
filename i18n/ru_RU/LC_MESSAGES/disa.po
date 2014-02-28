@@ -14,29 +14,27 @@
 #    along with FreePBX.  If not, see <http://www.gnu.org/licenses/>.
 #
 # Russian freePBX ver. translation
-# Copyright (c) 2006-2008 PostMet Corporation
+# Copyright (c) 2006-2012 PostMet Corporation
 # This file is distributed under the same license as the freePBX package.
-# Alexander Kozyrev <ceo@postmet.com>, Sergey Nikolayev <sergey@postmet.com>, 2006-2008.
+# Alexander Kozyrev <ceo@postmet.com>, Dmitry Kuznecov <dk@postmet.com>, 2006-2012.
 #
-# ∏·ﬂﬁ€Ï◊ﬁ“–‚Ï iconv amp.new -f UTF-8 -t ISO-8859-5 -o amp.po
-# fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-09-23 09:52+0000\n"
-"PO-Revision-Date: 2010-01-23 00:00+0100\n"
-"Last-Translator: Alexander Kozyrev <ceo@postmet.com>\n"
+"POT-Creation-Date: 2012-10-30 00:04+0400\n"
+"PO-Revision-Date: 2012-11-30 00:00+0100\n"
+"Last-Translator: Dmitry Kuznecov <dk@postmet.com>\n"
 "Language-Team: Russian <faq@postmet.com>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=iso-8859-5\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "DISA"
-msgstr ""
+msgstr "–î–æ—Å—Ç—É–ø –≤ Asterisk –∏–∑–≤–Ω–µ (DISA)"
 
 msgid "Applications"
-msgstr ""
+msgstr "–ü—Ä–∏–ª–æ–∂–µ–Ω–∏—è"
 
 msgid ""
 "DISA Allows you 'Direct Inward System Access'. This gives you the ability to "
@@ -44,133 +42,142 @@ msgid ""
 "out from the FreePBX machine as if you were connected to a standard "
 "extension. It appears as a Destination."
 msgstr ""
+"–î–æ—Å—Ç—É–ø –≤ Asterisk –∏–∑–≤–Ω–µ (DISA) –¥–∞–µ—Ç –≤–∞–º –¥–æ–ø–æ–ª–Ω–∏—Ç–µ–ª—å–Ω—É—é –æ–ø—Ü–∏—é –ø—Ä–∏ –∏—Å–ø–æ–ª—å–∑–æ–≤–∞–Ω–∏–∏ IVR, "
+"–∞ –∏–º–µ–Ω–Ω–æ, –Ω–∞–±—Ä–∞—Ç—å –∫–æ–¥ –∏ –ø–æ–ª—É—á–∏—Ç—å –≤–æ–∑–º–æ–∂–Ω–æ—Å—Ç—å –∑–≤–æ–Ω–∏—Ç—å —Å Asterisk —Ç–∞–∫, "
+"–∫–∞–∫ –µ—Å–ª–∏ –±—ã –≤—ã –±—ã–ª–∏ –ø–æ–¥–∫–ª—é—á–µ–Ω–Ω—ã –∫ –Ω–µ–º—É –Ω–∞–ø—Ä—è–º—É—é. "
 
 #, php-format
 msgid "DISA: %s"
-msgstr ""
+msgstr "–î–æ—Å—Ç—É–ø –∫ Asterisk –∏–∑–≤–Ω–µ (DISA): %s"
 
 msgid "Add DISA"
-msgstr ""
+msgstr "–î–æ–±–∞–≤–∏—Ç—å –î–æ—Å—Ç—É–ø –∫ Asterisk –∏–∑–≤–Ω–µ (DISA)"
 
 msgid "deleted"
-msgstr "„‘–€’›ﬁ"
+msgstr "—É–¥–∞–ª–µ–Ω–æ"
 
 #, php-format
 msgid "Delete DISA %s"
-msgstr ""
+msgstr "–£–¥–∞–ª–∏—Ç—å –î–æ—Å—Ç—É–ø –∫ Asterisk –∏–∑–≤–Ω–µ (DISA): %s"
 
 msgid ""
 "DISA is used to allow people from the outside world to call into your PBX "
-"and than be able to dial out of the PBX so it appears that their call is "
+"and then be able to dial out of the PBX so it appears that their call is "
 "coming from the office which can be handy when traveling. You can set a "
 "destination in an IVR that points to the DISA or set a DID. Make sure you "
 "password protect this to keep people from dialing in and using your PBX to "
 "make calls out."
 msgstr ""
+"–î–æ—Å—Ç—É–ø –≤ Asterisk –∏–∑–≤–Ω–µ (DISA) –ø–æ–∑–≤–æ–ª—è–µ—Ç —Å–æ—Ç—Ä—É–¥–Ω–∏–∫–∞–º –≤–Ω–µ –æ—Ñ–∏—Å–∞ –∑–≤–æ–Ω–∏—Ç—å –Ω–∞ –≤–∞—à Asterisk "
+"–∏ —Å–æ–≤–µ—Ä—à–∞—Ç—å —Å –Ω–µ–≥–æ –∑–≤–æ–Ω–∫–∏, —Ç–∞–∫ –∫–∞–∫ –±—É–¥—Ç–æ –∑–≤–æ–Ω–æ–∫ –ø—Ä–æ–∏—Å—Ö–æ–¥–∏—Ç –∏–∑ –æ—Ñ–∏—Å–∞, —á—Ç–æ –º–æ–∂–µ—Ç –±—ã—Ç—å "
+"—É–¥–æ–±–Ω–æ, –µ—Å–ª–∏ —Å–æ—Ç—Ä—É–¥–Ω–∏–∫ –Ω–∞—Ö–æ–¥–∏—Ç—Å—è –≤ –∫–æ–º–∞–Ω–¥–∏—Ä–æ–≤–∫–µ. –í—ã –º–æ–∂–µ—Ç–µ —É–∫–∞–∑–∞—Ç—å –Ω–∞–ø—Ä–∞–≤–ª–µ–Ω–∏–µ –∏–ª–∏ DID "
+"–∫–æ—Ç–æ—Ä—ã–µ –±—É–¥—É—Ç —É–∫–∞–∑—ã–≤–∞—Ç—å –Ω–∞ –î–æ—Å—Ç—É–ø –∫ Asterisk –∏–∑–≤–Ω–µ (DISA). –ü–µ—Ä–µ–¥ –∏—Å–ø–æ–ª—å–∑–æ–≤–∞–Ω–∏–µ–º —ç—Ç–æ–π —Ñ—É–Ω–∫—Ü–∏–∏ "
+"—É–±–µ–¥–∏—Ç–µ—Å—å, —á—Ç–æ –≤—ã —É—Å—Ç–∞–Ω–æ–≤–∏–ª–∏ –ø–∞—Ä–æ–ª—å –¥–ª—è –ø—Ä–µ–¥–æ—Ç–≤—Ä–∞—â–µ–Ω–∏—è –Ω–∞–±–æ—Ä–∞ –∏ –∏—Å–ø–æ–ª—å–∑–æ–≤–∞–Ω–∏—è –≤–∞—à–µ–≥–æ Asterisk,"
+"–ø–æ—Å—Ç–æ—Ä–æ–Ω–Ω–∏–º–∏ –ª—é–¥—å–º–∏!"
 
 msgid "Edit DISA"
-msgstr ""
+msgstr "–†–µ–¥–∞–∫—Ç–∏—Ä–æ–≤–∞—Ç—å –î–æ—Å—Ç—É–ø –∫ Asterisk –∏–∑–≤–Ω–µ (DISA)"
 
 msgid "DISA name:"
-msgstr ""
+msgstr "–ù–∞–∑–≤–∞–Ω–∏–µ –î–æ—Å—Ç—É–ø–∞ –∫ Asterisk –∏–∑–≤–Ω–µ (DISA)"
 
 msgid "Give this DISA a brief name to help you identify it."
-msgstr "ø‡ÿ·“ﬁŸ‚’ ⁄ﬁ‡ﬁ‚⁄ﬁ’ ›–◊“–›ÿ’ ‘€Ô DISA ‘€Ô ÿ‘’›‚ÿ‰ÿ⁄–Êÿÿ."
+msgstr "–ü—Ä–∏—Å–≤–æ–π—Ç–µ –∫–æ—Ä–æ—Ç–∫–æ–µ –Ω–∞–∑–≤–∞–Ω–∏–µ –¥–ª—è DISA –¥–ª—è –∏–¥–µ–Ω—Ç–∏—Ñ–∏–∫–∞—Ü–∏–∏."
 
 msgid "PIN"
 msgstr "PIN"
 
 msgid "The user will be prompted for this number."
-msgstr "øﬁ€Ï◊ﬁ“–‚’€Ï —„‘’‚ ““ﬁ‘ÿ‚Ï Ì‚ﬁ‚ ›ﬁ‹’‡."
+msgstr "–ü–æ–ª—å–∑–æ–≤–∞—Ç–µ–ª—å –±—É–¥–µ—Ç –≤–≤–æ–¥–∏—Ç—å —ç—Ç–æ—Ç –Ω–æ–º–µ—Ä."
 
 msgid "If you wish to have multiple PIN's, separate them with commas"
 msgstr ""
-"µ·€ÿ Âﬁ‚ÿ‚’ ÿ·ﬂﬁ€Ï◊ﬁ“–‚Ï ›’·⁄ﬁ€Ï⁄ﬁ ›ﬁ‹’‡ﬁ“ PIN, „⁄–÷ÿ‚’ ÿÂ ‡–◊‘’€ÔÔ ◊–ﬂÔ‚ﬁŸ."
+"–ï—Å–ª–∏ —Ö–æ—Ç–∏—Ç–µ –∏—Å–ø–æ–ª—å–∑–æ–≤–∞—Ç—å –Ω–µ—Å–∫–æ–ª—å–∫–æ –Ω–æ–º–µ—Ä–æ–≤ PIN, —É–∫–∞–∂–∏—Ç–µ –∏—Ö —Ä–∞–∑–¥–µ–ª—è—è –∑–∞–ø—è—Ç–æ–π."
 
 msgid "Response Timeout"
-msgstr "¬–Ÿ‹–„‚ ›– ﬁ‚“’‚"
+msgstr "–¢–∞–π–º–∞—É—Ç –Ω–∞ –æ—Ç–≤–µ—Ç"
 
 msgid ""
 "The maximum amount of time it will wait before hanging up if the user has "
 "dialed an incomplete or invalid number. Default of 10 seconds"
 msgstr ""
-"º–⁄·ÿ‹–€Ï›ﬁ’ “‡’‹Ô ﬁ÷ÿ‘–›ÿÔ ‘€Ô ﬂﬁ€Ï◊ﬁ“–‚’€Ô, ﬂ‡ÿ ““ﬁ‘’ ›ﬁ‹’‡ﬁ“ PIN. øﬁ "
-"„‹ﬁ€Á–›ÿÓ - 10 ·’⁄."
+"–ú–∞–∫—Å–∏–º–∞–ª—å–Ω–æ–µ –≤—Ä–µ–º—è –æ–∂–∏–¥–∞–Ω–∏—è –¥–ª—è –ø–æ–ª—å–∑–æ–≤–∞—Ç–µ–ª—è, –ø—Ä–∏ –≤–≤–æ–¥–µ –Ω–æ–º–µ—Ä–æ–≤ PIN. –ü–æ "
+"—É–º–æ–ª—á–∞–Ω–∏—é - 10 —Å–µ–∫."
 
 msgid "Digit Timeout"
-msgstr "¬–Ÿ‹–„‚ ‹’÷‘„ Êÿ‰‡–‹ÿ"
+msgstr "–¢–∞–π–º–∞—É—Ç –º–µ–∂–¥—É —Ü–∏—Ñ—Ä–∞–º–∏"
 
 msgid ""
 "The maximum amount of time permitted between digits when the user is typing "
 "in an extension. Default of 5"
 msgstr ""
-"º–⁄·ÿ‹–€Ï›ﬁ’ “‡’‹Ô ‹’÷‘„ Êÿ‰‡–‹ÿ “ ﬂ‡ﬁÊ’··’ ›–—ﬁ‡–. øﬁ „‹ﬁ€Á–›ÿÓ - 5 ·’⁄."
+"–ú–∞–∫—Å–∏–º–∞–ª—å–Ω–æ–µ –≤—Ä–µ–º—è –º–µ–∂–¥—É —Ü–∏—Ñ—Ä–∞–º–∏ –≤ –ø—Ä–æ—Ü–µ—Å—Å–µ –Ω–∞–±–æ—Ä–∞. –ü–æ —É–º–æ–ª—á–∞–Ω–∏—é - 5 —Å–µ–∫."
 
 msgid "Require Confirmation"
-msgstr "¬‡’—„’‚·Ô ﬂﬁ‘‚“’‡÷‘’›ÿ’"
+msgstr "–¢—Ä–µ–±—É–µ—Ç—Å—è –ø–æ–¥—Ç–≤–µ—Ä–∂–¥–µ–Ω–∏–µ"
 
 msgid ""
 "Require Confirmation before prompting for password. Used when your PSTN "
 "connection appears to answer the call immediately"
 msgstr ""
-"¬‡’—„’‚·Ô ﬂﬁ‘‚“’‡÷‘’›ÿ’ ﬂ‡’÷‘’ Á’‹ ﬂ‡’‘€–”–‚Ï ›–—‡–‚Ï ﬂ–‡ﬁ€Ï. ∏·ﬂﬁ€Ï◊„’‚·Ô, "
-"⁄ﬁ”‘– “Âﬁ‘ÔÈÿŸ “Î◊ﬁ“ ÿ◊ ¬ƒæø ›’‹’‘€’››ﬁ ·ﬁ’‘ÿ›Ô’‚·Ô."
+"–¢—Ä–µ–±—É–µ—Ç—Å—è –ø–æ–¥—Ç–≤–µ—Ä–∂–¥–µ–Ω–∏–µ –ø—Ä–µ–∂–¥–µ —á–µ–º –ø—Ä–µ–¥–ª–∞–≥–∞—Ç—å –Ω–∞–±—Ä–∞—Ç—å –ø–∞—Ä–æ–ª—å. –ò—Å–ø–æ–ª—å–∑—É–µ—Ç—Å—è, "
+"–∫–æ–≥–¥–∞ –≤—Ö–æ–¥—è—â–∏–π –≤—ã–∑–æ–≤ –∏–∑ –¢–§–û–ü –Ω–µ–º–µ–¥–ª–µ–Ω–Ω–æ —Å–æ–µ–¥–∏–Ω—è–µ—Ç—Å—è."
 
 msgid "Caller ID"
-msgstr "Ωﬁ‹’‡ ∏¥"
+msgstr "Caller ID"
 
 msgid ""
 "(Optional) When using this DISA, the users CallerID will be set to this. "
 "Format is \"User Name\" <5551234>"
 msgstr ""
-"(æﬂÊÿﬁ›–€Ï›ﬁ) µ·€ÿ ÿ·ﬂﬁ€Ï◊„’‚·Ô Ì‚– DISA, ‚ﬁ Ωﬁ‹’‡ ∏¥ —„‘’‚ ÿ◊‹’›Ò› ›– "
-"„⁄–◊–››ÎŸ ◊‘’·Ï. ƒﬁ‡‹–‚ \"∏‹Ô ƒ–‹ÿ€ÿÔ\" <5551234>"
+"(–û–ø—Ü–∏–æ–Ω–∞–ª—å–Ω–æ) –ï—Å–ª–∏ –∏—Å–ø–æ–ª—å–∑—É–µ—Ç—Å—è —ç—Ç–∞ DISA, —Ç–æ Caller ID –±—É–¥–µ—Ç –∏–∑–º–µ–Ω—ë–Ω –Ω–∞ "
+"—É–∫–∞–∑–∞–Ω–Ω—ã–π –∑–¥–µ—Å—å. –§–æ—Ä–º–∞—Ç \"–ò–º—è –§–∞–º–∏–ª–∏—è\" <5551234>"
 
 msgid "Context"
-msgstr "∫ﬁ›‚’⁄·‚"
+msgstr "–ö–æ–Ω—Ç–µ–∫—Å—Ç"
 
 msgid ""
 "(Experts Only) Sets the context that calls will originate from. Leave this "
 "as from-internal unless you know what you're doing."
 msgstr ""
-"(¬ﬁ€Ï⁄ﬁ ‘€Ô Ì⁄·ﬂ’‡‚ﬁ“) √·‚–›ﬁ“ÿ‚Ï ⁄ﬁ›‚’⁄·‚, ÿ◊ ⁄ﬁ‚ﬁ‡ﬁ”ﬁ —„‘„‚ "
-"ﬁ‡ÿ”ÿ›ÿ‡ﬁ“–‚Ï·Ô ◊“ﬁ›⁄ÿ. æ·‚–“ÿ‚Ï ⁄–⁄ ’·‚Ï - from-internal ﬁ◊›–Á–’‚, Á‚ﬁ “Î "
-"◊›–’‚’, Á‚ﬁ ‘’€–’‚’."
+"(–¢–æ–ª—å–∫–æ –¥–ª—è —ç–∫—Å–ø–µ—Ä—Ç–æ–≤) –£—Å—Ç–∞–Ω–æ–≤–∏—Ç—å –∫–æ–Ω—Ç–µ–∫—Å—Ç, –∏–∑ –∫–æ—Ç–æ—Ä–æ–≥–æ –±—É–¥—É—Ç "
+"–æ—Ä–∏–≥–∏–Ω–∏—Ä–æ–≤–∞—Ç—å—Å—è –∑–≤–æ–Ω–∫–∏. –û—Å—Ç–∞–≤–∏—Ç—å –∫–∞–∫ –µ—Å—Ç—å - from-internal –æ–∑–Ω–∞—á–∞–µ—Ç, —á—Ç–æ –≤—ã "
+"–∑–Ω–∞–µ—Ç–µ, —á—Ç–æ –¥–µ–ª–∞–µ—Ç–µ."
 
 msgid "Allow Hangup"
-msgstr "¿–◊‡’Ëÿ‚Ï ﬂ‡’‡Î“–›ÿ’ ◊“ﬁ›⁄–"
+msgstr "–†–∞–∑—Ä–µ—à–∏—Ç—å –ø—Ä–µ—Ä—ã–≤–∞–Ω–∏–µ –∑–≤–æ–Ω–∫–∞"
 
 #, php-format
 msgid ""
 "Allow the current call to be disconnected and dial tone presented for a new "
 "call by pressing the Hangup feature code: %s while in a call"
 msgstr ""
-"¿–◊‡’Ëÿ‚Ï ﬂ‡’‡Î“–‚Ï ‚’⁄„ÈÿŸ ◊“ﬁ›ﬁ⁄ ÿ ﬂ‡’‘ﬁ·‚–“ÿ‚Ï ‘€ÿ››ÎŸ ”„‘ﬁ⁄ (∫ø≤) ‘€Ô "
-"›ﬁ“ﬁ”ﬁ ◊“ﬁ›⁄– ›–—ﬁ‡ﬁ‹ ·’‡“ÿ·›ﬁ”ﬁ ⁄ﬁ‘– øﬁ€ﬁ÷ÿ‚Ï ‚‡„—⁄„: %s "
+"–†–∞–∑—Ä–µ—à–∏—Ç—å –ø—Ä–µ—Ä—ã–≤–∞—Ç—å —Ç–µ–∫—É—â–∏–π –∑–≤–æ–Ω–æ–∫ –∏ –ø—Ä–µ–¥–æ—Å—Ç–∞–≤–∏—Ç—å –¥–ª–∏–Ω–Ω—ã–π –≥—É–¥–æ–∫ (–ö–ü–í) –¥–ª—è "
+"–Ω–æ–≤–æ–≥–æ –∑–≤–æ–Ω–∫–∞ –Ω–∞–±–æ—Ä–æ–º —Å–µ—Ä–≤–∏—Å–Ω–æ–≥–æ –∫–æ–¥–∞ –ü–æ–ª–æ–∂–∏—Ç—å —Ç—Ä—É–±–∫—É: %s "
 
 msgid "Submit Changes"
-msgstr "ø‡ÿ‹’›ÿ‚Ï ÿ◊‹’›’›ÿÔ"
+msgstr "–ü—Ä–∏–º–µ–Ω–∏—Ç—å –∏–∑–º–µ–Ω–µ–Ω–∏—è"
 
 msgid "Please enter a valid DISA Name"
-msgstr "≤“’‘ÿ‚’ ‡–◊‡’ËÒ››ﬁ’ ›–◊“–›ÿ’ ‘€Ô DISA "
+msgstr "–í–≤–µ–¥–∏—Ç–µ —Ä–∞–∑—Ä–µ—à—ë–Ω–Ω–æ–µ –Ω–∞–∑–≤–∞–Ω–∏–µ –¥–ª—è DISA "
 
 msgid "Please enter a valid DISA PIN"
-msgstr "≤“’‘ÿ‚’ ‡–◊‡’ËÒ››ÎŸ PIN ‘€Ô DISA "
+msgstr "–í–≤–µ–¥–∏—Ç–µ —Ä–∞–∑—Ä–µ—à—ë–Ω–Ω—ã–π PIN –¥–ª—è DISA "
 
 msgid "Please enter a valid Caller ID or leave it blank"
-msgstr "≤“’‘ÿ‚’ ‡–◊‡’ËÒ››ÎŸ Ωﬁ‹’‡ ∏¥ ‘€Ô DISA "
+msgstr "–í–≤–µ–¥–∏—Ç–µ —Ä–∞–∑—Ä–µ—à—ë–Ω–Ω—ã–π Caller ID –¥–ª—è DISA "
 
 msgid "Context cannot be blank"
-msgstr "∫ﬁ›‚’⁄·‚ ›’ ‹ﬁ÷’‚ —Î‚Ï ﬂ„·‚Î‹"
+msgstr "–ö–æ–Ω—Ç–µ–∫—Å—Ç –Ω–µ –º–æ–∂–µ—Ç –±—ã—Ç—å –ø—É—Å—Ç—ã–º"
 
 #~ msgid "Add"
-#~ msgstr "¥ﬁ—–“ÿ‚Ï"
+#~ msgstr "–î–æ–±–∞–≤–∏—Ç—å"
 
 #~ msgid "Delete"
-#~ msgstr "√‘–€ÿ‚Ï"
+#~ msgstr "–£–¥–∞–ª–∏—Ç—å"
 
 #~ msgid "Edit"
-#~ msgstr "∏◊‹’›ÿ‚Ï"
+#~ msgstr "–ò–∑–º–µ–Ω–∏—Ç—å"
 
 #~ msgid "name:"
-#~ msgstr "›–◊“–›ÿ’:"
+#~ msgstr "–Ω–∞–∑–≤–∞–Ω–∏–µ:"
