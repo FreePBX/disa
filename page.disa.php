@@ -151,7 +151,7 @@ function edit_onsubmit() {
 	var msgInvalidContext = "<?php echo _('Context cannot be blank'); ?>";
 	
 	defaultEmptyOK = false;
-	var sizeDisplayName = "<?php echo disa_get_field_size('displayname', 50); ?>";
+	var sizeDisplayName = "<?php echo module_get_field_size('disa', 'displayname', 50); ?>";
 	if (!isCorrectLength(theForm.displayname.value, sizeDisplayName))
                 return warnInvalid(theForm.displayname, "<?php echo _('The DISA Name provided is too long.'); ?>")
 	if (!isAlphanumeric(theForm.displayname.value))
