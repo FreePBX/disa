@@ -16,7 +16,7 @@ $sql = "CREATE TABLE IF NOT EXISTS disa (
 	resptimeout INTEGER,
 	needconf VARCHAR( 10 ),
 	hangup VARCHAR( 10 ),
-	keepcid TINYINT(1) NOT NULL DEFAULT 1,
+	keepcid TINYINT(1) NOT NULL DEFAULT 1
 );";
 
 $check = $db->query($sql);
