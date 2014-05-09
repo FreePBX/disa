@@ -1,4 +1,4 @@
-<?php 
+<?php
 if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed'); }
 /* $Id */
 
@@ -43,14 +43,14 @@ function disa_getdestinfo($dest) {
 
 // This actually generates the dialplan
 function disa_get_config($engine) {
-	global $ext; 
+	global $ext;
 	switch($engine) {
 	case "asterisk":
 		$disalist = disa_list();
 		if(is_array($disalist)) {
 			foreach($disalist as $item) {
 				$nopass = false;
-					
+
 				// delete it incase there was one from before (of course if it was deleted???
 				// this should all be done properly in class, see pinsets, but for now ...
 				//
@@ -76,7 +76,7 @@ function disa_get_config($engine) {
 				} else {
 					$nopass = true;
 				}
-                                        
+
 				$thisitem = disa_get(ltrim($item['disa_id']));
 				// add dialplan
 
@@ -98,7 +98,7 @@ function disa_get_config($engine) {
         }
 				$ext->add('disa', $item['disa_id'], '', new ext_setvar('_DISA', 'disa^'.$item['disa_id'].'^newcall'));
 				$ext->add('disa', $item['disa_id'], 'newcall', new ext_setvar('_DISACONTEXT', $thisitem['context']));
-				$ext->add('disa', $item['disa_id'], '', new ext_setvar('_KEEPCID', 'TRUE')); 
+				$ext->add('disa', $item['disa_id'], '', new ext_setvar('_KEEPCID', (!$thisitem['keepcid'])?'TRUE':'FALSE'));
 				if ($thisitem['hangup'] == 'CHECKED') {
 					$ext->add('disa', $item['disa_id'], '', new ext_setvar('_HANGUP', '${TRUNK_OPTIONS}Hg'));
 				} else {
@@ -106,13 +106,13 @@ function disa_get_config($engine) {
         }
 				$ext->add('disa', $item['disa_id'], '', new ext_setvar('TIMEOUT(digit)', $thisitem['digittimeout']));
 				$ext->add('disa', $item['disa_id'], '', new ext_setvar('TIMEOUT(response)', $thisitem['resptimeout']));
-					
+
 				if ($item['cid']) {
-					$ext->add('disa', $item['disa_id'], '', new ext_setvar('CALLERID(all)', $item['cid'])); 
-					$ext->add('disa', $item['disa_id'], '', new ext_setvar('__REALCALLERIDNUM','${CALLERID(number):0:40}')); 
+					$ext->add('disa', $item['disa_id'], '', new ext_setvar('CALLERID(all)', $item['cid']));
+					$ext->add('disa', $item['disa_id'], '', new ext_setvar('__REALCALLERIDNUM','${CALLERID(number):0:40}'));
 				}
 				$ext->add('disa', $item['disa_id'], '', new ext_disa('no-password,disa-dial'));
-		
+
 				$ext->add('disa', $item['disa_id'], 'end', new ext_hangup(''));
 			}
 
@@ -186,10 +186,13 @@ function disa_add($post) {
 	if (!isset($needconf)) {
 		$needconf = '';
 	}
-	if(empty($displayname)) { 
+	if(empty($displayname)) {
 		$displayname = "unnamed";
 	}
-	$results = sql("INSERT INTO disa (displayname,pin,cid,context,resptimeout,digittimeout,needconf,hangup) values ('".$db->escapeSimple($displayname)."','".$db->escapeSimple($pin)."','".$db->escapeSimple($cid)."','".$db->escapeSimple($context)."', '".$db->escapeSimple($resptimeout)."', '".$db->escapeSimple($digittimeout)."', '$needconf', '$hangup')");
+	if (!isset($keepcid)) {
+		$keepcid = 0;
+	}
+	$results = sql("INSERT INTO disa (displayname,pin,cid,context,resptimeout,digittimeout,needconf,hangup,keepcid) values ('".$db->escapeSimple($displayname)."','".$db->escapeSimple($pin)."','".$db->escapeSimple($cid)."','".$db->escapeSimple($context)."', '".$db->escapeSimple($resptimeout)."', '".$db->escapeSimple($digittimeout)."', '$needconf', '$hangup', '".$db->escapeSimple($keepcid)."')");
 	if(method_exists($db,'insert_id')) {
 		$id = $db->insert_id();
 	} else {
@@ -215,6 +218,9 @@ function disa_edit($id, $post) {
 	if(empty($displayname)) {
 	 	$displayname = "unnamed";
 	}
-	$results = sql("UPDATE disa  set displayname = '".$db->escapeSimple($displayname)."', pin = '".$db->escapeSimple($pin)."', cid = '".$db->escapeSimple($cid)."', context = '".$db->escapeSimple($context)."', resptimeout = '".$db->escapeSimple($resptimeout)."', digittimeout = '".$db->escapeSimple($digittimeout)."', needconf = \"$needconf\", hangup = \"$hangup\" where disa_id = '$id'");
+	if (!isset($keepcid)) {
+		$keepcid = 0;
+	}
+	$results = sql("UPDATE disa  set displayname = '".$db->escapeSimple($displayname)."', pin = '".$db->escapeSimple($pin)."', cid = '".$db->escapeSimple($cid)."', context = '".$db->escapeSimple($context)."', resptimeout = '".$db->escapeSimple($resptimeout)."', digittimeout = '".$db->escapeSimple($digittimeout)."', needconf = \"$needconf\", hangup = \"$hangup\", keepcid = '".$db->escapeSimple($keepcid)."' where disa_id = '$id'");
 }
 ?>
