@@ -55,7 +55,7 @@ if ($action == 'delete') {
 <?php		if ($itemid){
 
 
-	$delURL = $_SERVER['PHP_SELF'].'?'.$_SERVER['QUERY_STRING'].'&action=delete';
+	$delURL = '?'.$_SERVER['QUERY_STRING'].'&action=delete';
 	$tlabel = sprintf(_("Delete DISA %s"),$thisItem["displayname"]);
 	$label = '<span><img width="16" height="16" border="0" title="'.$tlabel.'" alt="" src="images/core_delete.png"/>&nbsp;'.$tlabel.'</span>';
 ?>
@@ -79,7 +79,7 @@ if ($action == 'delete') {
 		$hangup_code = '*';
 	}
 ?>
-	<form autocomplete="off" name="edit" action="<?php $_SERVER['PHP_SELF'] ?>" method="post" onsubmit="return edit_onsubmit();">
+	<form autocomplete="off" name="edit" action="" method="post" onsubmit="return edit_onsubmit();">
 	<input type="hidden" name="display" value="<?php echo $dispnum?>">
 	<input type="hidden" name="action" value="<?php echo ($itemid ? 'edit' : 'add') ?>">
 	<input type="hidden" name="deptname" value="<?php echo $_SESSION["AMP_user"]->_deptname ?>">
