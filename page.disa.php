@@ -1,17 +1,8 @@
  <?php /* $Id */
 if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed'); }
-//Copyright (C) 2006 Rob Thomas <xrobau@gmail.com>
+//	License for all code of this FreePBX module can be found in the license file inside the module directory
+//	Copyright 2013 Schmooze Com Inc.
 //
-//This program is free software; you can redistribute it and/or
-//modify it under the terms of version 2 the GNU General Public
-//License as published by the Free Software Foundation.
-//
-//This program is distributed in the hope that it will be useful,
-//but WITHOUT ANY WARRANTY; without even the implied warranty of
-//MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-//GNU General Public License for more details.
-
-
 $tabindex = 0;
 $action = isset($_REQUEST['action'])?$_REQUEST['action']:'';
 $itemid = isset($_REQUEST['itemid'])?$_REQUEST['itemid']:'';
@@ -55,13 +46,13 @@ if (isset($disas)) {
 <?php
 if ($action == 'delete') {
 	echo '<br><h3>DISA '.$oldItem["displayname"].' '._("deleted").'!</h3>';
-} else { 
+} else {
 	//get details for this time condition
 	$thisItem = disa_get($itemid);
 ?>
 
 	<h2><?php echo ($itemid ? "DISA: ".$thisItem["displayname"]." ($itemid)" : _("Add DISA")); ?></h2>
-<?php		if ($itemid){ 
+<?php		if ($itemid){
 
 
 	$delURL = $_SERVER['PHP_SELF'].'?'.$_SERVER['QUERY_STRING'].'&action=delete';
@@ -86,17 +77,17 @@ if ($action == 'delete') {
 	unset($fcc);
 	if ($hangup_code == "") {
 		$hangup_code = '*';
-	} 
+	}
 ?>
 	<form autocomplete="off" name="edit" action="<?php $_SERVER['PHP_SELF'] ?>" method="post" onsubmit="return edit_onsubmit();">
 	<input type="hidden" name="display" value="<?php echo $dispnum?>">
 	<input type="hidden" name="action" value="<?php echo ($itemid ? 'edit' : 'add') ?>">
 	<input type="hidden" name="deptname" value="<?php echo $_SESSION["AMP_user"]->_deptname ?>">
 	<table>
-		<tr>			
-			<td colspan="2">			
-			    <?php echo _('DISA is used to allow people from the outside world to call into your PBX and then be able to dial out of the PBX so it appears that their call is coming from the office which can be handy when traveling. You can set a destination in an IVR that points to the DISA or set a DID. Make sure you password protect this to keep people from dialing in and using your PBX to make calls out.'); ?>			
-			</td>			
+		<tr>
+			<td colspan="2">
+			    <?php echo _('DISA is used to allow people from the outside world to call into your PBX and then be able to dial out of the PBX so it appears that their call is coming from the office which can be handy when traveling. You can set a destination in an IVR that points to the DISA or set a DID. Make sure you password protect this to keep people from dialing in and using your PBX to make calls out.'); ?>
+			</td>
 		</tr>
 	<tr><td colspan="2"><h5><?php echo ($itemid ? _("Edit DISA") : _("Add DISA")) ?><hr></h5></td></tr>
 
@@ -134,6 +125,15 @@ if ($action == 'delete') {
 		<td><input type="checkbox" name="hangup" value="CHECKED" <?php echo $thisItem['hangup'] ?>   tabindex="<?php echo ++$tabindex;?>"/></td>
 	</tr>
         <tr>
+		<td><a href="#" class="info"><?php echo _("Caller ID Override"); ?><span><?php echo _("Determine if we keep the Caller ID being presented or if we override it. Default is Enable"); ?></span></a></td>
+                <td>
+			<span class="radioset">
+				<input type="radio" name="keepcid" id="keepcid0" tabindex="" value="0" <?php echo (isset($thisItem['keepcid']) && $thisItem['keepcid']!=true)?'CHECKED':''; ?>><label for="keepcid0">Disable</label>
+				<input type="radio" name="keepcid" id="keepcid1" tabindex="" value="1" <?php echo ($thisItem['keepcid'] || !isset($thisItem['keepcid']))?'CHECKED':''; ?>><label for="keepcid1">Enable</label>
+			</span>
+		</td>
+	</tr>
+	<tr>
                 <td colspan="2"><br><h6><input name="Submit" type="submit" value="<?php echo _("Submit Changes")?>" tabindex="<?php echo ++$tabindex;?>"></h6></td>
         </tr>
         </table>
@@ -149,23 +149,23 @@ function edit_onsubmit() {
 	var msgInvalidDISAPIN = "<?php echo _('Please enter a valid DISA PIN'); ?>";
 	var msgInvalidCID = "<?php echo _('Please enter a valid Caller ID or leave it blank'); ?>";
 	var msgInvalidContext = "<?php echo _('Context cannot be blank'); ?>";
-	
+
 	defaultEmptyOK = false;
 	if (!isAlphanumeric(theForm.displayname.value))
 		return warnInvalid(theForm.displayname, msgInvalidDISAName);
-	
+
 	defaultEmptyOK = true;
 	if (!isPINList(theForm.pin.value))
 		return warnInvalid(theForm.pin, msgInvalidDISAPIN);
-	
+
 	defaultEmptyOK = true;
 	if (!isCallerID(theForm.cid.value))
 		return warnInvalid(theForm.cid, msgInvalidCID);
-	
+
 	defaultEmptyOK = false;
 	if (isEmpty(theForm.context.value))
 		return warnInvalid(theForm.context, msgInvalidContext);
-	
+
 	return true;
 }
 
@@ -173,7 +173,6 @@ function edit_onsubmit() {
 </script>
 
 	</form>
-<?php		
+<?php
 }
 ?>
-
