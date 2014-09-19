@@ -33,7 +33,7 @@ $disas = disa_list();
 ?>
 
 <div class="rnav"><ul>
-    <li><a id="<?php echo ($itemid=='' ? 'current':'std') ?>" href="config.php?display=<?php echo urlencode($dispnum)?>"><?php echo _("Add DISA") ?></a></li>
+		<li><a id="<?php echo ($itemid=='' ? 'current':'std') ?>" href="config.php?display=<?php echo urlencode($dispnum)?>"><?php echo _("Add DISA") ?></a></li>
 <?php
 if (isset($disas)) {
 	foreach ($disas as $d) {
@@ -124,9 +124,9 @@ if ($action == 'delete') {
 		<td><a href="#" class="info"><?php echo _("Allow Hangup"); ?><span><?php echo sprintf(_("Allow the current call to be disconnected and dial tone presented for a new call by pressing the Hangup feature code: %s while in a call"),$hangup_code); ?></span></a></td>
 		<td><input type="checkbox" name="hangup" value="CHECKED" <?php echo $thisItem['hangup'] ?>   tabindex="<?php echo ++$tabindex;?>"/></td>
 	</tr>
-        <tr>
+				<tr>
 		<td><a href="#" class="info"><?php echo _("Caller ID Override"); ?><span><?php echo _("Determine if we keep the Caller ID being presented or if we override it. Default is Enable"); ?></span></a></td>
-                <td>
+								<td>
 			<span class="radioset">
 				<input type="radio" name="keepcid" id="keepcid0" tabindex="" value="0" <?php echo (isset($thisItem['keepcid']) && $thisItem['keepcid']!=true)?'CHECKED':''; ?>><label for="keepcid0">Disable</label>
 				<input type="radio" name="keepcid" id="keepcid1" tabindex="" value="1" <?php echo ($thisItem['keepcid'] || !isset($thisItem['keepcid']))?'CHECKED':''; ?>><label for="keepcid1">Enable</label>
@@ -134,9 +134,9 @@ if ($action == 'delete') {
 		</td>
 	</tr>
 	<tr>
-                <td colspan="2"><br><h6><input name="Submit" type="submit" value="<?php echo _("Submit Changes")?>" tabindex="<?php echo ++$tabindex;?>"></h6></td>
-        </tr>
-        </table>
+								<td colspan="2"><br><h6><input name="Submit" type="submit" value="<?php echo _("Submit Changes")?>" tabindex="<?php echo ++$tabindex;?>"></h6></td>
+				</tr>
+				</table>
 
 <script language="javascript">
 <!--
@@ -151,6 +151,13 @@ function edit_onsubmit() {
 	var msgInvalidContext = "<?php echo _('Context cannot be blank'); ?>";
 
 	defaultEmptyOK = false;
+
+	<?php if (function_exists('module_get_field_size')) { ?>
+		var sizeDisplayName = "<?php echo module_get_field_size('disa', 'displayname', 50); ?>";
+		if (!isCorrectLength(theForm.displayname.value, sizeDisplayName))
+			return warnInvalid(theForm.displayname, "<?php echo _('The DISA Name provided is too long.'); ?>")
+	<?php } ?>
+
 	if (!isAlphanumeric(theForm.displayname.value))
 		return warnInvalid(theForm.displayname, msgInvalidDISAName);
 
