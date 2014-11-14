@@ -58,6 +58,7 @@ if ($action == 'delete') {
 	$delURL = '?'.$_SERVER['QUERY_STRING'].'&action=delete';
 	$tlabel = sprintf(_("Delete DISA %s"),$thisItem["displayname"]);
 	$label = '<span><img width="16" height="16" border="0" title="'.$tlabel.'" alt="" src="images/core_delete.png"/>&nbsp;'.$tlabel.'</span>';
+
 ?>
 					<a href="<?php echo $delURL ?>"><?php echo $label; ?></a>
 <?php
@@ -108,6 +109,32 @@ if ($action == 'delete') {
 		<td><a href="#" class="info"><?php echo _("Digit Timeout"); ?><span><?php echo _("The maximum amount of time permitted between digits when the user is typing in an extension. Default of 5"); ?></span></a></td>
 		<td><input type="text" name="digittimeout" value="<?php echo htmlspecialchars(isset($thisItem['digittimeout']) ? $thisItem['digittimeout'] : '5'); ?>" tabindex="<?php echo ++$tabindex;?>"></td>
 	</tr>
+	<tr>
+		<td><a href="#" class="info"><?php echo _("Call Recording"); ?><span><?php echo _("Record calls that use this DISA"); ?></span></a></td>
+		<td>
+			<span class="radioset">
+
+<?php 
+
+	if (isset($thisItem['recording'])) {
+		$recording = $thisItem['recording'];
+	} else {
+		$recording = "dontcare";
+	}
+	$options = array(_("Force") => "force", _("Yes") => "yes", _("Don't Care") => "dontcare", _("No") => "no", _("Never") => "never");
+	$html = "";
+	foreach ($options as $disp => $name) {
+		if ($recording == $name) {
+			$checked = "checked";
+		} else {
+			$checked = "";
+		}
+		$html .= "<input type='radio' id='record_${name}' name='recording' value='$name' $checked><label for='record_${name}'>$disp</label>";
+	}
+	echo $html;
+?>
+			</span>
+		</td>
 	<tr>
 		<td><a href="#" class="info"><?php echo _("Require Confirmation"); ?><span><?php echo _("Require Confirmation before prompting for password. Used when your PSTN connection appears to answer the call immediately"); ?></span></a></td>
 		<td><input type="checkbox" name="needconf" value="CHECKED" <?php echo $thisItem['needconf'] ?>   tabindex="<?php echo ++$tabindex;?>"/></td>

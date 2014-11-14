@@ -4,8 +4,8 @@
 	<name>DISA</name>
 	<version>2.11.0.6</version>
 	<publisher>Schmooze Com Inc</publisher>
-	<license>GPLv3+</license>
-	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
+	<license>AGPLv3+</license>
+	<licenselink>http://www.gnu.org/licenses/agpl-3.0.txt</licenselink>
 	<category>Applications</category>
 	<menuitems>
 		<disa>DISA</disa>

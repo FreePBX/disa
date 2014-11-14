@@ -99,7 +99,8 @@ function disa_get_config($engine) {
 					}
 				} else {
 				  $ext->add('disa', $item['disa_id'], '', new ext_answer(''));
-        }
+        			}
+				$ext->add('disa', $item['disa_id'], '', new ext_gosub("1", "s", "sub-record-check", 'disa,${EXTEN},'.disa_get_recording($item['disa_id'])));
 				$ext->add('disa', $item['disa_id'], '', new ext_setvar('_DISA', 'disa^'.$item['disa_id'].'^newcall'));
 				$ext->add('disa', $item['disa_id'], 'newcall', new ext_setvar('_DISACONTEXT', $thisitem['context']));
 				$ext->add('disa', $item['disa_id'], '', new ext_setvar('_KEEPCID', (!$thisitem['keepcid'])?'TRUE':'FALSE'));
@@ -171,18 +172,43 @@ function disa_list() {
 }
 
 function disa_get($id){
+
 	//get all the variables for the meetme
 	$results = sql("SELECT * FROM disa WHERE disa_id = '$id'","getRow",DB_FETCHMODE_ASSOC);
+
+	$results['recording'] = disa_get_recording($id);
+
 	return $results;
 }
 
-function disa_chk($post) {
+function disa_get_recording($id) {
+	global $astman;
+	$rec = $astman->database_get("DISA", $id);
+	if (!$rec) {
+		$rec = "dontcare";
+	}
+
+	return $rec;
+}
+
+function disa_put_recording($id, $recording = "dontcare") {
+	global $astman;
+	$astman->database_put("DISA", $id, $recording);
+	return;
+}
+
+
+function disa_chk(&$post) {
+	if (!isset($post['recording'])) {
+		$post['recording'] = 'dontcare';
+	}
 	return true;
 }
 
 function disa_add($post) {
 	global $db;
 	global $amp_conf;
+
 	if(!disa_chk($post)) {
 		return null;
 	}
@@ -202,6 +228,9 @@ function disa_add($post) {
 	} else {
 		$id = $amp_conf["AMPDBENGINE"] == "sqlite3" ? sqlite_last_insert_rowid($db->connection) : mysql_insert_id($db->connection);
 	}
+
+	disa_put_recording($id, $post['recording']);
+
 	return($id);
 }
 
@@ -225,6 +254,9 @@ function disa_edit($id, $post) {
 	if (!isset($keepcid)) {
 		$keepcid = 0;
 	}
+
+	disa_put_recording($id, $post['recording']);
+
 	$results = sql("UPDATE disa  set displayname = '".$db->escapeSimple($displayname)."', pin = '".$db->escapeSimple($pin)."', cid = '".$db->escapeSimple($cid)."', context = '".$db->escapeSimple($context)."', resptimeout = '".$db->escapeSimple($resptimeout)."', digittimeout = '".$db->escapeSimple($digittimeout)."', needconf = \"$needconf\", hangup = \"$hangup\", keepcid = '".$db->escapeSimple($keepcid)."' where disa_id = '$id'");
 }
-?>
+
