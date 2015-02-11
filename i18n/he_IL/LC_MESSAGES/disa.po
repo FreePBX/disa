@@ -22,109 +22,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-09-23 09:52+0000\n"
+"POT-Creation-Date: 2015-02-11 17:46-0500\n"
 "PO-Revision-Date: 2010-01-23 00:00+0300\n"
 "Last-Translator: Shimi <shimi@shimi.net>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "DISA"
-msgstr ""
-
-msgid "Applications"
-msgstr ""
-
-msgid ""
-"DISA Allows you 'Direct Inward System Access'. This gives you the ability to "
-"have an option on an IVR that gives you a dial tone, and you're able to dial "
-"out from the FreePBX machine as if you were connected to a standard "
-"extension. It appears as a Destination."
-msgstr ""
-
-#, php-format
-msgid "DISA: %s"
-msgstr ""
-
-msgid "Add DISA"
-msgstr ""
-
-msgid "deleted"
-msgstr "נמחק"
-
-#, fuzzy, php-format
-msgid "Delete DISA %s"
-msgstr "מחק"
-
-msgid ""
-"DISA is used to allow people from the outside world to call into your PBX "
-"and than be able to dial out of the PBX so it appears that their call is "
-"coming from the office which can be handy when traveling. You can set a "
-"destination in an IVR that points to the DISA or set a DID. Make sure you "
-"password protect this to keep people from dialing in and using your PBX to "
-"make calls out."
-msgstr ""
-
-#, fuzzy
-msgid "Edit DISA"
-msgstr "ערוך"
-
-#, fuzzy
-msgid "DISA name:"
-msgstr "שם:"
-
-msgid "Give this DISA a brief name to help you identify it."
-msgstr "תן ל-DISA זה שם קצר שיעזור לך לזהות אותו."
-
-msgid "PIN"
-msgstr "סיסמא"
-
-msgid "The user will be prompted for this number."
-msgstr "המשתמש יתבקש להכניס מספר זה"
-
-msgid "If you wish to have multiple PIN's, separate them with commas"
-msgstr "אם ברצונך ליצור מספר סיסמאות, הפרד אותן בפסיקים"
-
-msgid "Response Timeout"
-msgstr "זמן המתנה לתגובה"
-
-msgid ""
-"The maximum amount of time it will wait before hanging up if the user has "
-"dialed an incomplete or invalid number. Default of 10 seconds"
-msgstr ""
-"הזמן המקסימלי שהמערכת תמתין לפני ניתוק אוטומטי אם המשתמש חייג מספר לא שלם או "
-"שגוי. ברירת המחדל היא 10 שניות"
-
-msgid "Digit Timeout"
-msgstr "זמן המתנה לספרה"
-
-msgid ""
-"The maximum amount of time permitted between digits when the user is typing "
-"in an extension. Default of 5"
-msgstr "הזמן המקסימלי המותר בין ספרות כשהמשתמש מחייג לשלוחה. ברירת המחדל היא 5"
-
-msgid "Require Confirmation"
-msgstr "דרוש אישור"
-
-msgid ""
-"Require Confirmation before prompting for password. Used when your PSTN "
-"connection appears to answer the call immediately"
-msgstr ""
-"דרוש אישור לפני בקשת סיסמא. נמצא בשימוש כאשר נראה שהשיחה נענתה באופן מיידי"
-
-msgid "Caller ID"
-msgstr "שיחה מזוהה"
-
-msgid ""
-"(Optional) When using this DISA, the users CallerID will be set to this. "
-"Format is \"User Name\" <5551234>"
-msgstr ""
-"(רשות) כאשר משתמשים ב DISA זה, השיחות שתצאנה דרך ה DISA יוצגו עם זיהוי שיחה "
-"מזוהה שתקבע כאן. הפורמט הוא \"User Name\" <5551234>"
-
-msgid "Context"
-msgstr "הקשר (context)"
-
+#: /usr/src/freepbx/disa/page.disa.php:120
 msgid ""
 "(Experts Only) Sets the context that calls will originate from. Leave this "
 "as from-internal unless you know what you're doing."
@@ -132,29 +37,155 @@ msgstr ""
 "(למומחים בלבד) מגדיר את ההקשר (context( שממנו יראה מקור השיחה. השאר ערך זה "
 "בתור from-internal אלא אם כן אתה באמת יודע מה אתה עושה."
 
+#: /usr/src/freepbx/disa/page.disa.php:116
+msgid ""
+"(Optional) When using this DISA, the users CallerID will be set to this. "
+"Format is \"User Name\" <5551234>"
+msgstr ""
+"(רשות) כאשר משתמשים ב DISA זה, השיחות שתצאנה דרך ה DISA יוצגו עם זיהוי שיחה "
+"מזוהה שתקבע כאן. הפורמט הוא \"User Name\" <5551234>"
+
+#: /usr/src/freepbx/disa/page.disa.php:36
+#: /usr/src/freepbx/disa/page.disa.php:54
+#: /usr/src/freepbx/disa/page.disa.php:92
+msgid "Add DISA"
+msgstr ""
+
+#: /usr/src/freepbx/disa/page.disa.php:124
 msgid "Allow Hangup"
 msgstr ""
 
+#: /usr/src/freepbx/disa/page.disa.php:124
 #, php-format
 msgid ""
 "Allow the current call to be disconnected and dial tone presented for a new "
 "call by pressing the Hangup feature code: %s while in a call"
 msgstr ""
 
-msgid "Submit Changes"
+#: /usr/src/freepbx/disa/page.disa.php:116
+msgid "Caller ID"
+msgstr "שיחה מזוהה"
+
+#: /usr/src/freepbx/disa/page.disa.php:128
+msgid "Caller ID Override"
 msgstr ""
 
-msgid "Please enter a valid DISA Name"
+#: /usr/src/freepbx/disa/page.disa.php:120
+msgid "Context"
+msgstr "הקשר (context)"
+
+#: /usr/src/freepbx/disa/page.disa.php:151
+msgid "Context cannot be blank"
 msgstr ""
 
-msgid "Please enter a valid DISA PIN"
+#: /usr/src/freepbx/disa/page.disa.php:89
+msgid ""
+"DISA is used to allow people from the outside world to call into your PBX "
+"and then be able to dial out of the PBX so it appears that their call is "
+"coming from the office which can be handy when traveling. You can set a "
+"destination in an IVR that points to the DISA or set a DID. Make sure you "
+"password protect this to keep people from dialing in and using your PBX to "
+"make calls out."
 msgstr ""
 
+#: /usr/src/freepbx/disa/page.disa.php:95
+#, fuzzy
+msgid "DISA name:"
+msgstr "שם:"
+
+#: /usr/src/freepbx/disa/functions.inc.php:39
+#, php-format
+msgid "DISA: %s"
+msgstr ""
+
+#: /usr/src/freepbx/disa/page.disa.php:59
+#, fuzzy, php-format
+msgid "Delete DISA %s"
+msgstr "מחק"
+
+#: /usr/src/freepbx/disa/page.disa.php:128
+msgid ""
+"Determine if we keep the Caller ID being presented or if we override it. "
+"Default is Enable"
+msgstr ""
+
+#: /usr/src/freepbx/disa/page.disa.php:108
+msgid "Digit Timeout"
+msgstr "זמן המתנה לספרה"
+
+#: /usr/src/freepbx/disa/page.disa.php:92
+#, fuzzy
+msgid "Edit DISA"
+msgstr "ערוך"
+
+#: /usr/src/freepbx/disa/page.disa.php:95
+msgid "Give this DISA a brief name to help you identify it."
+msgstr "תן ל-DISA זה שם קצר שיעזור לך לזהות אותו."
+
+#: /usr/src/freepbx/disa/page.disa.php:100
+msgid "If you wish to have multiple PIN's, separate them with commas"
+msgstr "אם ברצונך ליצור מספר סיסמאות, הפרד אותן בפסיקים"
+
+#: /usr/src/freepbx/disa/page.disa.php:100
+msgid "PIN"
+msgstr "סיסמא"
+
+#: /usr/src/freepbx/disa/page.disa.php:150
 msgid "Please enter a valid Caller ID or leave it blank"
 msgstr ""
 
-msgid "Context cannot be blank"
+#: /usr/src/freepbx/disa/page.disa.php:148
+msgid "Please enter a valid DISA Name"
 msgstr ""
+
+#: /usr/src/freepbx/disa/page.disa.php:149
+msgid "Please enter a valid DISA PIN"
+msgstr ""
+
+#: /usr/src/freepbx/disa/page.disa.php:112
+msgid "Require Confirmation"
+msgstr "דרוש אישור"
+
+#: /usr/src/freepbx/disa/page.disa.php:112
+msgid ""
+"Require Confirmation before prompting for password. Used when your PSTN "
+"connection appears to answer the call immediately"
+msgstr ""
+"דרוש אישור לפני בקשת סיסמא. נמצא בשימוש כאשר נראה שהשיחה נענתה באופן מיידי"
+
+#: /usr/src/freepbx/disa/page.disa.php:104
+msgid "Response Timeout"
+msgstr "זמן המתנה לתגובה"
+
+#: /usr/src/freepbx/disa/page.disa.php:137
+msgid "Submit Changes"
+msgstr ""
+
+#: /usr/src/freepbx/disa/page.disa.php:158
+msgid "The DISA Name provided is too long."
+msgstr ""
+
+#: /usr/src/freepbx/disa/page.disa.php:104
+msgid ""
+"The maximum amount of time it will wait before hanging up if the user has "
+"dialed an incomplete or invalid number. Default of 10 seconds"
+msgstr ""
+"הזמן המקסימלי שהמערכת תמתין לפני ניתוק אוטומטי אם המשתמש חייג מספר לא שלם או "
+"שגוי. ברירת המחדל היא 10 שניות"
+
+#: /usr/src/freepbx/disa/page.disa.php:108
+msgid ""
+"The maximum amount of time permitted between digits when the user is typing "
+"in an extension. Default of 5"
+msgstr "הזמן המקסימלי המותר בין ספרות כשהמשתמש מחייג לשלוחה. ברירת המחדל היא 5"
+
+#: /usr/src/freepbx/disa/page.disa.php:100
+msgid "The user will be prompted for this number."
+msgstr "המשתמש יתבקש להכניס מספר זה"
+
+#: /usr/src/freepbx/disa/page.disa.php:48
+msgid "deleted"
+msgstr "נמחק"
 
 #~ msgid "Add"
 #~ msgstr "הוסף"
