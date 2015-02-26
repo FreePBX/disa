@@ -71,7 +71,7 @@ msgstr "主叫ID"
 
 #: page.disa.php:128
 msgid "Caller ID Override"
-msgstr ""
+msgstr "来电显示覆盖"
 
 #: page.disa.php:120
 msgid "Context"
@@ -102,6 +102,9 @@ msgid ""
 "password protect this to keep people from dialing in and using your PBX to "
 "make calls out."
 msgstr ""
+"DISA 简单来说就是通过外部呼入公司内部PBX，然后通过公司的内部的PBX线路做再次呼出的一个业务。当公司员工出差时，如果通过DISA呼出到客户端时，让"
+"客户感觉到是通过公司内部IPPBX呼出。用户可以设置一个IVR目的地来指向一个DISA "
+"或者设置一个DID号码。注意，如果设置DISA，切记对呼出的线路进行密码设置，保证公司IPPBX的安全，防止外部用户盗打电话。"
 
 #: page.disa.php:95
 msgid "DISA name:"
