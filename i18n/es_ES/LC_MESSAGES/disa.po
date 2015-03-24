@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: FreePBX - módulo disa module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-02-20 19:24-0500\n"
-"PO-Revision-Date: 2015-03-23 21:37+0200\n"
+"PO-Revision-Date: 2015-03-23 21:39+0200\n"
 "Last-Translator: Ernesto <ecasas@sangoma.com>\n"
 "Language-Team: Spanish "
 "<http://weblate.freepbx.org/projects/freepbx/disa/es_ES/>\n"
@@ -48,9 +48,9 @@ msgid ""
 "(Optional) When using this DISA, the users CallerID will be set to this. "
 "Format is \"User Name\" <5551234>"
 msgstr ""
-"Opcional. Cuando se esté usando este DISA, el identificador de llamante del "
+"(Opcional) Cuando se esté usando este DISA, el identificador de llamante del "
 "usuario se establecerá a este valor. El formato que se debe usar es el "
-"siguiente: \"Nombre del usuario\" <5551234>."
+"siguiente: \"Nombre del usuario\" <5551234>"
 
 #: page.disa.php:36 page.disa.php:54 page.disa.php:92
 msgid "Add DISA"
@@ -58,7 +58,7 @@ msgstr "Añadir DISA"
 
 #: page.disa.php:124
 msgid "Allow Hangup"
-msgstr "Permitir colgar:"
+msgstr "Permitir colgar"
 
 #: page.disa.php:124
 #, php-format
@@ -68,7 +68,7 @@ msgid ""
 msgstr ""
 "Permite que la llamada actual sea desconectada y se presente un tono de "
 "marcado para realizar una nueva llamada, pulsando el código de "
-"característica de colgado %s mientras se está en una llamada."
+"característica de colgado %s mientras se está en una llamada"
 
 #: disa.i18n.php:4
 msgid "Applications"
@@ -128,7 +128,7 @@ msgstr "Nombre de DISA:"
 #: functions.inc.php:39
 #, php-format
 msgid "DISA: %s"
-msgstr "DISA: %s"
+msgstr "DISA : %s"
 
 #: page.disa.php:59
 #, php-format
@@ -145,7 +145,7 @@ msgstr ""
 
 #: page.disa.php:108
 msgid "Digit Timeout"
-msgstr "Tiempo de espera de marcado:"
+msgstr "Tiempo de espera de marcado"
 
 #: page.disa.php:92
 msgid "Edit DISA"
@@ -157,11 +157,11 @@ msgstr "Asigne un breve nombre a este DISA que le ayude a identificarlo."
 
 #: page.disa.php:100
 msgid "If you wish to have multiple PIN's, separate them with commas"
-msgstr "Si desea tener varios PIN, sepárelos con comas."
+msgstr "Si desea tener varios PIN, sepárelos con comas"
 
 #: page.disa.php:100
 msgid "PIN"
-msgstr "PIN:"
+msgstr "PIN"
 
 #: page.disa.php:150
 msgid "Please enter a valid Caller ID or leave it blank"
@@ -179,7 +179,7 @@ msgstr "Por favor, introduzca un PIN válido para el DISA"
 
 #: page.disa.php:112
 msgid "Require Confirmation"
-msgstr "Pedir confirmación:"
+msgstr "Pedir confirmación"
 
 #: page.disa.php:112
 msgid ""
@@ -187,11 +187,11 @@ msgid ""
 "connection appears to answer the call immediately"
 msgstr ""
 "Pide una confirmación ants de solicitar la contraeña. Puede ser útil cuando "
-"la conexión a la RTC contesta la llamada de inmediato."
+"la conexión a la RTC contesta la llamada de inmediato"
 
 #: page.disa.php:104
 msgid "Response Timeout"
-msgstr "Tiempo de espera para la respuesta:"
+msgstr "Tiempo de espera para la respuesta"
 
 #: page.disa.php:137
 msgid "Submit Changes"
@@ -207,7 +207,7 @@ msgid ""
 "dialed an incomplete or invalid number. Default of 10 seconds"
 msgstr ""
 "El tiempo máximo que se esperará abtes de colgar si el usuario ha marcado un "
-"número incompleto o no válido. Su valor por defecto es de 10 segundos."
+"número incompleto o no válido. Su valor por defecto es de 10 segundos"
 
 #: page.disa.php:108
 msgid ""
@@ -215,7 +215,7 @@ msgid ""
 "in an extension. Default of 5"
 msgstr ""
 "El tiempo máximo que se esperará entre pulsaciones de números cuando el "
-"usuario esté llamando a una extensión. Su valor por defecto es de 5 segundos."
+"usuario esté llamando a una extensión. Su valor por defecto es de 5 segundos"
 
 #: page.disa.php:100
 msgid "The user will be prompted for this number."
