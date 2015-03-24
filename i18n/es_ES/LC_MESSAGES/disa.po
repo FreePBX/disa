@@ -20,12 +20,16 @@ msgstr ""
 "Project-Id-Version: FreePBX - módulo disa module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-02-20 19:24-0500\n"
-"PO-Revision-Date: 2010-01-23 00:00+0100\n"
-"Last-Translator: Juan Asensio Sánchez <okelet@gmail.com>\n"
-"Language-Team: Juan Asensio Sánchez <okelet@gmail.com>\n"
+"PO-Revision-Date: 2015-03-23 21:37+0200\n"
+"Last-Translator: Ernesto <ecasas@sangoma.com>\n"
+"Language-Team: Spanish "
+"<http://weblate.freepbx.org/projects/freepbx/disa/es_ES/>\n"
+"Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.2-dev\n"
 "X-Poedit-Language: Spanish\n"
 "X-Poedit-Country: SPAIN\n"
 "X-Poedit-SourceCharset: utf-8\n"
@@ -68,7 +72,7 @@ msgstr ""
 
 #: disa.i18n.php:4
 msgid "Applications"
-msgstr ""
+msgstr "Aplicaciones"
 
 #: page.disa.php:116
 msgid "Caller ID"
@@ -76,7 +80,7 @@ msgstr "Identificador de llamante:"
 
 #: page.disa.php:128
 msgid "Caller ID Override"
-msgstr ""
+msgstr "Anulación ID de llamada"
 
 #: page.disa.php:120
 msgid "Context"
@@ -88,7 +92,7 @@ msgstr "El contexto no puede estar vacío"
 
 #: disa.i18n.php:3 /usr/src/freepbx/disa/disa.i18n.php:6
 msgid "DISA"
-msgstr ""
+msgstr "DISA"
 
 #: disa.i18n.php:5
 msgid ""
@@ -97,6 +101,10 @@ msgid ""
 "able to dial out from the FreePBX machine as if you were connected to a "
 "standard extension. It appears as a Destination."
 msgstr ""
+"DISA le permite \\ 'Acceso directo al sistema \\'. Esto le da la posibilidad "
+"de tener una opción en un IVR que le da un tono de marcado, y que \\ 're "
+"capaz de marcar desde la máquina FreePBX como si estuviera conectado a una "
+"extensión estándar. Aparece como un destino."
 
 #: page.disa.php:89
 msgid ""
@@ -107,6 +115,11 @@ msgid ""
 "password protect this to keep people from dialing in and using your PBX to "
 "make calls out."
 msgstr ""
+"DISA se utiliza para permitir que la gente del mundo exterior pueda llamar a "
+"la centralita y luego ser capaces de marcar de la central por lo que parece "
+"que su llamada proviene de la oficina, lo que puede ser útil cuando se "
+"viaja. Puede configurar un destino en un IVR que apunta a la DISA o "
+"establecer un DID. Asegúrese de proteger con contraseña."
 
 #: page.disa.php:95
 msgid "DISA name:"
@@ -127,6 +140,8 @@ msgid ""
 "Determine if we keep the Caller ID being presented or if we override it. "
 "Default is Enable"
 msgstr ""
+"Determinar si se mantiene el ID de llamadas que se muestra o si lo anulamos. "
+"Por defecto esta habilitado"
 
 #: page.disa.php:108
 msgid "Digit Timeout"
@@ -184,7 +199,7 @@ msgstr "Enviar cambios"
 
 #: page.disa.php:158
 msgid "The DISA Name provided is too long."
-msgstr ""
+msgstr "El numero DISA provisto es muy largo."
 
 #: page.disa.php:104
 msgid ""
