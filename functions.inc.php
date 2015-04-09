@@ -1,4 +1,4 @@
-<?php 
+<?php
 //	License for all code of this FreePBX module can be found in the license file inside the module directory
 //	Copyright 2013 Schmooze Com Inc.
 //
@@ -156,19 +156,9 @@ function disa_get_config($engine) {
 function disa_list() {
 	$results = sql("SELECT * FROM disa","getAll",DB_FETCHMODE_ASSOC);
 	if(is_array($results)){
-		foreach($results as $result){
-			// check to see if we have a dept match for the current AMP User.
-			if (!isset($results['deptname']) || checkDept($result['deptname'])){
-				// return this item's dialplan destination, and the description
-				$allowed[] = $result;
-			}
-		}
+		return $results;
 	}
-	if (isset($allowed)) {
-		return $allowed;
-	} else {
-		return null;
-	}
+	return null;
 }
 
 function disa_get($id){
@@ -259,4 +249,3 @@ function disa_edit($id, $post) {
 
 	$results = sql("UPDATE disa  set displayname = '".$db->escapeSimple($displayname)."', pin = '".$db->escapeSimple($pin)."', cid = '".$db->escapeSimple($cid)."', context = '".$db->escapeSimple($context)."', resptimeout = '".$db->escapeSimple($resptimeout)."', digittimeout = '".$db->escapeSimple($digittimeout)."', needconf = \"$needconf\", hangup = \"$hangup\", keepcid = '".$db->escapeSimple($keepcid)."' where disa_id = '$id'");
 }
-
