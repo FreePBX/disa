@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-20 19:24-0500\n"
+"POT-Creation-Date: 2015-04-14 21:50-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,13 +17,13 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: page.disa.php:120
+#: page.disa.php:147
 msgid ""
 "(Experts Only) Sets the context that calls will originate from. Leave this "
 "as from-internal unless you know what you're doing."
 msgstr ""
 
-#: page.disa.php:116
+#: page.disa.php:143
 msgid ""
 "(Optional) When using this DISA, the users CallerID will be set to this. "
 "Format is \"User Name\" <5551234>"
@@ -31,54 +31,60 @@ msgstr ""
 
 #: page.disa.php:36
 #: page.disa.php:54
-#: page.disa.php:92
+#: page.disa.php:93
 msgid "Add DISA"
 msgstr ""
 
-#: page.disa.php:124
+#: page.disa.php:151
 msgid "Allow Hangup"
 msgstr ""
 
-#: page.disa.php:124
+#: page.disa.php:151
 #, php-format
 msgid ""
 "Allow the current call to be disconnected and dial tone presented for a new "
 "call by pressing the Hangup feature code: %s while in a call"
 msgstr ""
 
-#: disa.i18n.php:4
+#: disa.i18n.php:6
+#: disa.i18n.php:12
 msgid "Applications"
 msgstr ""
 
-#: page.disa.php:116
+#: page.disa.php:113
+msgid "Call Recording"
+msgstr ""
+
+#: page.disa.php:143
 msgid "Caller ID"
 msgstr ""
 
-#: page.disa.php:128
+#: page.disa.php:155
 msgid "Caller ID Override"
 msgstr ""
 
-#: page.disa.php:120
+#: page.disa.php:147
 msgid "Context"
 msgstr ""
 
-#: page.disa.php:151
+#: page.disa.php:178
 msgid "Context cannot be blank"
 msgstr ""
 
-#: disa.i18n.php:3 /usr/src/freepbx/disa/disa.i18n.php:6
+#: disa.i18n.php:4
+#: disa.i18n.php:10
 msgid "DISA"
 msgstr ""
 
-#: disa.i18n.php:5
+#: disa.i18n.php:8
 msgid ""
-"DISA Allows you \\'Direct Inward System Access\\'. This gives you the "
-"ability to have an option on an IVR that gives you a dial tone, and you\\'re "
-"able to dial out from the FreePBX machine as if you were connected to a "
-"standard extension. It appears as a Destination."
+"DISA Allows you 'Direct Inward System Access'. This gives you the ability to "
+"have an option on an IVR that gives you a dial tone, and you're able to dial "
+"out from the FreePBX machine as if you were connected to a standard "
+"extension. It appears as a Destination."
 msgstr ""
 
-#: page.disa.php:89
+#: page.disa.php:90
 msgid ""
 "DISA is used to allow people from the outside world to call into your PBX "
 "and then be able to dial out of the PBX so it appears that their call is "
@@ -88,7 +94,7 @@ msgid ""
 "make calls out."
 msgstr ""
 
-#: page.disa.php:95
+#: page.disa.php:96
 msgid "DISA name:"
 msgstr ""
 
@@ -102,80 +108,104 @@ msgstr ""
 msgid "Delete DISA %s"
 msgstr ""
 
-#: page.disa.php:128
+#: page.disa.php:155
 msgid ""
 "Determine if we keep the Caller ID being presented or if we override it. "
 "Default is Enable"
 msgstr ""
 
-#: page.disa.php:108
+#: page.disa.php:109
 msgid "Digit Timeout"
 msgstr ""
 
-#: page.disa.php:92
+#: page.disa.php:124
+msgid "Don't Care"
+msgstr ""
+
+#: page.disa.php:93
 msgid "Edit DISA"
 msgstr ""
 
-#: page.disa.php:95
+#: page.disa.php:124
+msgid "Force"
+msgstr ""
+
+#: page.disa.php:96
 msgid "Give this DISA a brief name to help you identify it."
 msgstr ""
 
-#: page.disa.php:100
+#: page.disa.php:101
 msgid "If you wish to have multiple PIN's, separate them with commas"
 msgstr ""
 
-#: page.disa.php:100
+#: page.disa.php:124
+msgid "Never"
+msgstr ""
+
+#: page.disa.php:124
+msgid "No"
+msgstr ""
+
+#: page.disa.php:101
 msgid "PIN"
 msgstr ""
 
-#: page.disa.php:150
+#: page.disa.php:177
 msgid "Please enter a valid Caller ID or leave it blank"
 msgstr ""
 
-#: page.disa.php:148
+#: page.disa.php:175
 msgid "Please enter a valid DISA Name"
 msgstr ""
 
-#: page.disa.php:149
+#: page.disa.php:176
 msgid "Please enter a valid DISA PIN"
 msgstr ""
 
-#: page.disa.php:112
+#: page.disa.php:113
+msgid "Record calls that use this DISA"
+msgstr ""
+
+#: page.disa.php:139
 msgid "Require Confirmation"
 msgstr ""
 
-#: page.disa.php:112
+#: page.disa.php:139
 msgid ""
 "Require Confirmation before prompting for password. Used when your PSTN "
 "connection appears to answer the call immediately"
 msgstr ""
 
-#: page.disa.php:104
+#: page.disa.php:105
 msgid "Response Timeout"
 msgstr ""
 
-#: page.disa.php:137
+#: page.disa.php:164
 msgid "Submit Changes"
 msgstr ""
 
-#: page.disa.php:158
+#: page.disa.php:185
 msgid "The DISA Name provided is too long."
 msgstr ""
 
-#: page.disa.php:104
+#: page.disa.php:105
 msgid ""
 "The maximum amount of time it will wait before hanging up if the user has "
 "dialed an incomplete or invalid number. Default of 10 seconds"
 msgstr ""
 
-#: page.disa.php:108
+#: page.disa.php:109
 msgid ""
 "The maximum amount of time permitted between digits when the user is typing "
 "in an extension. Default of 5"
 msgstr ""
 
-#: page.disa.php:100
+#: page.disa.php:101
 msgid "The user will be prompted for this number."
+msgstr ""
+
+#: page.disa.php:124
+msgid "Yes"
 msgstr ""
 
 #: page.disa.php:48
