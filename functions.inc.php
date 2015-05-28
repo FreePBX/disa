@@ -226,7 +226,7 @@ function disa_add($post) {
 
 function disa_del($id) {
 	$results = sql("DELETE FROM disa WHERE disa_id = \"$id\"","query");
-	unlink("/etc/asterisk/disa-{$id}.conf");
+	@unlink("/etc/asterisk/disa-{$id}.conf");
 }
 
 function disa_edit($id, $post) {
