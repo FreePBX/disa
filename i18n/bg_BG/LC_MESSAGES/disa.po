@@ -77,7 +77,7 @@ msgstr "Caller ID"
 
 #: page.disa.php:128
 msgid "Caller ID Override"
-msgstr ""
+msgstr "Caller ID Замяна"
 
 #: page.disa.php:120
 msgid "Context"
@@ -98,6 +98,11 @@ msgid ""
 "able to dial out from the FreePBX machine as if you were connected to a "
 "standard extension. It appears as a Destination."
 msgstr ""
+"DISA Ви разрешава \\'Директен Вътрешен Достъп до Системата\\'. Предоставя ви "
+"възможност да въведете опция в IVR която да ви даде сигнал за  избиране, "
+"като по този начин ще можете да избирате навън от FreePBX централата все "
+"едно сте свързани като нормална вътрешна линия. Представя се като "
+"Направление."
 
 #: page.disa.php:89
 msgid ""
@@ -108,6 +113,12 @@ msgid ""
 "password protect this to keep people from dialing in and using your PBX to "
 "make calls out."
 msgstr ""
+"DISA се използва за да позволи на хора отвън да се обаждат на вашата "
+"централа и тогава да им се разреши да избират номера извън централата, като "
+"прави обаждането да изглежда все едно е направено от вашия офис което е "
+"полезно при пътувания. Можете да установите направление в IVR което да "
+"насочва към DISA или да зададете DID. Убедете се че сте поставили парола за "
+"употреба за да се предпазите от неоторизиран достъп до услугата."
 
 #: page.disa.php:95
 msgid "DISA name:"
@@ -128,6 +139,8 @@ msgid ""
 "Determine if we keep the Caller ID being presented or if we override it. "
 "Default is Enable"
 msgstr ""
+"Определя дали ще запазим получения Caller ID или ще го заменим. По "
+"подразбиране е Включено"
 
 #: page.disa.php:108
 msgid "Digit Timeout"
@@ -183,7 +196,7 @@ msgstr "Приеми Промените"
 
 #: page.disa.php:158
 msgid "The DISA Name provided is too long."
-msgstr ""
+msgstr "Въведеното Име за DISA е прекалено дълго."
 
 #: page.disa.php:104
 msgid ""
