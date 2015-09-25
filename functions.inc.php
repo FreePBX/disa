@@ -9,16 +9,17 @@ if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed'); }
 
 // This is the hook for 'destinations'
 function disa_destinations() {
-	$results = disa_list();
-	// return an associative array with destination and description
-	if (isset($results)) {
-		foreach($results as $result){
-			$extens[] = array('destination' => 'disa,'.$result['disa_id'].',1', 'description' => $result['displayname']);
-		}
-		return $extens;
-	} else {
-		return null;
-	}
+				$results = disa_list();
+				// return an associative array with destination and description
+				if ($results) {
+								$extens = array();
+								foreach($results as $result){
+												$extens[] = array('destination' => 'disa,'.$result['disa_id'].',1', 'description' => $result['displayname']);
+								}
+								return $extens;
+				} else {
+								return array();
+				}
 }
 
 function disa_getdest($exten) {
@@ -158,7 +159,7 @@ function disa_list() {
 	if(is_array($results)){
 		return $results;
 	}
-	return null;
+	return array();
 }
 
 function disa_get($id){
