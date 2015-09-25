@@ -22,7 +22,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-27 18:30-0400\n"
+"POT-Creation-Date: 2015-09-25 13:46-0700\n"
 "PO-Revision-Date: 2015-04-25 00:10+0200\n"
 "Last-Translator: Yuriy <alliancesko@gmail.com>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/disa/"
@@ -118,7 +118,7 @@ msgstr ""
 "установили пароль для предотвращения набора и использования вашего Asterisk "
 "посторонними людьми."
 
-#: functions.inc.php:39
+#: functions.inc.php:40
 #, php-format
 msgid "DISA: %s"
 msgstr "Доступ к Asterisk извне (DISA): %s"

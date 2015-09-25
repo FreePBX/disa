@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX - módulo disa module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-27 18:30-0400\n"
+"POT-Creation-Date: 2015-09-25 13:46-0700\n"
 "PO-Revision-Date: 2015-03-23 21:39+0200\n"
 "Last-Translator: Ernesto <ecasas@sangoma.com>\n"
 "Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/disa/"
@@ -117,7 +117,7 @@ msgstr ""
 "viaja. Puede configurar un destino en un IVR que apunta a la DISA o "
 "establecer un DID. Asegúrese de proteger con contraseña."
 
-#: functions.inc.php:39
+#: functions.inc.php:40
 #, php-format
 msgid "DISA: %s"
 msgstr "DISA : %s"
