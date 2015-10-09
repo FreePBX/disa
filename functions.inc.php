@@ -92,15 +92,14 @@ function disa_get_config($engine) {
 					$ext->add('disa', $item['disa_id'], '', new ext_setvar('RESCOUNT', '$[${RESCOUNT}+1]'));
 					$ext->add('disa', $item['disa_id'], '', new ext_gotoif('$["x${RRES}"="x"]', 'loop'));
 				}
+				$ext->add('disa', $item['disa_id'], '', new ext_answer(''));
 				if (!$nopass) {
 					if ($is_file) {
 						$ext->add('disa', $item['disa_id'], '', new ext_authenticate('/etc/asterisk/disa-'.$item['disa_id'].'.conf'));
 					} else {
 						$ext->add('disa', $item['disa_id'], '', new ext_authenticate($item['pin']));
 					}
-				} else {
-				  $ext->add('disa', $item['disa_id'], '', new ext_answer(''));
-        			}
+				}
 				$ext->add('disa', $item['disa_id'], '', new ext_gosub("1", "s", "sub-record-check", 'disa,${EXTEN},'.disa_get_recording($item['disa_id'])));
 				$ext->add('disa', $item['disa_id'], '', new ext_setvar('_DISA', 'disa^'.$item['disa_id'].'^newcall'));
 				$ext->add('disa', $item['disa_id'], 'newcall', new ext_setvar('_DISACONTEXT', $thisitem['context']));
