@@ -102,4 +102,15 @@ class Disa implements \BMO {
       break;
     }
   }
+	public function getRightNav($request) {
+		if($request['view']=='form'){
+    	return load_view(__DIR__."/views/bootnav.php",array());
+		}
+	}
+	public function search($query, &$results) {
+		$disas = $this->listAll();
+		foreach($disas as $disa){
+			$results[] = array("text" => sprintf(_("DISA: %s"), $disa['displayname']), "type" => "get", "dest" => "?display=disa&view=form&itemid=".$disa['disa_id']);
+		}
+	}
 }

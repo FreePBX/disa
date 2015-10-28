@@ -19,19 +19,18 @@ $helptext = _('DISA is used to allow people from the outside world to call into 
 ?>
 <div class="container-fluid">
 	<h1><?php echo _('DISA')?></h1>
-	<div class="well well-info">
+	<div class="alert alert-info">
 		<?php echo $helptext?>
 	</div>
 	<div class = "display full-border">
 		<div class="row">
-			<div class="col-sm-9">
+			<div class="col-sm-12">
 				<div class="fpbx-container">
 					<div class="display full-border">
 						<?php echo $content?>
 					</div>
 				</div>
 			</div>
-      <?php echo $bootnav?>
 		</div>
 	</div>
 </div>

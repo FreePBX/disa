@@ -8,7 +8,7 @@ $dataurl = "ajax.php?module=disa&command=getJSON&jdata=grid";
   <thead>
     <tr>
       <th data-field="displayname"><?php echo _("DISA")?></th>
-      <th data-field="disa_id" data-formatter="linkFormatter"><?php echo _("Actions")?></th>
+      <th data-field="disa_id" data-formatter="linkFormatter" class="col-md-2"><?php echo _("Actions")?></th>
     </tr>
   </thead>
 </table>
