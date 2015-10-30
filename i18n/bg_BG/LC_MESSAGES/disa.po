@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX v2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-25 13:46-0700\n"
+"POT-Creation-Date: 2015-10-29 18:29-0700\n"
 "PO-Revision-Date: 2014-07-21 16:55+0200\n"
 "Last-Translator: Chavdar <chavdar_75@yahoo.com>\n"
 "Language-Team: Bulgarian <http://git.freepbx.org/projects/freepbx/disa/bg/>\n"
@@ -53,7 +53,7 @@ msgstr ""
 msgid "Actions"
 msgstr ""
 
-#: views/bootnav.php:7 views/form.php:20 views/grid.php:5
+#: views/bootnav.php:5 views/form.php:20 views/grid.php:5
 msgid "Add DISA"
 msgstr "Добави DISA"
 
@@ -91,9 +91,13 @@ msgstr "Контекст"
 msgid "Context cannot be blank"
 msgstr "Трябва да има въведен контекст"
 
-#: page.disa.php:21 views/form.php:6 views/grid.php:10
+#: page.disa.php:21 views/bootnav.php:11 views/form.php:6 views/grid.php:10
 msgid "DISA"
 msgstr "DISA"
+
+#: views/bootnav.php:6
+msgid "DISA List"
+msgstr ""
 
 #: views/form.php:58
 msgid "DISA Name"
@@ -115,7 +119,7 @@ msgstr ""
 "насочва към DISA или да зададете DID. Убедете се че сте поставили парола за "
 "употреба за да се предпазите от неоторизиран достъп до услугата."
 
-#: functions.inc.php:40
+#: Disa.class.php:113 functions.inc.php:40
 #, php-format
 msgid "DISA: %s"
 msgstr "DISA: %s"
@@ -149,10 +153,6 @@ msgstr "Дайте на DISA описващо име за да ви помогн
 #: views/form.php:94
 msgid "If you wish to have multiple PIN's, separate them with commas"
 msgstr "Ако искате да имате наколко PIN кода, разделете ги с запетая"
-
-#: views/bootnav.php:5
-msgid "List DISA(s)"
-msgstr ""
 
 #: views/form.php:34
 msgid "Never"

@@ -22,7 +22,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-25 13:46-0700\n"
+"POT-Creation-Date: 2015-10-29 18:29-0700\n"
 "PO-Revision-Date: 2010-01-23 00:00+0300\n"
 "Last-Translator: Shimi <shimi@shimi.net>\n"
 "MIME-Version: 1.0\n"
@@ -49,7 +49,7 @@ msgstr ""
 msgid "Actions"
 msgstr ""
 
-#: views/bootnav.php:7 views/form.php:20 views/grid.php:5
+#: views/bootnav.php:5 views/form.php:20 views/grid.php:5
 msgid "Add DISA"
 msgstr ""
 
@@ -84,8 +84,12 @@ msgstr "הקשר (context)"
 msgid "Context cannot be blank"
 msgstr ""
 
-#: page.disa.php:21 views/form.php:6 views/grid.php:10
+#: page.disa.php:21 views/bootnav.php:11 views/form.php:6 views/grid.php:10
 msgid "DISA"
+msgstr ""
+
+#: views/bootnav.php:6
+msgid "DISA List"
 msgstr ""
 
 #: views/form.php:58
@@ -102,7 +106,7 @@ msgid ""
 "make calls out."
 msgstr ""
 
-#: functions.inc.php:40
+#: Disa.class.php:113 functions.inc.php:40
 #, php-format
 msgid "DISA: %s"
 msgstr ""
@@ -136,10 +140,6 @@ msgstr "תן ל-DISA זה שם קצר שיעזור לך לזהות אותו."
 #: views/form.php:94
 msgid "If you wish to have multiple PIN's, separate them with commas"
 msgstr "אם ברצונך ליצור מספר סיסמאות, הפרד אותן בפסיקים"
-
-#: views/bootnav.php:5
-msgid "List DISA(s)"
-msgstr ""
 
 #: views/form.php:34
 msgid "Never"

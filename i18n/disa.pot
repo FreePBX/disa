@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-25 13:46-0700\n"
+"POT-Creation-Date: 2015-10-29 18:29-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,7 +33,7 @@ msgstr ""
 msgid "Actions"
 msgstr ""
 
-#: views/bootnav.php:7
+#: views/bootnav.php:5
 #: views/form.php:20
 #: views/grid.php:5
 msgid "Add DISA"
@@ -71,9 +71,14 @@ msgid "Context cannot be blank"
 msgstr ""
 
 #: page.disa.php:21
+#: views/bootnav.php:11
 #: views/form.php:6
 #: views/grid.php:10
 msgid "DISA"
+msgstr ""
+
+#: views/bootnav.php:6
+msgid "DISA List"
 msgstr ""
 
 #: views/form.php:58
@@ -90,6 +95,7 @@ msgid ""
 "make calls out."
 msgstr ""
 
+#: Disa.class.php:113
 #: functions.inc.php:40
 #, php-format
 msgid "DISA: %s"
@@ -123,10 +129,6 @@ msgstr ""
 
 #: views/form.php:94
 msgid "If you wish to have multiple PIN's, separate them with commas"
-msgstr ""
-
-#: views/bootnav.php:5
-msgid "List DISA(s)"
 msgstr ""
 
 #: views/form.php:34

@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-25 13:46-0700\n"
+"POT-Creation-Date: 2015-10-29 18:29-0700\n"
 "PO-Revision-Date: 2014-02-19 22:16+0200\n"
 "Last-Translator: Kenichi Fukaumi <k.fukaumi@qloog.com>\n"
 "Language-Team: Japanese <http://example.com/projects/freepbx/disa/ja/>\n"
@@ -66,7 +66,7 @@ msgstr ""
 msgid "Actions"
 msgstr ""
 
-#: views/bootnav.php:7 views/form.php:20 views/grid.php:5
+#: views/bootnav.php:5 views/form.php:20 views/grid.php:5
 msgid "Add DISA"
 msgstr "DISAを追加"
 
@@ -103,9 +103,13 @@ msgstr "コンテキスト"
 msgid "Context cannot be blank"
 msgstr "コンテキストを空にすることはできません。"
 
-#: page.disa.php:21 views/form.php:6 views/grid.php:10
+#: page.disa.php:21 views/bootnav.php:11 views/form.php:6 views/grid.php:10
 msgid "DISA"
 msgstr "DISA"
+
+#: views/bootnav.php:6
+msgid "DISA List"
+msgstr ""
 
 #: views/form.php:58
 msgid "DISA Name"
@@ -125,7 +129,7 @@ msgstr ""
 "行く時に便利な機能です。DISAに指すIVRの宛先またはDIDの設定ができます。他の人"
 "に自分のPBXを使われないようにパスワードを設定してください。"
 
-#: functions.inc.php:40
+#: Disa.class.php:113 functions.inc.php:40
 #, php-format
 msgid "DISA: %s"
 msgstr "DISA: %s"
@@ -159,10 +163,6 @@ msgstr "このDISAを識別しやすい簡潔な名前を入力。"
 #: views/form.php:94
 msgid "If you wish to have multiple PIN's, separate them with commas"
 msgstr "もし複数のPINを入力したい場合はカンマで区切ります。"
-
-#: views/bootnav.php:5
-msgid "List DISA(s)"
-msgstr ""
 
 #: views/form.php:34
 msgid "Never"

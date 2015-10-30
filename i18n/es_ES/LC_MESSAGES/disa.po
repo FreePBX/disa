@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX - módulo disa module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-25 13:46-0700\n"
+"POT-Creation-Date: 2015-10-29 18:29-0700\n"
 "PO-Revision-Date: 2015-03-23 21:39+0200\n"
 "Last-Translator: Ernesto <ecasas@sangoma.com>\n"
 "Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/disa/"
@@ -56,7 +56,7 @@ msgstr ""
 msgid "Actions"
 msgstr ""
 
-#: views/bootnav.php:7 views/form.php:20 views/grid.php:5
+#: views/bootnav.php:5 views/form.php:20 views/grid.php:5
 msgid "Add DISA"
 msgstr "Añadir DISA"
 
@@ -94,9 +94,13 @@ msgstr "Contexto:"
 msgid "Context cannot be blank"
 msgstr "El contexto no puede estar vacío"
 
-#: page.disa.php:21 views/form.php:6 views/grid.php:10
+#: page.disa.php:21 views/bootnav.php:11 views/form.php:6 views/grid.php:10
 msgid "DISA"
 msgstr "DISA"
+
+#: views/bootnav.php:6
+msgid "DISA List"
+msgstr ""
 
 #: views/form.php:58
 msgid "DISA Name"
@@ -117,7 +121,7 @@ msgstr ""
 "viaja. Puede configurar un destino en un IVR que apunta a la DISA o "
 "establecer un DID. Asegúrese de proteger con contraseña."
 
-#: functions.inc.php:40
+#: Disa.class.php:113 functions.inc.php:40
 #, php-format
 msgid "DISA: %s"
 msgstr "DISA : %s"
@@ -151,10 +155,6 @@ msgstr "Asigne un breve nombre a este DISA que le ayude a identificarlo."
 #: views/form.php:94
 msgid "If you wish to have multiple PIN's, separate them with commas"
 msgstr "Si desea tener varios PIN, sepárelos con comas"
-
-#: views/bootnav.php:5
-msgid "List DISA(s)"
-msgstr ""
 
 #: views/form.php:34
 msgid "Never"
