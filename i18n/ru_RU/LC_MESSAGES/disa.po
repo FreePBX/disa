@@ -54,7 +54,7 @@ msgstr ""
 
 #: views/grid.php:11
 msgid "Actions"
-msgstr ""
+msgstr "Действие"
 
 #: views/bootnav.php:5 views/form.php:20 views/grid.php:5
 msgid "Add DISA"
@@ -75,7 +75,7 @@ msgstr ""
 
 #: views/form.php:160
 msgid "Call Recording"
-msgstr ""
+msgstr "Запись вызова"
 
 #: views/form.php:211
 msgid "Caller ID"
@@ -99,11 +99,11 @@ msgstr "Доступ в Asterisk извне (DISA)"
 
 #: views/bootnav.php:6
 msgid "DISA List"
-msgstr ""
+msgstr "Список DISA"
 
 #: views/form.php:58
 msgid "DISA Name"
-msgstr ""
+msgstr "Имя DISA"
 
 #: page.disa.php:18
 msgid ""
@@ -136,6 +136,7 @@ msgid ""
 "Determine if we keep the Caller ID being presented or if we override it. "
 "Default is Yes"
 msgstr ""
+"Указать если мы сохраняем Caller ID или перезаписываем его. По умолчанию Да"
 
 #: views/form.php:133
 msgid "Digit Timeout"
@@ -143,11 +144,11 @@ msgstr "Таймаут между цифрами"
 
 #: views/form.php:34
 msgid "Don't Care"
-msgstr ""
+msgstr "Не обращать внимание"
 
 #: views/form.php:34
 msgid "Force"
-msgstr ""
+msgstr "Запустить"
 
 #: views/form.php:70
 msgid "Give this DISA a brief name to help you identify it."
@@ -160,11 +161,11 @@ msgstr ""
 
 #: views/form.php:34
 msgid "Never"
-msgstr ""
+msgstr "Никогда"
 
 #: views/form.php:34 views/form.php:191 views/form.php:266 views/form.php:293
 msgid "No"
-msgstr ""
+msgstr "Нет"
 
 #: views/form.php:82
 msgid "PIN"
@@ -184,7 +185,7 @@ msgstr "Введите разрешенный PIN для DISA"
 
 #: views/form.php:172
 msgid "Record calls that use this DISA"
-msgstr ""
+msgstr "Запись вызовов , которые используют данный DISA"
 
 #: views/form.php:184
 msgid "Require Confirmation"
@@ -192,7 +193,7 @@ msgstr "Требуется подтверждение"
 
 #: Disa.class.php:49
 msgid "Reset"
-msgstr ""
+msgstr "Сброс"
 
 #: views/form.php:106
 msgid "Response Timeout"
@@ -200,11 +201,11 @@ msgstr "Таймаут на ответ"
 
 #: views/form.php:112 views/form.php:139
 msgid "Seconds"
-msgstr ""
+msgstr "Секунд"
 
 #: Disa.class.php:54
 msgid "Submit"
-msgstr ""
+msgstr "Подтвердить"
 
 #: views/form.php:324
 msgid "The DISA Name provided is too long."
@@ -223,6 +224,8 @@ msgid ""
 "The maximum amount of time permitted between digits when the user is typing "
 "in an extension. Default of 5 seconds"
 msgstr ""
+"Максимальный интервал времени , допустимый между цифрами при наборе номера "
+"пользователем. По умолчанию 5 секунд"
 
 #: views/form.php:94
 msgid "The user will be prompted for this number."
@@ -230,13 +233,15 @@ msgstr "Пользователь будет вводить этот номер."
 
 #: views/form.php:34 views/form.php:189 views/form.php:264 views/form.php:291
 msgid "Yes"
-msgstr ""
+msgstr "Да"
 
 #: views/form.php:199
 msgid ""
 "equire Confirmation before prompting for password. Used when your PSTN "
 "connection appears to answer the call immediately"
 msgstr ""
+"Спросить Подтверждение перед приглашением ввести пароль. Используется когда "
+"ваше PSTN-подключение сразу отвечает на вызов."
 
 #~ msgid "Applications"
 #~ msgstr "Приложения"
