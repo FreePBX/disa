@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-10-29 18:29-0700\n"
-"PO-Revision-Date: 2016-01-19 03:24+0200\n"
+"PO-Revision-Date: 2016-01-19 06:47+0200\n"
 "Last-Translator: Nicolas <forums@riendeau.org>\n"
 "Language-Team: French "
 "<http://weblate.freepbx.org/projects/freepbx/disa/fr_FR/>\n"
@@ -66,11 +66,11 @@ msgstr ""
 
 #: views/form.php:235
 msgid "Context"
-msgstr ""
+msgstr "Contexte"
 
 #: views/form.php:317
 msgid "Context cannot be blank"
-msgstr ""
+msgstr "Le contexte ne peut être vide"
 
 #: page.disa.php:21 views/bootnav.php:11 views/form.php:6 views/grid.php:10
 msgid "DISA"
@@ -101,7 +101,7 @@ msgstr ""
 
 #: Disa.class.php:44
 msgid "Delete"
-msgstr ""
+msgstr "Supprimer"
 
 #: views/form.php:301
 msgid ""
@@ -119,7 +119,7 @@ msgstr ""
 
 #: views/form.php:34
 msgid "Force"
-msgstr ""
+msgstr "Forcer"
 
 #: views/form.php:70
 msgid "Give this DISA a brief name to help you identify it."
@@ -127,19 +127,19 @@ msgstr ""
 
 #: views/form.php:94
 msgid "If you wish to have multiple PIN's, separate them with commas"
-msgstr ""
+msgstr "Si vous désirez avoir plusieurs NIPs, séparez-les par des virgules"
 
 #: views/form.php:34
 msgid "Never"
-msgstr ""
+msgstr "Jamais"
 
 #: views/form.php:34 views/form.php:191 views/form.php:266 views/form.php:293
 msgid "No"
-msgstr ""
+msgstr "Non"
 
 #: views/form.php:82
 msgid "PIN"
-msgstr ""
+msgstr "NIP"
 
 #: views/form.php:316
 msgid "Please enter a valid Caller ID or leave it blank"
@@ -159,11 +159,11 @@ msgstr ""
 
 #: views/form.php:184
 msgid "Require Confirmation"
-msgstr ""
+msgstr "Demande confirmation"
 
 #: Disa.class.php:49
 msgid "Reset"
-msgstr ""
+msgstr "Remise à 0"
 
 #: views/form.php:106
 msgid "Response Timeout"
@@ -171,11 +171,11 @@ msgstr ""
 
 #: views/form.php:112 views/form.php:139
 msgid "Seconds"
-msgstr ""
+msgstr "Secondes"
 
 #: Disa.class.php:54
 msgid "Submit"
-msgstr ""
+msgstr "Soumettre"
 
 #: views/form.php:324
 msgid "The DISA Name provided is too long."
@@ -186,6 +186,8 @@ msgid ""
 "The maximum amount of time it will wait before hanging up if the user has "
 "dialed an incomplete or invalid number. Default of 10 seconds"
 msgstr ""
+"Le temps d'attente maximal avant de raccrocher si l'utilisateur à signalé un "
+"numéro incomplet ou invalide. Par défaut, il s'agit de 10 secondes"
 
 #: views/form.php:148
 msgid ""
