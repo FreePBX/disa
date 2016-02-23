@@ -298,7 +298,7 @@ echo $usagehtml;
   </div>
   <div class="row">
     <div class="col-md-12">
-      <span id="keepcid-help" class="help-block fpbx-help-block"><?php echo _("Determine if we keep the Caller ID being presented or if we override it. Default is Yes")?></span>
+      <span id="keepcid-help" class="help-block fpbx-help-block"><?php echo _("Determine if we keep the Caller ID being presented or if we override it. Default is No")."</br>"._("If you choose Yes the disa will pass the caller id set above.")?></span>
     </div>
   </div>
 </div>
