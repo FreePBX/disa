@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX - módulo disa module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-29 18:29-0700\n"
+"POT-Creation-Date: 2016-03-01 11:28-0800\n"
 "PO-Revision-Date: 2015-03-23 21:39+0200\n"
 "Last-Translator: Ernesto <ecasas@sangoma.com>\n"
 "Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/disa/"
@@ -74,6 +74,10 @@ msgstr ""
 "marcado para realizar una nueva llamada, pulsando el código de "
 "característica de colgado %s mientras se está en una llamada"
 
+#: disa.i18n.php:6 disa.i18n.php:12
+msgid "Applications"
+msgstr "Aplicaciones"
+
 #: views/form.php:160
 msgid "Call Recording"
 msgstr ""
@@ -94,9 +98,18 @@ msgstr "Contexto:"
 msgid "Context cannot be blank"
 msgstr "El contexto no puede estar vacío"
 
-#: page.disa.php:21 views/bootnav.php:11 views/form.php:6 views/grid.php:10
+#: disa.i18n.php:4 disa.i18n.php:10 page.disa.php:21 views/bootnav.php:17
+#: views/form.php:6 views/grid.php:10
 msgid "DISA"
 msgstr "DISA"
+
+#: disa.i18n.php:8
+msgid ""
+"DISA Allows you 'Direct Inward System Access'. This gives you the ability to "
+"have an option on an IVR that gives you a dial tone, and you're able to dial "
+"out from the FreePBX machine as if you were connected to a standard "
+"extension. It appears as a Destination."
+msgstr ""
 
 #: views/bootnav.php:6
 msgid "DISA List"
@@ -133,7 +146,7 @@ msgstr ""
 #: views/form.php:301
 msgid ""
 "Determine if we keep the Caller ID being presented or if we override it. "
-"Default is Yes"
+"Default is No"
 msgstr ""
 
 #: views/form.php:133
@@ -151,6 +164,10 @@ msgstr ""
 #: views/form.php:70
 msgid "Give this DISA a brief name to help you identify it."
 msgstr "Asigne un breve nombre a este DISA que le ayude a identificarlo."
+
+#: views/form.php:301
+msgid "If you choose Yes the disa will pass the caller id set above."
+msgstr ""
 
 #: views/form.php:94
 msgid "If you wish to have multiple PIN's, separate them with commas"
@@ -237,9 +254,6 @@ msgid ""
 "equire Confirmation before prompting for password. Used when your PSTN "
 "connection appears to answer the call immediately"
 msgstr ""
-
-#~ msgid "Applications"
-#~ msgstr "Aplicaciones"
 
 #~ msgid "DISA name:"
 #~ msgstr "Nombre de DISA:"

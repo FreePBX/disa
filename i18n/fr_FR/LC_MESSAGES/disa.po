@@ -9,15 +9,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-29 18:29-0700\n"
+"POT-Creation-Date: 2016-03-01 11:28-0800\n"
 "PO-Revision-Date: 2016-02-04 23:06+0200\n"
 "Last-Translator: Nicolas Riendeau <freepbx@riendeau.org>\n"
-"Language-Team: French "
-"<http://weblate.freepbx.org/projects/freepbx/disa/fr_FR/>\n"
-"Language: fr_FR\n"
+"Language-Team: French <http://weblate.freepbx.org/projects/freepbx/disa/"
+"fr_FR/>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: fr_FR\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: Weblate 2.2-dev\n"
 
@@ -26,8 +26,8 @@ msgid ""
 "(Experts Only) Sets the context that calls will originate from. Leave this "
 "as from-internal unless you know what you're doing."
 msgstr ""
-"(Experts seulement) Le contexte utilisé pour effectuer un appel. Laisser à \""
-"from-internal\" à moins de savoir ce que vous faites."
+"(Experts seulement) Le contexte utilisé pour effectuer un appel. Laisser à "
+"\"from-internal\" à moins de savoir ce que vous faites."
 
 #: views/form.php:223
 msgid ""
@@ -58,6 +58,10 @@ msgstr ""
 "Permet de terminer l'appel en cours et d'avoir une tonalité d'appel pour "
 "procéder à un autre appel en pressant le code %s durant un appel"
 
+#: disa.i18n.php:6 disa.i18n.php:12
+msgid "Applications"
+msgstr ""
+
 #: views/form.php:160
 msgid "Call Recording"
 msgstr "Enregistrer l'appel"
@@ -78,9 +82,18 @@ msgstr "Contexte"
 msgid "Context cannot be blank"
 msgstr "Le contexte ne peut être vide"
 
-#: page.disa.php:21 views/bootnav.php:11 views/form.php:6 views/grid.php:10
+#: disa.i18n.php:4 disa.i18n.php:10 page.disa.php:21 views/bootnav.php:17
+#: views/form.php:6 views/grid.php:10
 msgid "DISA"
 msgstr "DISA"
+
+#: disa.i18n.php:8
+msgid ""
+"DISA Allows you 'Direct Inward System Access'. This gives you the ability to "
+"have an option on an IVR that gives you a dial tone, and you're able to dial "
+"out from the FreePBX machine as if you were connected to a standard "
+"extension. It appears as a Destination."
+msgstr ""
 
 #: views/bootnav.php:6
 msgid "DISA List"
@@ -117,10 +130,8 @@ msgstr "Supprimer"
 #: views/form.php:301
 msgid ""
 "Determine if we keep the Caller ID being presented or if we override it. "
-"Default is Yes"
+"Default is No"
 msgstr ""
-"Détermine si on garde l'ID appelant fourni ou si on le remplace. Oui par "
-"défaut"
 
 #: views/form.php:133
 msgid "Digit Timeout"
@@ -137,6 +148,10 @@ msgstr "Forcer"
 #: views/form.php:70
 msgid "Give this DISA a brief name to help you identify it."
 msgstr "Donner à ce DISA un nom pour permettre de l'identifier."
+
+#: views/form.php:301
+msgid "If you choose Yes the disa will pass the caller id set above."
+msgstr ""
 
 #: views/form.php:94
 msgid "If you wish to have multiple PIN's, separate them with commas"
@@ -225,3 +240,10 @@ msgid ""
 msgstr ""
 "Requiert une confirmation avant de demander un mot de passe. À utiliser "
 "lorsque votre ligne téléphonique semble répondre à l'appel immédiatement"
+
+#~ msgid ""
+#~ "Determine if we keep the Caller ID being presented or if we override it. "
+#~ "Default is Yes"
+#~ msgstr ""
+#~ "Détermine si on garde l'ID appelant fourni ou si on le remplace. Oui par "
+#~ "défaut"

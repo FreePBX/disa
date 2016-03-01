@@ -22,7 +22,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-29 18:29-0700\n"
+"POT-Creation-Date: 2016-03-01 11:28-0800\n"
 "PO-Revision-Date: 2010-01-23 00:00+0300\n"
 "Last-Translator: Shimi <shimi@shimi.net>\n"
 "MIME-Version: 1.0\n"
@@ -64,6 +64,10 @@ msgid ""
 "call by pressing the Hangup feature code: %s while in a call"
 msgstr ""
 
+#: disa.i18n.php:6 disa.i18n.php:12
+msgid "Applications"
+msgstr ""
+
 #: views/form.php:160
 msgid "Call Recording"
 msgstr ""
@@ -84,8 +88,17 @@ msgstr "הקשר (context)"
 msgid "Context cannot be blank"
 msgstr ""
 
-#: page.disa.php:21 views/bootnav.php:11 views/form.php:6 views/grid.php:10
+#: disa.i18n.php:4 disa.i18n.php:10 page.disa.php:21 views/bootnav.php:17
+#: views/form.php:6 views/grid.php:10
 msgid "DISA"
+msgstr ""
+
+#: disa.i18n.php:8
+msgid ""
+"DISA Allows you 'Direct Inward System Access'. This gives you the ability to "
+"have an option on an IVR that gives you a dial tone, and you're able to dial "
+"out from the FreePBX machine as if you were connected to a standard "
+"extension. It appears as a Destination."
 msgstr ""
 
 #: views/bootnav.php:6
@@ -118,7 +131,7 @@ msgstr ""
 #: views/form.php:301
 msgid ""
 "Determine if we keep the Caller ID being presented or if we override it. "
-"Default is Yes"
+"Default is No"
 msgstr ""
 
 #: views/form.php:133
@@ -136,6 +149,10 @@ msgstr ""
 #: views/form.php:70
 msgid "Give this DISA a brief name to help you identify it."
 msgstr "תן ל-DISA זה שם קצר שיעזור לך לזהות אותו."
+
+#: views/form.php:301
+msgid "If you choose Yes the disa will pass the caller id set above."
+msgstr ""
 
 #: views/form.php:94
 msgid "If you wish to have multiple PIN's, separate them with commas"

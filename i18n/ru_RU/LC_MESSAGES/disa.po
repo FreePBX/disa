@@ -22,17 +22,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-29 18:29-0700\n"
+"POT-Creation-Date: 2016-03-01 11:28-0800\n"
 "PO-Revision-Date: 2015-12-08 23:17+0200\n"
 "Last-Translator: Andrew <andrew.nagy@the159.com>\n"
-"Language-Team: Russian "
-"<http://weblate.freepbx.org/projects/freepbx/disa/ru_RU/>\n"
-"Language: ru_RU\n"
+"Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/disa/"
+"ru_RU/>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
-"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Language: ru_RU\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
+"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 2.2-dev\n"
 
 #: views/form.php:247
@@ -73,6 +73,10 @@ msgstr ""
 "Разрешить прерывать текущий звонок и предоставить длинный гудок (КПВ) для "
 "нового звонка набором сервисного кода Положить трубку: %s во время разговора"
 
+#: disa.i18n.php:6 disa.i18n.php:12
+msgid "Applications"
+msgstr "Приложения"
+
 #: views/form.php:160
 msgid "Call Recording"
 msgstr "Запись вызова"
@@ -93,9 +97,21 @@ msgstr "Контекст"
 msgid "Context cannot be blank"
 msgstr "Контекст не может быть пустым"
 
-#: page.disa.php:21 views/bootnav.php:11 views/form.php:6 views/grid.php:10
+#: disa.i18n.php:4 disa.i18n.php:10 page.disa.php:21 views/bootnav.php:17
+#: views/form.php:6 views/grid.php:10
 msgid "DISA"
 msgstr "Доступ в Asterisk извне (DISA)"
+
+#: disa.i18n.php:8
+msgid ""
+"DISA Allows you 'Direct Inward System Access'. This gives you the ability to "
+"have an option on an IVR that gives you a dial tone, and you're able to dial "
+"out from the FreePBX machine as if you were connected to a standard "
+"extension. It appears as a Destination."
+msgstr ""
+"Доступ в Asterisk извне (DISA) дает вам дополнительную опцию при "
+"использовании IVR, а именно, набрать код и получить возможность звонить с "
+"Asterisk так, как если бы вы были подключенны к нему напрямую. "
 
 #: views/bootnav.php:6
 msgid "DISA List"
@@ -134,9 +150,8 @@ msgstr "Удалить"
 #: views/form.php:301
 msgid ""
 "Determine if we keep the Caller ID being presented or if we override it. "
-"Default is Yes"
+"Default is No"
 msgstr ""
-"Указать если мы сохраняем Caller ID или перезаписываем его. По умолчанию Да"
 
 #: views/form.php:133
 msgid "Digit Timeout"
@@ -153,6 +168,10 @@ msgstr "Запустить"
 #: views/form.php:70
 msgid "Give this DISA a brief name to help you identify it."
 msgstr "Присвойте короткое название для DISA для идентификации."
+
+#: views/form.php:301
+msgid "If you choose Yes the disa will pass the caller id set above."
+msgstr ""
 
 #: views/form.php:94
 msgid "If you wish to have multiple PIN's, separate them with commas"
@@ -243,8 +262,12 @@ msgstr ""
 "Спросить Подтверждение перед приглашением ввести пароль. Используется когда "
 "ваше PSTN-подключение сразу отвечает на вызов"
 
-#~ msgid "Applications"
-#~ msgstr "Приложения"
+#~ msgid ""
+#~ "Determine if we keep the Caller ID being presented or if we override it. "
+#~ "Default is Yes"
+#~ msgstr ""
+#~ "Указать если мы сохраняем Caller ID или перезаписываем его. По умолчанию "
+#~ "Да"
 
 #~ msgid ""
 #~ "DISA Allows you \\'Direct Inward System Access\\'. This gives you the "
@@ -291,16 +314,6 @@ msgstr ""
 
 #~ msgid "deleted"
 #~ msgstr "удалено"
-
-#~ msgid ""
-#~ "DISA Allows you 'Direct Inward System Access'. This gives you the ability "
-#~ "to have an option on an IVR that gives you a dial tone, and you're able "
-#~ "to dial out from the FreePBX machine as if you were connected to a "
-#~ "standard extension. It appears as a Destination."
-#~ msgstr ""
-#~ "Доступ в Asterisk извне (DISA) дает вам дополнительную опцию при "
-#~ "использовании IVR, а именно, набрать код и получить возможность звонить с "
-#~ "Asterisk так, как если бы вы были подключенны к нему напрямую. "
 
 #~ msgid "Add"
 #~ msgstr "Добавить"
