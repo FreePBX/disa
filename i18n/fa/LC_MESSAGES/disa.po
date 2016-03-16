@@ -10,16 +10,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-03-01 11:28-0800\n"
-"PO-Revision-Date: 2016-02-15 09:05+0200\n"
+"PO-Revision-Date: 2016-03-15 22:38+0200\n"
 "Last-Translator: Media <mousavi.media@gmail.com>\n"
-"Language-Team: Persian <http://weblate.freepbx.org/projects/freepbx/disa/fa/"
-">\n"
+"Language-Team: Persian <http://weblate.freepbx.org/projects/freepbx/disa/fa/>"
+"\n"
+"Language: fa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: fa\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.2-dev\n"
+"X-Generator: Weblate 2.4\n"
 
 #: views/form.php:247
 msgid ""
@@ -54,23 +54,23 @@ msgstr ""
 
 #: disa.i18n.php:6 disa.i18n.php:12
 msgid "Applications"
-msgstr ""
+msgstr "عملیات"
 
 #: views/form.php:160
 msgid "Call Recording"
-msgstr ""
+msgstr "ضبط تماس"
 
 #: views/form.php:211
 msgid "Caller ID"
-msgstr ""
+msgstr "شناسه تماس گیرنده"
 
 #: views/form.php:286
 msgid "Caller ID Override"
-msgstr ""
+msgstr "بازنویسی شناسه تماس گیرنده"
 
 #: views/form.php:235
 msgid "Context"
-msgstr ""
+msgstr "محتوا"
 
 #: views/form.php:317
 msgid "Context cannot be blank"
@@ -91,11 +91,11 @@ msgstr ""
 
 #: views/bootnav.php:6
 msgid "DISA List"
-msgstr ""
+msgstr "فهرست DISA"
 
 #: views/form.php:58
 msgid "DISA Name"
-msgstr ""
+msgstr "نام DISA"
 
 #: page.disa.php:18
 msgid ""
@@ -114,7 +114,7 @@ msgstr ""
 
 #: Disa.class.php:44
 msgid "Delete"
-msgstr ""
+msgstr "حذف"
 
 #: views/form.php:301
 msgid ""
@@ -132,7 +132,7 @@ msgstr ""
 
 #: views/form.php:34
 msgid "Force"
-msgstr ""
+msgstr "اجباز"
 
 #: views/form.php:70
 msgid "Give this DISA a brief name to help you identify it."
@@ -148,55 +148,55 @@ msgstr ""
 
 #: views/form.php:34
 msgid "Never"
-msgstr ""
+msgstr "هرگز"
 
 #: views/form.php:34 views/form.php:191 views/form.php:266 views/form.php:293
 msgid "No"
-msgstr ""
+msgstr "خیر"
 
 #: views/form.php:82
 msgid "PIN"
-msgstr ""
+msgstr "پین کد"
 
 #: views/form.php:316
 msgid "Please enter a valid Caller ID or leave it blank"
-msgstr ""
+msgstr "لطفا شناسه معتبر وارد کنید"
 
 #: views/form.php:314
 msgid "Please enter a valid DISA Name"
-msgstr ""
+msgstr "نام DISA معتبر وارد کنید"
 
 #: views/form.php:315
 msgid "Please enter a valid DISA PIN"
-msgstr ""
+msgstr "پین DISA معتبر وارد کنید"
 
 #: views/form.php:172
 msgid "Record calls that use this DISA"
-msgstr ""
+msgstr "ضبط تماس هایی که از این DISA استفاده کردند"
 
 #: views/form.php:184
 msgid "Require Confirmation"
-msgstr ""
+msgstr "نیاز به تاییدیه"
 
 #: Disa.class.php:49
 msgid "Reset"
-msgstr ""
+msgstr "بازنشانی"
 
 #: views/form.php:106
 msgid "Response Timeout"
-msgstr ""
+msgstr "وقفه پاسخ"
 
 #: views/form.php:112 views/form.php:139
 msgid "Seconds"
-msgstr ""
+msgstr "ثانیه ها"
 
 #: Disa.class.php:54
 msgid "Submit"
-msgstr ""
+msgstr "ارسال"
 
 #: views/form.php:324
 msgid "The DISA Name provided is too long."
-msgstr ""
+msgstr "نام DISA بلند است."
 
 #: views/form.php:121
 msgid ""
@@ -216,7 +216,7 @@ msgstr ""
 
 #: views/form.php:34 views/form.php:189 views/form.php:264 views/form.php:291
 msgid "Yes"
-msgstr ""
+msgstr "بله"
 
 #: views/form.php:199
 msgid ""
