@@ -10,13 +10,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-03-01 11:28-0800\n"
-"PO-Revision-Date: 2016-03-01 11:28-0800\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2017-03-03 14:09+0200\n"
+"Last-Translator: hammer125 <auswertung@aon.at>\n"
+"Language-Team: German "
+"<http://weblate.freepbx.org/projects/freepbx/disa/de_DE/>\n"
+"Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.4\n"
 
 #: views/form.php:247
 msgid ""
@@ -32,15 +35,15 @@ msgstr ""
 
 #: views/grid.php:11
 msgid "Actions"
-msgstr ""
+msgstr "Maßnahmen/Aktionen"
 
 #: views/bootnav.php:5 views/form.php:20 views/grid.php:5
 msgid "Add DISA"
-msgstr ""
+msgstr "füge DISA hinzu"
 
 #: views/form.php:259
 msgid "Allow Hangup"
-msgstr ""
+msgstr "erlaube aufzulegen"
 
 #: views/form.php:274
 #, php-format
@@ -48,35 +51,40 @@ msgid ""
 "Allow the current call to be disconnected and dial tone presented for a new "
 "call by pressing the Hangup feature code: %s while in a call"
 msgstr ""
+"Erlaube die Beendigung des akutellen Anrufs und die Anzeige eines "
+"Wählzeichens für einen neuen Anruf, indem während eines Anrufs der "
+"Beendigungscode: %s gedrückt wird"
 
 #: disa.i18n.php:6 disa.i18n.php:12
 msgid "Applications"
-msgstr ""
+msgstr "Anwendungen"
 
 #: views/form.php:160
 msgid "Call Recording"
-msgstr ""
+msgstr "Anfrufaufzeichnungen"
 
 #: views/form.php:211
 msgid "Caller ID"
-msgstr ""
+msgstr "Anrufer-ID"
 
 #: views/form.php:286
 msgid "Caller ID Override"
-msgstr ""
+msgstr "Anrufer-ID überschreiben"
 
 #: views/form.php:235
+#, fuzzy
 msgid "Context"
-msgstr ""
+msgstr "Zusammenhang"
 
 #: views/form.php:317
+#, fuzzy
 msgid "Context cannot be blank"
-msgstr ""
+msgstr "Der Kontext kann nicht leer bleiben"
 
 #: disa.i18n.php:4 disa.i18n.php:10 page.disa.php:21 views/bootnav.php:17
 #: views/form.php:6 views/grid.php:10
 msgid "DISA"
-msgstr ""
+msgstr "DISA"
 
 #: disa.i18n.php:8
 msgid ""
@@ -88,11 +96,11 @@ msgstr ""
 
 #: views/bootnav.php:6
 msgid "DISA List"
-msgstr ""
+msgstr "DISA-Liste"
 
 #: views/form.php:58
 msgid "DISA Name"
-msgstr ""
+msgstr "DISA-Name"
 
 #: page.disa.php:18
 msgid ""
@@ -111,7 +119,7 @@ msgstr ""
 
 #: Disa.class.php:44
 msgid "Delete"
-msgstr ""
+msgstr "löschen"
 
 #: views/form.php:301
 msgid ""
@@ -129,7 +137,7 @@ msgstr ""
 
 #: views/form.php:34
 msgid "Force"
-msgstr ""
+msgstr "erzwingen"
 
 #: views/form.php:70
 msgid "Give this DISA a brief name to help you identify it."
@@ -145,15 +153,15 @@ msgstr ""
 
 #: views/form.php:34
 msgid "Never"
-msgstr ""
+msgstr "Nie"
 
 #: views/form.php:34 views/form.php:191 views/form.php:266 views/form.php:293
 msgid "No"
-msgstr ""
+msgstr "Nein"
 
 #: views/form.php:82
 msgid "PIN"
-msgstr ""
+msgstr "PIN"
 
 #: views/form.php:316
 msgid "Please enter a valid Caller ID or leave it blank"
@@ -173,50 +181,57 @@ msgstr ""
 
 #: views/form.php:184
 msgid "Require Confirmation"
-msgstr ""
+msgstr "Bestätigung erwartet"
 
 #: Disa.class.php:49
 msgid "Reset"
-msgstr ""
+msgstr "zurücksetzen"
 
 #: views/form.php:106
 msgid "Response Timeout"
-msgstr ""
+msgstr "Zeitüberschreitung bei der Antwort"
 
 #: views/form.php:112 views/form.php:139
 msgid "Seconds"
-msgstr ""
+msgstr "Sekunden"
 
 #: Disa.class.php:54
 msgid "Submit"
-msgstr ""
+msgstr "absenden"
 
 #: views/form.php:324
 msgid "The DISA Name provided is too long."
-msgstr ""
+msgstr "Der angegebene DISA Name ist zu lang."
 
 #: views/form.php:121
 msgid ""
 "The maximum amount of time it will wait before hanging up if the user has "
 "dialed an incomplete or invalid number. Default of 10 seconds"
 msgstr ""
+"Die maximale Zeit, die gewartet wird, bevor aufgehängt wird, wenn der "
+"Benutzer eine unvollständige oder ungültige Nummer gewählt hat. "
+"Standardmäßig 10 Sekunden"
 
 #: views/form.php:148
 msgid ""
 "The maximum amount of time permitted between digits when the user is typing "
 "in an extension. Default of 5 seconds"
 msgstr ""
+"Die maximale Zeit, die zwischen zwei Ziffern erlaubt ist, wenn der Benutzer "
+"auf einer Erweiterung tippt. Standardmäßig 5 Sekunden"
 
 #: views/form.php:94
 msgid "The user will be prompted for this number."
-msgstr ""
+msgstr "Die Eingabe dieser Nummer wird vom Benutzer erwartet."
 
 #: views/form.php:34 views/form.php:189 views/form.php:264 views/form.php:291
 msgid "Yes"
-msgstr ""
+msgstr "Ja"
 
 #: views/form.php:199
 msgid ""
 "equire Confirmation before prompting for password. Used when your PSTN "
 "connection appears to answer the call immediately"
 msgstr ""
+"erwartete Bestätigung bevor zur Passworteingabe aufgefordert wird. Wird "
+"benützt, wenn die PSTN-Verbindung den Ruf sofort anzunehmen scheint"
