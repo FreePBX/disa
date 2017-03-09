@@ -49,6 +49,7 @@ function disa_getdestinfo($dest) {
 // This actually generates the dialplan
 function disa_get_config($engine) {
 	global $ext;
+	global $amp_conf;
 	switch($engine) {
 	case "asterisk":
 		$disalist = disa_list();
@@ -59,7 +60,7 @@ function disa_get_config($engine) {
 				// delete it incase there was one from before (of course if it was deleted???
 				// this should all be done properly in class, see pinsets, but for now ...
 				//
-				$filename = "/etc/asterisk/disa-".$item['disa_id'].".conf";
+				$filename = $amp_conf['ASTETCDIR'].'/disa-'.$item['disa_id'].'.conf';
 				if (file_exists($filename)) {
 					unlink($filename);
 				}
@@ -95,7 +96,7 @@ function disa_get_config($engine) {
 				$ext->add('disa', $item['disa_id'], '', new ext_answer(''));
 				if (!$nopass) {
 					if ($is_file) {
-						$ext->add('disa', $item['disa_id'], '', new ext_authenticate('/etc/asterisk/disa-'.$item['disa_id'].'.conf'));
+						$ext->add('disa', $item['disa_id'], '', new ext_authenticate($amp_conf['ASTETCDIR'].'/disa-'.$item['disa_id'].'.conf'));
 					} else {
 						$ext->add('disa', $item['disa_id'], '', new ext_authenticate($item['pin']));
 					}
@@ -225,8 +226,9 @@ function disa_add($post) {
 }
 
 function disa_del($id) {
+	global $amp_conf;
 	$results = sql("DELETE FROM disa WHERE disa_id = \"$id\"","query");
-	@unlink("/etc/asterisk/disa-{$id}.conf");
+	@unlink($amp_conf['ASTETCDIR'].'/disa-{$id}.conf');
 }
 
 function disa_edit($id, $post) {
