@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-03-01 11:28-0800\n"
+"POT-Creation-Date: 2017-03-15 17:12-0700\n"
 "PO-Revision-Date: 2010-01-23 00:00+0100\n"
 "Last-Translator: Francesco Romano <francesco.romano@alteclab.it>\n"
 "Language-Team: Italian\n"
@@ -67,7 +67,7 @@ msgstr ""
 "di libero per effettuare una nuova chiamata premendo durante la chiamata il "
 "Codice Servizio di Riaggancio: %s"
 
-#: disa.i18n.php:6 disa.i18n.php:12
+#: disa.i18n.php:6
 msgid "Applications"
 msgstr ""
 

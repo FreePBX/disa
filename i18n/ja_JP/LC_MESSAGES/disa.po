@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-03-01 11:28-0800\n"
+"POT-Creation-Date: 2017-03-15 17:12-0700\n"
 "PO-Revision-Date: 2014-02-19 22:16+0200\n"
 "Last-Translator: Kenichi Fukaumi <k.fukaumi@qloog.com>\n"
 "Language-Team: Japanese <http://example.com/projects/freepbx/disa/ja/>\n"
@@ -83,7 +83,7 @@ msgstr ""
 "コール中に切断のキーコード: %s を押すことにより、現在のコールを切断して新しい"
 "コールに出るためにダイヤルトーンを許可します。"
 
-#: disa.i18n.php:6 disa.i18n.php:12
+#: disa.i18n.php:6
 msgid "Applications"
 msgstr "アプリケーション"
 
