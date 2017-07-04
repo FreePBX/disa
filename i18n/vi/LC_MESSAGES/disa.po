@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-03-15 17:12-0700\n"
-"PO-Revision-Date: 2017-07-04 08:39+0200\n"
+"PO-Revision-Date: 2017-07-04 08:40+0200\n"
 "Last-Translator: PETER <ftek@ymail.com>\n"
 "Language-Team: Vietnamese "
 "<http://weblate.freepbx.org/projects/freepbx/disa/vi/>\n"
@@ -127,7 +127,7 @@ msgstr ""
 #: Disa.class.php:113 functions.inc.php:40
 #, php-format
 msgid "DISA: %s"
-msgstr "DISA: %s"
+msgstr "DISA:%s"
 
 #: Disa.class.php:44
 msgid "Delete"
