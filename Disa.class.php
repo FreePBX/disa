@@ -41,10 +41,10 @@ class Disa extends FreePBX_Helpers implements BMO {
 
 	public function getActionBar($request) {
 		$buttons = array();
-		if (!isset($request['view'])){
+		if (!isset($_GET['view'])){
 			return $buttons;
 		}
-		switch($request['display']) {
+		switch($_GET['display']) {
 			case 'disa':
 				$buttons = array(
 					'delete' => array(
@@ -71,9 +71,8 @@ class Disa extends FreePBX_Helpers implements BMO {
 		return $buttons;
 	}
 	public function listAll() {
-		$dbh = $this->FreePBX->Database;
 		$sql = 'SELECT * FROM disa';
-		$stmt = $dbh->prepare($sql);
+		$stmt = $this->FreePBX->Database->prepare($sql);
 		$stmt->execute();
 		$results = $stmt->fetchAll(PDO::FETCH_ASSOC);
 		if(is_array($results)){
@@ -162,7 +161,7 @@ class Disa extends FreePBX_Helpers implements BMO {
 	 * @param string $recording recording setting
 	 * @return object Self
 	 */
-	public function putRecording(int $id, string $recording = 'dontcare'){
+	public function putRecording(int $id, $recording = 'dontcare'){
 		$this->FreePBX->astman->database_put("DISA", $id, $recording);
 		return $this;
 	}
