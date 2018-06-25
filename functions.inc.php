@@ -9,7 +9,7 @@ if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed'); }
 
 // This is the hook for 'destinations'
 function disa_destinations() {
-				$results = disa_list();
+				$results = FreePBX::Disa()->listAll();
 				// return an associative array with destination and description
 				if ($results) {
 								$extens = array();
@@ -32,7 +32,7 @@ function disa_getdestinfo($dest) {
 	if (substr(trim($dest),0,5) == 'disa,') {
 		$exten = explode(',',$dest);
 		$exten = $exten[1];
-		$thisexten = disa_get($exten);
+		$thisexten = FreePBX::Disa()->get($exten);
 		if (empty($thisexten)) {
 			return array();
 		} else {
@@ -52,7 +52,7 @@ function disa_get_config($engine) {
 	global $amp_conf;
 	switch($engine) {
 	case "asterisk":
-		$disalist = disa_list();
+		$disalist = FreePBX::Disa()->listAll();
 		if(is_array($disalist)) {
 			foreach($disalist as $item) {
 				$nopass = false;
@@ -155,99 +155,38 @@ function disa_get_config($engine) {
 }
 
 function disa_list() {
-	$results = sql("SELECT * FROM disa","getAll",DB_FETCHMODE_ASSOC);
-	if(is_array($results)){
-		return $results;
-	}
-	return array();
+    FreePBX::Modules()->deprecatedFunction();
+    return FreePBX::Disa()->listAll();
+
 }
 
 function disa_get($id){
-
-	//get all the variables for the meetme
-	$results = sql("SELECT * FROM disa WHERE disa_id = '$id'","getRow",DB_FETCHMODE_ASSOC);
-
-	$results['recording'] = disa_get_recording($id);
-
-	return $results;
+    FreePBX::Modules()->deprecatedFunction();
+    return FreePBX::Disa()->get($id);
 }
 
 function disa_get_recording($id) {
-	global $astman;
-	$rec = $astman->database_get("DISA", $id);
-	if (!$rec) {
-		$rec = "dontcare";
-	}
-
-	return $rec;
+    FreePBX::Modules()->deprecatedFunction();
+    return FreePBX::Disa()->getRecording($id);
 }
 
 function disa_put_recording($id, $recording = "dontcare") {
-	global $astman;
-	$astman->database_put("DISA", $id, $recording);
-	return;
+    FreePBX::Modules()->deprecatedFunction();
+	return FreePBX::Disa()->putRecording($id, $recording);
 }
 
-
-function disa_chk(&$post) {
-	if (!isset($post['recording'])) {
-		$post['recording'] = 'dontcare';
-	}
-	return true;
-}
 
 function disa_add($post) {
-	global $db;
-	global $amp_conf;
-
-	if(!disa_chk($post)) {
-		return null;
-	}
-	extract($post);
-	if (!isset($needconf)) {
-		$needconf = '';
-	}
-	if(empty($displayname)) {
-		$displayname = "unnamed";
-	}
-	if (!isset($keepcid)) {
-		$keepcid = 0;
-	}
-	$results = sql("INSERT INTO disa (displayname,pin,cid,context,resptimeout,digittimeout,needconf,hangup,keepcid) values ('".$db->escapeSimple($displayname)."','".$db->escapeSimple($pin)."','".$db->escapeSimple($cid)."','".$db->escapeSimple($context)."', '".$db->escapeSimple($resptimeout)."', '".$db->escapeSimple($digittimeout)."', '$needconf', '$hangup', '".$db->escapeSimple($keepcid)."')");
-	if(method_exists($db,'insert_id')) {
-		$id = $db->insert_id();
-	} else {
-		$id = $amp_conf["AMPDBENGINE"] == "sqlite3" ? sqlite_last_insert_rowid($db->connection) : mysql_insert_id($db->connection);
-	}
-
-	disa_put_recording($id, $post['recording']);
-
-	return($id);
+    FreePBX::Modules()->deprecatedFunction();
+    return FreePBX::Disa()->add($post);    
 }
 
 function disa_del($id) {
-	global $amp_conf;
-	$results = sql("DELETE FROM disa WHERE disa_id = \"$id\"","query");
-	@unlink($amp_conf['ASTETCDIR'].'/disa-{$id}.conf');
+    FreePBX::Modules()->deprecatedFunction();
+    return FreePBX::Disa()->delete($id);
 }
 
 function disa_edit($id, $post) {
-	global $db;
-	if (!disa_chk($post)) {
-		return null;
-	}
-	extract($post);
-	if (!isset($needconf)) {
-		$needconf = '';
-	}
-	if(empty($displayname)) {
-	 	$displayname = "unnamed";
-	}
-	if (!isset($keepcid)) {
-		$keepcid = 0;
-	}
-
-	disa_put_recording($id, $post['recording']);
-
-	$results = sql("UPDATE disa  set displayname = '".$db->escapeSimple($displayname)."', pin = '".$db->escapeSimple($pin)."', cid = '".$db->escapeSimple($cid)."', context = '".$db->escapeSimple($context)."', resptimeout = '".$db->escapeSimple($resptimeout)."', digittimeout = '".$db->escapeSimple($digittimeout)."', needconf = \"$needconf\", hangup = \"$hangup\", keepcid = '".$db->escapeSimple($keepcid)."' where disa_id = '$id'");
+    FreePBX::Modules()->deprecatedFunction();
+    return FreePBX::Disa()->edit($id, $post);
 }
