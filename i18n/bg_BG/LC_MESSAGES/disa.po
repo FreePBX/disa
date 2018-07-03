@@ -20,15 +20,15 @@ msgstr ""
 "Project-Id-Version: FreePBX v2.5\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-03-15 17:12-0700\n"
-"PO-Revision-Date: 2014-07-21 16:55+0200\n"
-"Last-Translator: Chavdar <chavdar_75@yahoo.com>\n"
-"Language-Team: Bulgarian <http://git.freepbx.org/projects/freepbx/disa/bg/>\n"
+"PO-Revision-Date: 2018-07-03 13:06+0000\n"
+"Last-Translator: Chavdar Shtiliyanov <chavdar_75@yahoo.com>\n"
+"Language-Team: Bulgarian <http://*/projects/freepbx/disa/bg/>\n"
+"Language: bg_BG\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: bg_BG\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 1.10-dev\n"
+"X-Generator: Weblate 2.19.1\n"
 "X-Poedit-Language: Bulgarian\n"
 "X-Poedit-Country: BULGARIA\n"
 "X-Poedit-SourceCharset: utf-8\n"
@@ -51,7 +51,7 @@ msgstr ""
 
 #: views/grid.php:11
 msgid "Actions"
-msgstr ""
+msgstr "Действия"
 
 #: views/bootnav.php:5 views/form.php:20 views/grid.php:5
 msgid "Add DISA"
@@ -77,7 +77,7 @@ msgstr "Приложения"
 
 #: views/form.php:160
 msgid "Call Recording"
-msgstr ""
+msgstr "Запис на Разговор"
 
 #: views/form.php:211
 msgid "Caller ID"
@@ -115,11 +115,11 @@ msgstr ""
 
 #: views/bootnav.php:6
 msgid "DISA List"
-msgstr ""
+msgstr "DISA Списък"
 
 #: views/form.php:58
 msgid "DISA Name"
-msgstr ""
+msgstr "Име на DISA"
 
 #: page.disa.php:18
 msgid ""
@@ -144,13 +144,15 @@ msgstr "DISA: %s"
 
 #: Disa.class.php:44
 msgid "Delete"
-msgstr ""
+msgstr "Изтрий"
 
 #: views/form.php:301
 msgid ""
 "Determine if we keep the Caller ID being presented or if we override it. "
 "Default is No"
 msgstr ""
+"Определете дали ще запазим Caller ID на обаждащия се или ще го заменим. По "
+"подразбиране е Не"
 
 #: views/form.php:133
 msgid "Digit Timeout"
@@ -158,11 +160,11 @@ msgstr "Време на Изчакване Между Цифрите"
 
 #: views/form.php:34
 msgid "Don't Care"
-msgstr ""
+msgstr "Без Значение"
 
 #: views/form.php:34
 msgid "Force"
-msgstr ""
+msgstr "Винаги"
 
 #: views/form.php:70
 msgid "Give this DISA a brief name to help you identify it."
@@ -170,7 +172,7 @@ msgstr "Дайте на DISA описващо име за да ви помогн
 
 #: views/form.php:301
 msgid "If you choose Yes the disa will pass the caller id set above."
-msgstr ""
+msgstr "Ако изберете Да, DISA ще пропусне въведения по-горе caller id."
 
 #: views/form.php:94
 msgid "If you wish to have multiple PIN's, separate them with commas"
@@ -178,11 +180,11 @@ msgstr "Ако искате да имате наколко PIN кода, раз�
 
 #: views/form.php:34
 msgid "Never"
-msgstr ""
+msgstr "Никога"
 
 #: views/form.php:34 views/form.php:191 views/form.php:266 views/form.php:293
 msgid "No"
-msgstr ""
+msgstr "Не"
 
 #: views/form.php:82
 msgid "PIN"
@@ -202,7 +204,7 @@ msgstr "Моля въведете правилен DISA PIN"
 
 #: views/form.php:172
 msgid "Record calls that use this DISA"
-msgstr ""
+msgstr "Запис на разговори които използват тази DISA"
 
 #: views/form.php:184
 msgid "Require Confirmation"
@@ -210,7 +212,7 @@ msgstr "Изисква Потвърждение"
 
 #: Disa.class.php:49
 msgid "Reset"
-msgstr ""
+msgstr "Изчисти"
 
 #: views/form.php:106
 msgid "Response Timeout"
@@ -218,11 +220,11 @@ msgstr "Време на Изчакване на Отговор"
 
 #: views/form.php:112 views/form.php:139
 msgid "Seconds"
-msgstr ""
+msgstr "Секунди"
 
 #: Disa.class.php:54
 msgid "Submit"
-msgstr ""
+msgstr "Приеми"
 
 #: views/form.php:324
 msgid "The DISA Name provided is too long."
@@ -241,6 +243,8 @@ msgid ""
 "The maximum amount of time permitted between digits when the user is typing "
 "in an extension. Default of 5 seconds"
 msgstr ""
+"Максимално допустимото време между цифрите, когато потребителят набира във "
+"вътрешна линия. По подразбиране е 5 секунди"
 
 #: views/form.php:94
 msgid "The user will be prompted for this number."
@@ -248,13 +252,15 @@ msgstr "Потребителят ще бъде запитан за този но
 
 #: views/form.php:34 views/form.php:189 views/form.php:264 views/form.php:291
 msgid "Yes"
-msgstr ""
+msgstr "Да"
 
 #: views/form.php:199
 msgid ""
 "equire Confirmation before prompting for password. Used when your PSTN "
 "connection appears to answer the call immediately"
 msgstr ""
+"Потвърждаване преди поискване на парола. Използва се, когато вашата PSTN "
+"линия изглежда, че отговаря на обаждането веднага"
 
 #~ msgid ""
 #~ "DISA Allows you \\'Direct Inward System Access\\'. This gives you the "
