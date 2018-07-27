@@ -10,16 +10,15 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-03-15 17:12-0700\n"
-"PO-Revision-Date: 2017-03-03 14:09+0200\n"
-"Last-Translator: hammer125 <auswertung@aon.at>\n"
-"Language-Team: German <http://weblate.freepbx.org/projects/freepbx/disa/"
-"de_DE/>\n"
+"PO-Revision-Date: 2018-07-28 08:00+0000\n"
+"Last-Translator: Bastian Mertgen <b.mertgen@bastian-mertgen.de>\n"
+"Language-Team: German <http://*/projects/freepbx/disa/de/>\n"
+"Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: de_DE\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.4\n"
+"X-Generator: Weblate 3.0.1\n"
 
 #: views/form.php:247
 msgid ""
@@ -77,9 +76,8 @@ msgid "Context"
 msgstr "Zusammenhang"
 
 #: views/form.php:317
-#, fuzzy
 msgid "Context cannot be blank"
-msgstr "Der Kontext kann nicht leer bleiben"
+msgstr "Der Zusammenhang kann nicht leer bleiben"
 
 #: disa.i18n.php:4 disa.i18n.php:10 page.disa.php:21 views/bootnav.php:17
 #: views/form.php:6 views/grid.php:10
