@@ -22,7 +22,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-15 17:12-0700\n"
+"POT-Creation-Date: 2018-08-20 12:47-0400\n"
 "PO-Revision-Date: 2010-01-23 00:00+0300\n"
 "Last-Translator: Shimi <shimi@shimi.net>\n"
 "MIME-Version: 1.0\n"
@@ -88,8 +88,8 @@ msgstr "הקשר (context)"
 msgid "Context cannot be blank"
 msgstr ""
 
-#: disa.i18n.php:4 disa.i18n.php:10 page.disa.php:21 views/bootnav.php:17
-#: views/form.php:6 views/grid.php:10
+#: disa.i18n.php:4 /usr/src/freepbx/disa/disa.i18n.php:10 page.disa.php:21
+#: views/bootnav.php:17 views/form.php:6 views/grid.php:10
 msgid "DISA"
 msgstr ""
 
@@ -119,12 +119,12 @@ msgid ""
 "make calls out."
 msgstr ""
 
-#: Disa.class.php:113 functions.inc.php:40
+#: Disa.class.php:204 functions.inc.php:40
 #, php-format
 msgid "DISA: %s"
 msgstr ""
 
-#: Disa.class.php:44
+#: Disa.class.php:53
 msgid "Delete"
 msgstr ""
 
@@ -190,7 +190,7 @@ msgstr ""
 msgid "Require Confirmation"
 msgstr "דרוש אישור"
 
-#: Disa.class.php:49
+#: Disa.class.php:58
 msgid "Reset"
 msgstr ""
 
@@ -202,7 +202,7 @@ msgstr "זמן המתנה לתגובה"
 msgid "Seconds"
 msgstr ""
 
-#: Disa.class.php:54
+#: Disa.class.php:63
 msgid "Submit"
 msgstr ""
 

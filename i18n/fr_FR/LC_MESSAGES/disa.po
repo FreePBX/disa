@@ -9,11 +9,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-15 17:12-0700\n"
+"POT-Creation-Date: 2018-08-20 12:47-0400\n"
 "PO-Revision-Date: 2017-12-01 22:40+0200\n"
 "Last-Translator: CATTAN Jérémie <jeremie@famillecattan.com>\n"
-"Language-Team: French "
-"<http://weblate.freepbx.org/projects/freepbx/disa/fr_FR/>\n"
+"Language-Team: French <http://weblate.freepbx.org/projects/freepbx/disa/"
+"fr_FR/>\n"
 "Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -82,8 +82,8 @@ msgstr "Contexte"
 msgid "Context cannot be blank"
 msgstr "Le contexte ne peut être vide"
 
-#: disa.i18n.php:4 disa.i18n.php:10 page.disa.php:21 views/bootnav.php:17
-#: views/form.php:6 views/grid.php:10
+#: disa.i18n.php:4 /usr/src/freepbx/disa/disa.i18n.php:10 page.disa.php:21
+#: views/bootnav.php:17 views/form.php:6 views/grid.php:10
 msgid "DISA"
 msgstr "DISA"
 
@@ -122,12 +122,12 @@ msgstr ""
 "SVI ou comme destination pour un SDA (DID). Assurez-vous de mettre un mot de "
 "passe pour protéger l'accès à celui-ci."
 
-#: Disa.class.php:113 functions.inc.php:40
+#: Disa.class.php:204 functions.inc.php:40
 #, php-format
 msgid "DISA: %s"
 msgstr "DISA : %s"
 
-#: Disa.class.php:44
+#: Disa.class.php:53
 msgid "Delete"
 msgstr "Supprimer"
 
@@ -196,7 +196,7 @@ msgstr "Enregistrer les appels qui utilisent ce DISA"
 msgid "Require Confirmation"
 msgstr "Demande confirmation"
 
-#: Disa.class.php:49
+#: Disa.class.php:58
 msgid "Reset"
 msgstr "Réinitialiser"
 
@@ -208,7 +208,7 @@ msgstr "Délai d'attente de la réponse"
 msgid "Seconds"
 msgstr "Secondes"
 
-#: Disa.class.php:54
+#: Disa.class.php:63
 msgid "Submit"
 msgstr "Soumettre"
 
