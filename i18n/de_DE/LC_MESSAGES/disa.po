@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-03-15 17:12-0700\n"
-"PO-Revision-Date: 2018-07-31 15:00+0000\n"
+"PO-Revision-Date: 2018-08-25 15:00+0000\n"
 "Last-Translator: Bastian Mertgen <b.mertgen@bastian-mertgen.de>\n"
 "Language-Team: German <http://*/projects/freepbx/disa/de/>\n"
 "Language: de_DE\n"
@@ -34,7 +34,7 @@ msgstr ""
 
 #: views/grid.php:11
 msgid "Actions"
-msgstr "Maßnahmen/Aktionen"
+msgstr "Aktionen"
 
 #: views/bootnav.php:5 views/form.php:20 views/grid.php:5
 msgid "Add DISA"
@@ -71,9 +71,8 @@ msgid "Caller ID Override"
 msgstr "Anrufer-ID überschreiben"
 
 #: views/form.php:235
-#, fuzzy
 msgid "Context"
-msgstr "Zusammenhang"
+msgstr "Kontext"
 
 #: views/form.php:317
 msgid "Context cannot be blank"
@@ -195,7 +194,7 @@ msgstr "Sekunden"
 
 #: Disa.class.php:54
 msgid "Submit"
-msgstr "absenden"
+msgstr "Absenden"
 
 #: views/form.php:324
 msgid "The DISA Name provided is too long."
