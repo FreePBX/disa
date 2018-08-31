@@ -4,7 +4,7 @@ use PDO;
 use BMO;
 use FreePBX_Helpers;
 class Disa extends FreePBX_Helpers implements BMO {
-	protected static $defaults = [
+	const DEFAULTS = [
 		'needconf' => '',
 		'displayname' => 'unnamed',
 		'keepcid' => 0,
@@ -14,15 +14,14 @@ class Disa extends FreePBX_Helpers implements BMO {
 		'resptimeout' => '',
 		'digittimeout' => '',
 		'hangup' => '',
-		'recording' => 'dontcare',
 	];
 
 	public function install() {}
 	public function uninstall() {}
 
 	public function doConfigPageInit($page) {
-	  $action = isset($_POST['action'])?$_POST['action']:'';
-	  $itemid = isset($_POST['itemid'])?$_POST['itemid']:'';
+	  $action = isset($_REQUEST['action'])?$_REQUEST['action']:'';
+	  $itemid = isset($_REQUEST['itemid'])?$_REQUEST['itemid']:'';
 	  switch ($action) {
 	  	case "add":
 	  		$this->add($_POST);
@@ -107,7 +106,7 @@ class Disa extends FreePBX_Helpers implements BMO {
 	 */
 	public function add($itemArray){
 		$final = [];
-		foreach ($this->defaults as $key => $value) {
+		foreach (self::DEFAULTS as $key => $value) {
 			$final[':'.$key] = isset($itemArray[$key])?$itemArray[$key]:$value;
 		}
 		
@@ -128,12 +127,11 @@ class Disa extends FreePBX_Helpers implements BMO {
 	 */
 	public function edit($id, $itemArray){
 		$final[':disa_id'] = $id;
-		foreach ($this->defaults as $key => $value) {
+		foreach (self::DEFAULTS as $key => $value) {
 			$final[':' . $key] = isset($itemArray[$key]) ? $itemArray[$key] : $value;
 		}
 
-		$sql = "INSERT INTO disa (disa_id, displayname,pin,cid,context,resptimeout,digittimeout,needconf,hangup,keepcid) VALUES (:disa_id, :displayname, :pin, :cid, :context, :resptimeout, :digittimeout, :needconf, :hangup, :keepcid)";
-		$sql = " ON DUPLICATE KEY UPDATE disa_id= VALUES(disa_id), displayname= VALUES(displayname),pin= VALUES(pin),cid= VALUES(cid),context= VALUES(context),resptimeout= VALUES(resptimeout),digittimeout= VALUES(digittimeout),needconf= VALUES(needconf),hangup= VALUES(hangup),keepcid= VALUES(keepcid)";
+		$sql = "REPLACE INTO disa (disa_id, displayname,pin,cid,context,resptimeout,digittimeout,needconf,hangup,keepcid) VALUES (:disa_id, :displayname, :pin, :cid, :context, :resptimeout, :digittimeout, :needconf, :hangup, :keepcid)";
 		$this->FreePBX->Database->prepare($sql)
 			->execute($final);
 		$this->putRecording($id, $post['recording']);
