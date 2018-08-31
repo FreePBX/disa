@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-31 18:51-0400\n"
+"POT-Creation-Date: 2018-08-31 18:52-0400\n"
 "PO-Revision-Date: 2014-02-19 22:16+0200\n"
 "Last-Translator: Kenichi Fukaumi <k.fukaumi@qloog.com>\n"
 "Language-Team: Japanese <http://example.com/projects/freepbx/disa/ja/>\n"
@@ -146,12 +146,12 @@ msgstr ""
 "行く時に便利な機能です。DISAに指すIVRの宛先またはDIDの設定ができます。他の人"
 "に自分のPBXを使われないようにパスワードを設定してください。"
 
-#: Disa.class.php:204 functions.inc.php:40
+#: Disa.class.php:202 functions.inc.php:40
 #, php-format
 msgid "DISA: %s"
 msgstr "DISA: %s"
 
-#: Disa.class.php:53
+#: Disa.class.php:52
 msgid "Delete"
 msgstr ""
 
@@ -217,7 +217,7 @@ msgstr ""
 msgid "Require Confirmation"
 msgstr "確認要求"
 
-#: Disa.class.php:58
+#: Disa.class.php:57
 msgid "Reset"
 msgstr ""
 
@@ -229,7 +229,7 @@ msgstr "応答タイムアウト"
 msgid "Seconds"
 msgstr ""
 
-#: Disa.class.php:63
+#: Disa.class.php:62
 msgid "Submit"
 msgstr ""
 

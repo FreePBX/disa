@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-31 18:51-0400\n"
+"POT-Creation-Date: 2018-08-31 18:52-0400\n"
 "PO-Revision-Date: 2018-07-31 15:00+0000\n"
 "Last-Translator: Bastian Mertgen <b.mertgen@bastian-mertgen.de>\n"
 "Language-Team: German <http://*/projects/freepbx/disa/de/>\n"
@@ -110,12 +110,12 @@ msgid ""
 "make calls out."
 msgstr ""
 
-#: Disa.class.php:204 functions.inc.php:40
+#: Disa.class.php:202 functions.inc.php:40
 #, php-format
 msgid "DISA: %s"
 msgstr ""
 
-#: Disa.class.php:53
+#: Disa.class.php:52
 msgid "Delete"
 msgstr "Löschen"
 
@@ -181,7 +181,7 @@ msgstr ""
 msgid "Require Confirmation"
 msgstr "Bestätigung erwartet"
 
-#: Disa.class.php:58
+#: Disa.class.php:57
 msgid "Reset"
 msgstr "zurücksetzen"
 
@@ -193,7 +193,7 @@ msgstr "Zeitüberschreitung bei der Antwort"
 msgid "Seconds"
 msgstr "Sekunden"
 
-#: Disa.class.php:63
+#: Disa.class.php:62
 msgid "Submit"
 msgstr "absenden"
 

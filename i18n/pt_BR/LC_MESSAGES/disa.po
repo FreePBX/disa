@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-31 18:51-0400\n"
+"POT-Creation-Date: 2018-08-31 18:52-0400\n"
 "PO-Revision-Date: 2016-12-12 22:54+0200\n"
 "Last-Translator: Alexander <alexander.schley@paranagua.pr.gov.br>\n"
 "Language-Team: Portuguese (Brazil) <http://weblate.freepbx.org/projects/"
@@ -124,12 +124,12 @@ msgstr ""
 "para o DISA ou definir um DID. Certifique-se de que a senha está protegida "
 "para evitar que as pessoas façam discagem e usem seu PBX para fazer chamadas."
 
-#: Disa.class.php:204 functions.inc.php:40
+#: Disa.class.php:202 functions.inc.php:40
 #, php-format
 msgid "DISA: %s"
 msgstr "DISA: %s"
 
-#: Disa.class.php:53
+#: Disa.class.php:52
 msgid "Delete"
 msgstr "Apagar"
 
@@ -199,7 +199,7 @@ msgstr "Gravar chamadas que user essa DISA"
 msgid "Require Confirmation"
 msgstr "Solicitar Confirmação"
 
-#: Disa.class.php:58
+#: Disa.class.php:57
 msgid "Reset"
 msgstr "Reiniciar"
 
@@ -211,7 +211,7 @@ msgstr "Tempo Limite de Resposta"
 msgid "Seconds"
 msgstr "Segundos"
 
-#: Disa.class.php:63
+#: Disa.class.php:62
 msgid "Submit"
 msgstr "Enviar"
 
