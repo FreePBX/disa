@@ -162,7 +162,7 @@ class Disa extends FreePBX_Helpers implements BMO {
 	 * @param string $recording recording setting
 	 * @return object Self
 	 */
-	public function putRecording(int $id, string $recording = 'dontcare'){
+	public function putRecording(int $id, $recording = 'dontcare'){
 		$this->FreePBX->astman->database_put("DISA", $id, $recording);
 		return $this;
 	}
