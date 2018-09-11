@@ -4,7 +4,7 @@ use PDO;
 use BMO;
 use FreePBX_Helpers;
 class Disa extends FreePBX_Helpers implements BMO {
-	protected static $defaults = [
+	protected static $defaults = array(
 		'needconf' => '',
 		'displayname' => 'unnamed',
 		'keepcid' => 0,
@@ -15,7 +15,7 @@ class Disa extends FreePBX_Helpers implements BMO {
 		'digittimeout' => '',
 		'hangup' => '',
 		'recording' => 'dontcare',
-	];
+	);
 
 	public function install() {}
 	public function uninstall() {}
@@ -79,7 +79,7 @@ class Disa extends FreePBX_Helpers implements BMO {
 		if(is_array($results)){
 			return $results;
 		}
-		return [];
+		return array();
 	}
 
 	/**
@@ -97,7 +97,7 @@ class Disa extends FreePBX_Helpers implements BMO {
 			$result['recording'] = $this->getRecording($id);
 			return $result;
 		}
-		return [];
+		return array();
 	}
 
 	/**
@@ -107,11 +107,11 @@ class Disa extends FreePBX_Helpers implements BMO {
 	 * @return int Item id;
 	 */
 	public function add(array $itemArray){
-		$final = [];
+		$final = array();
 		foreach ($this->defaults as $key => $value) {
 			$final[':'.$key] = isset($itemArray[$key])?$itemArray[$key]:$value;
 		}
-		
+
 		$sql = "INSERT INTO disa (displayname,pin,cid,context,resptimeout,digittimeout,needconf,hangup,keepcid) VALUES (:displayname, :pin, :cid, :context, :resptimeout, :digittimeout, :needconf, :hangup, :keepcid)";
 		$this->FreePBX->Database->prepare($sql)
 		 ->execute($final);
@@ -143,10 +143,10 @@ class Disa extends FreePBX_Helpers implements BMO {
 	}
 
 	/**
-	 * Delete DISA item 
+	 * Delete DISA item
 	 * @param integer $id
 	 * @return object Self
-	 */	
+	 */
 	public function delete(int $id){
 		$sql = "DELETE FROM disa WHERE disa_id = :id";
 		$this->FreePBX->Database->prepare($sql)
