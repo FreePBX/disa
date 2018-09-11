@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX v2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-15 17:12-0700\n"
+"POT-Creation-Date: 2018-09-11 19:34-0400\n"
 "PO-Revision-Date: 2018-07-18 19:11+0000\n"
 "Last-Translator: Chavdar Shtiliyanov <chavdar_75@yahoo.com>\n"
 "Language-Team: Bulgarian <http://*/projects/freepbx/disa/bg/>\n"
@@ -71,10 +71,6 @@ msgstr ""
 "ново  обаждане като се натисне специален код за Прекъсване на Разговора: %s "
 "докато говорите"
 
-#: disa.i18n.php:6
-msgid "Applications"
-msgstr "Приложения"
-
 #: views/form.php:160
 msgid "Call Recording"
 msgstr "Запис на Разговор"
@@ -95,23 +91,9 @@ msgstr "Контекст"
 msgid "Context cannot be blank"
 msgstr "Трябва да има въведен контекст"
 
-#: disa.i18n.php:4 disa.i18n.php:10 page.disa.php:21 views/bootnav.php:17
-#: views/form.php:6 views/grid.php:10
+#: page.disa.php:21 views/bootnav.php:17 views/form.php:6 views/grid.php:10
 msgid "DISA"
 msgstr "DISA"
-
-#: disa.i18n.php:8
-msgid ""
-"DISA Allows you 'Direct Inward System Access'. This gives you the ability to "
-"have an option on an IVR that gives you a dial tone, and you're able to dial "
-"out from the FreePBX machine as if you were connected to a standard "
-"extension. It appears as a Destination."
-msgstr ""
-"DISA Ви разрешава 'Директен Вътрешен Достъп до Системата'. Предоставя ви "
-"възможност да въведете опция в IVR която да ви даде сигнал за  избиране, "
-"като по този начин ще можете да избирате навън от FreePBX централата все "
-"едно сте свързани като нормална вътрешна линия. Представя се като "
-"Направление."
 
 #: views/bootnav.php:6
 msgid "DISA List"
@@ -137,12 +119,12 @@ msgstr ""
 "насочва към DISA или да зададете DID. Убедете се че сте поставили парола за "
 "употреба за да се предпазите от неоторизиран достъп до услугата."
 
-#: Disa.class.php:113 functions.inc.php:40
+#: Disa.class.php:205 functions.inc.php:40
 #, php-format
 msgid "DISA: %s"
 msgstr "DISA: %s"
 
-#: Disa.class.php:44
+#: Disa.class.php:53
 msgid "Delete"
 msgstr "Изтрий"
 
@@ -210,7 +192,7 @@ msgstr "Запис на разговори които използват таз�
 msgid "Require Confirmation"
 msgstr "Изисква Потвърждение"
 
-#: Disa.class.php:49
+#: Disa.class.php:58
 msgid "Reset"
 msgstr "Изчисти"
 
@@ -222,7 +204,7 @@ msgstr "Време на Изчакване на Отговор"
 msgid "Seconds"
 msgstr "Секунди"
 
-#: Disa.class.php:54
+#: Disa.class.php:63
 msgid "Submit"
 msgstr "Приеми"
 
@@ -261,6 +243,21 @@ msgid ""
 msgstr ""
 "Потвърждаване преди поискване на парола. Използва се, когато вашата PSTN "
 "линия изглежда, че отговаря на обаждането веднага"
+
+#~ msgid "Applications"
+#~ msgstr "Приложения"
+
+#~ msgid ""
+#~ "DISA Allows you 'Direct Inward System Access'. This gives you the ability "
+#~ "to have an option on an IVR that gives you a dial tone, and you're able "
+#~ "to dial out from the FreePBX machine as if you were connected to a "
+#~ "standard extension. It appears as a Destination."
+#~ msgstr ""
+#~ "DISA Ви разрешава 'Директен Вътрешен Достъп до Системата'. Предоставя ви "
+#~ "възможност да въведете опция в IVR която да ви даде сигнал за  избиране, "
+#~ "като по този начин ще можете да избирате навън от FreePBX централата все "
+#~ "едно сте свързани като нормална вътрешна линия. Представя се като "
+#~ "Направление."
 
 #~ msgid ""
 #~ "DISA Allows you \\'Direct Inward System Access\\'. This gives you the "
