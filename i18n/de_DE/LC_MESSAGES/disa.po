@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-03-15 17:12-0700\n"
-"PO-Revision-Date: 2018-08-25 15:00+0000\n"
+"PO-Revision-Date: 2018-09-12 00:00+0000\n"
 "Last-Translator: Bastian Mertgen <b.mertgen@bastian-mertgen.de>\n"
 "Language-Team: German <http://*/projects/freepbx/disa/de/>\n"
 "Language: de_DE\n"
@@ -134,7 +134,7 @@ msgstr ""
 
 #: views/form.php:34
 msgid "Force"
-msgstr "erzwingen"
+msgstr "Erzwingen"
 
 #: views/form.php:70
 msgid "Give this DISA a brief name to help you identify it."
