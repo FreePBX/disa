@@ -25,8 +25,8 @@ class Disa extends FreePBX_Helpers implements BMO {
 	public function backup(){}
 	public function restore($restore){}
 	public function doConfigPageInit($page) {
-	  $action = isset($_POST['action'])?$_POST['action']:'';
-	  $itemid = isset($_POST['itemid'])?$_POST['itemid']:'';
+	  $action = isset($_REQUEST['action'])?$_REQUEST['action']:'';
+	  $itemid = isset($_REQUEST['itemid'])?$_REQUEST['itemid']:'';
 	  switch ($action) {
 	  	case "add":
 	  		$this->add($_POST);
