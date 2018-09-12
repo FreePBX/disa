@@ -9,14 +9,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-11 19:34-0400\n"
+"POT-Creation-Date: 2018-09-12 09:00-0700\n"
 "PO-Revision-Date: 2018-08-25 15:00+0000\n"
 "Last-Translator: Bastian Mertgen <b.mertgen@bastian-mertgen.de>\n"
 "Language-Team: German <http://*/projects/freepbx/disa/de/>\n"
-"Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: de_DE\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 3.0.1\n"
 
@@ -54,6 +54,10 @@ msgstr ""
 "Wählzeichens für einen neuen Anruf, indem während eines Anrufs der "
 "Beendigungscode: %s gedrückt wird"
 
+#: disa.i18n.php:6
+msgid "Applications"
+msgstr "Anwendungen"
+
 #: views/form.php:160
 msgid "Call Recording"
 msgstr "Anfrufaufzeichnungen"
@@ -74,9 +78,18 @@ msgstr "Kontext"
 msgid "Context cannot be blank"
 msgstr "Der Zusammenhang kann nicht leer bleiben"
 
-#: page.disa.php:21 views/bootnav.php:17 views/form.php:6 views/grid.php:10
+#: disa.i18n.php:4 disa.i18n.php:10 page.disa.php:21 views/bootnav.php:17
+#: views/form.php:6 views/grid.php:10
 msgid "DISA"
 msgstr "DISA"
+
+#: disa.i18n.php:8
+msgid ""
+"DISA Allows you 'Direct Inward System Access'. This gives you the ability to "
+"have an option on an IVR that gives you a dial tone, and you're able to dial "
+"out from the FreePBX machine as if you were connected to a standard "
+"extension. It appears as a Destination."
+msgstr ""
 
 #: views/bootnav.php:6
 msgid "DISA List"
@@ -96,12 +109,12 @@ msgid ""
 "make calls out."
 msgstr ""
 
-#: Disa.class.php:205 functions.inc.php:40
+#: Disa.class.php:206 functions.inc.php:40
 #, php-format
 msgid "DISA: %s"
 msgstr ""
 
-#: Disa.class.php:53
+#: Disa.class.php:54
 msgid "Delete"
 msgstr "Löschen"
 
@@ -167,7 +180,7 @@ msgstr ""
 msgid "Require Confirmation"
 msgstr "Bestätigung erwartet"
 
-#: Disa.class.php:58
+#: Disa.class.php:59
 msgid "Reset"
 msgstr "zurücksetzen"
 
@@ -179,7 +192,7 @@ msgstr "Zeitüberschreitung bei der Antwort"
 msgid "Seconds"
 msgstr "Sekunden"
 
-#: Disa.class.php:63
+#: Disa.class.php:64
 msgid "Submit"
 msgstr "Absenden"
 
@@ -219,6 +232,3 @@ msgid ""
 msgstr ""
 "erwartete Bestätigung bevor zur Passworteingabe aufgefordert wird. Wird "
 "benützt, wenn die PSTN-Verbindung den Ruf sofort anzunehmen scheint"
-
-#~ msgid "Applications"
-#~ msgstr "Anwendungen"

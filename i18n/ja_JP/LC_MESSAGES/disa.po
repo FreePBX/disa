@@ -37,14 +37,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-11 19:34-0400\n"
+"POT-Creation-Date: 2018-09-12 09:00-0700\n"
 "PO-Revision-Date: 2014-02-19 22:16+0200\n"
 "Last-Translator: Kenichi Fukaumi <k.fukaumi@qloog.com>\n"
 "Language-Team: Japanese <http://example.com/projects/freepbx/disa/ja/>\n"
-"Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 1.8\n"
 
@@ -83,6 +83,10 @@ msgstr ""
 "コール中に切断のキーコード: %s を押すことにより、現在のコールを切断して新しい"
 "コールに出るためにダイヤルトーンを許可します。"
 
+#: disa.i18n.php:6
+msgid "Applications"
+msgstr "アプリケーション"
+
 #: views/form.php:160
 msgid "Call Recording"
 msgstr ""
@@ -103,9 +107,22 @@ msgstr "コンテキスト"
 msgid "Context cannot be blank"
 msgstr "コンテキストを空にすることはできません。"
 
-#: page.disa.php:21 views/bootnav.php:17 views/form.php:6 views/grid.php:10
+#: disa.i18n.php:4 disa.i18n.php:10 page.disa.php:21 views/bootnav.php:17
+#: views/form.php:6 views/grid.php:10
 msgid "DISA"
 msgstr "DISA"
+
+#: disa.i18n.php:8
+msgid ""
+"DISA Allows you 'Direct Inward System Access'. This gives you the ability to "
+"have an option on an IVR that gives you a dial tone, and you're able to dial "
+"out from the FreePBX machine as if you were connected to a standard "
+"extension. It appears as a Destination."
+msgstr ""
+"DISAによって'ダイレクト・イン・システム・アクセス'機能が可能となります。DISA"
+"を使用することにより、IVRのオプション経由でダイヤルトーンを入力すれば、PBXに"
+"接続された通常の内線と同じようにFreePBXから外部へダイヤル発信することが可能に"
+"なります。DISAは宛先として表示されます。"
 
 #: views/bootnav.php:6
 msgid "DISA List"
@@ -129,12 +146,12 @@ msgstr ""
 "行く時に便利な機能です。DISAに指すIVRの宛先またはDIDの設定ができます。他の人"
 "に自分のPBXを使われないようにパスワードを設定してください。"
 
-#: Disa.class.php:205 functions.inc.php:40
+#: Disa.class.php:206 functions.inc.php:40
 #, php-format
 msgid "DISA: %s"
 msgstr "DISA: %s"
 
-#: Disa.class.php:53
+#: Disa.class.php:54
 msgid "Delete"
 msgstr ""
 
@@ -200,7 +217,7 @@ msgstr ""
 msgid "Require Confirmation"
 msgstr "確認要求"
 
-#: Disa.class.php:58
+#: Disa.class.php:59
 msgid "Reset"
 msgstr ""
 
@@ -212,7 +229,7 @@ msgstr "応答タイムアウト"
 msgid "Seconds"
 msgstr ""
 
-#: Disa.class.php:63
+#: Disa.class.php:64
 msgid "Submit"
 msgstr ""
 
@@ -247,20 +264,6 @@ msgid ""
 "equire Confirmation before prompting for password. Used when your PSTN "
 "connection appears to answer the call immediately"
 msgstr ""
-
-#~ msgid "Applications"
-#~ msgstr "アプリケーション"
-
-#~ msgid ""
-#~ "DISA Allows you 'Direct Inward System Access'. This gives you the ability "
-#~ "to have an option on an IVR that gives you a dial tone, and you're able "
-#~ "to dial out from the FreePBX machine as if you were connected to a "
-#~ "standard extension. It appears as a Destination."
-#~ msgstr ""
-#~ "DISAによって'ダイレクト・イン・システム・アクセス'機能が可能となります。"
-#~ "DISAを使用することにより、IVRのオプション経由でダイヤルトーンを入力すれ"
-#~ "ば、PBXに接続された通常の内線と同じようにFreePBXから外部へダイヤル発信する"
-#~ "ことが可能になります。DISAは宛先として表示されます。"
 
 #~ msgid "DISA name:"
 #~ msgstr "DISA名："
