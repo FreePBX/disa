@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-12 10:01-0700\n"
+"POT-Creation-Date: 2018-09-12 10:30-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -109,13 +109,13 @@ msgid ""
 "make calls out."
 msgstr ""
 
-#: Disa.class.php:206
+#: Disa.class.php:209
 #: functions.inc.php:40
 #, php-format
 msgid "DISA: %s"
 msgstr ""
 
-#: Disa.class.php:54
+#: Disa.class.php:57
 msgid "Delete"
 msgstr ""
 
@@ -184,7 +184,7 @@ msgstr ""
 msgid "Require Confirmation"
 msgstr ""
 
-#: Disa.class.php:59
+#: Disa.class.php:62
 msgid "Reset"
 msgstr ""
 
@@ -197,7 +197,7 @@ msgstr ""
 msgid "Seconds"
 msgstr ""
 
-#: Disa.class.php:64
+#: Disa.class.php:67
 msgid "Submit"
 msgstr ""
 

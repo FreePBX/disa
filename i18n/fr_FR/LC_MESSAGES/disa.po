@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-12 09:00-0700\n"
+"POT-Creation-Date: 2018-09-12 10:30-0700\n"
 "PO-Revision-Date: 2017-12-01 22:40+0200\n"
 "Last-Translator: CATTAN Jérémie <jeremie@famillecattan.com>\n"
 "Language-Team: French <http://weblate.freepbx.org/projects/freepbx/disa/"
@@ -122,12 +122,12 @@ msgstr ""
 "SVI ou comme destination pour un SDA (DID). Assurez-vous de mettre un mot de "
 "passe pour protéger l'accès à celui-ci."
 
-#: Disa.class.php:206 functions.inc.php:40
+#: Disa.class.php:209 functions.inc.php:40
 #, php-format
 msgid "DISA: %s"
 msgstr "DISA : %s"
 
-#: Disa.class.php:54
+#: Disa.class.php:57
 msgid "Delete"
 msgstr "Supprimer"
 
@@ -196,7 +196,7 @@ msgstr "Enregistrer les appels qui utilisent ce DISA"
 msgid "Require Confirmation"
 msgstr "Demande confirmation"
 
-#: Disa.class.php:59
+#: Disa.class.php:62
 msgid "Reset"
 msgstr "Réinitialiser"
 
@@ -208,7 +208,7 @@ msgstr "Délai d'attente de la réponse"
 msgid "Seconds"
 msgstr "Secondes"
 
-#: Disa.class.php:64
+#: Disa.class.php:67
 msgid "Submit"
 msgstr "Soumettre"
 

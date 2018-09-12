@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-12 09:00-0700\n"
+"POT-Creation-Date: 2018-09-12 10:30-0700\n"
 "PO-Revision-Date: 2016-04-06 21:14+0200\n"
 "Last-Translator: Media <mousavi.media@gmail.com>\n"
 "Language-Team: Persian <http://weblate.freepbx.org/projects/freepbx/disa/fa/"
@@ -123,12 +123,12 @@ msgstr ""
 "password protect this to keep people from dialing in and using your PBX to "
 "make calls out."
 
-#: Disa.class.php:206 functions.inc.php:40
+#: Disa.class.php:209 functions.inc.php:40
 #, php-format
 msgid "DISA: %s"
 msgstr "DISA:  %s"
 
-#: Disa.class.php:54
+#: Disa.class.php:57
 msgid "Delete"
 msgstr "حذف"
 
@@ -197,7 +197,7 @@ msgstr "ضبط تماس هایی که از این DISA استفاده کردند
 msgid "Require Confirmation"
 msgstr "نیاز به تاییدیه"
 
-#: Disa.class.php:59
+#: Disa.class.php:62
 msgid "Reset"
 msgstr "بازنشانی"
 
@@ -209,7 +209,7 @@ msgstr "وقفه پاسخ"
 msgid "Seconds"
 msgstr "ثانیه ها"
 
-#: Disa.class.php:64
+#: Disa.class.php:67
 msgid "Submit"
 msgstr "ارسال"
 
