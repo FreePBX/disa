@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-03-15 17:12-0700\n"
-"PO-Revision-Date: 2018-09-12 00:00+0000\n"
+"PO-Revision-Date: 2018-10-18 15:00+0000\n"
 "Last-Translator: Bastian Mertgen <b.mertgen@bastian-mertgen.de>\n"
 "Language-Team: German <http://*/projects/freepbx/disa/de/>\n"
 "Language: de_DE\n"
@@ -182,7 +182,7 @@ msgstr "Bestätigung erwartet"
 
 #: Disa.class.php:49
 msgid "Reset"
-msgstr "zurücksetzen"
+msgstr "Zurücksetzen"
 
 #: views/form.php:106
 msgid "Response Timeout"
