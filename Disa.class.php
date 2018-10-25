@@ -18,23 +18,22 @@ class Disa extends FreePBX_Helpers implements BMO {
 
 	public function install() {}
 	public function uninstall() {}
-
 	public function doConfigPageInit($page) {
 	  $action = isset($_REQUEST['action'])?$_REQUEST['action']:'';
 	  $itemid = isset($_REQUEST['itemid'])?$_REQUEST['itemid']:'';
 	  switch ($action) {
-	  	case "add":
-	  		$this->add($_POST);
-	  		needreload();
-	  	break;
-	  	case "delete":
-	  		$this->delete($itemid);
-	  		needreload();
-	  	break;
-	  	case "edit":  //just delete and re-add
-	  		$this->edit($itemid,$_POST);
-	  		needreload();
-	  	break;
+		case "add":
+			$this->add($_POST);
+				needreload();
+		break;
+		case "delete":
+			$this->delete($itemid);
+			needreload();
+		break;
+		case "edit":  //just delete and re-add
+			$this->edit($itemid,$_POST);
+			needreload();
+		break;
 	  }
 	}
 
@@ -89,7 +88,7 @@ class Disa extends FreePBX_Helpers implements BMO {
 	public function get($id){
 		$sql = 'SELECT * FROM disa WHERE disa_id = :id LIMIT 1';
 		$stmt = $this->FreePBX->Database->prepare($sql);
-		$stmt->execute([':id' => $id]);
+		$stmt->execute(array(':id' => $id));
 		$result = $stmt->fetch(PDO::FETCH_ASSOC);
 		if(is_array($result)){
 			$result['recording'] = $this->getRecording($id);
@@ -147,7 +146,7 @@ class Disa extends FreePBX_Helpers implements BMO {
 	public function delete($id){
 		$sql = "DELETE FROM disa WHERE disa_id = :id";
 		$this->FreePBX->Database->prepare($sql)
-			->execute([':id' => $id]);
+			->execute(array(':id' => $id));
 		@unlink($this->FreePBX->Config->get('ASTETCDIR') . '/disa-{$id}.conf');
 		return $this;
 	}

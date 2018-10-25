@@ -155,38 +155,46 @@ function disa_get_config($engine) {
 }
 
 function disa_list() {
-    FreePBX::Modules()->deprecatedFunction();
+    _disa_backtrace();
     return FreePBX::Disa()->listAll();
 
 }
 
 function disa_get($id){
-    FreePBX::Modules()->deprecatedFunction();
+    _disa_backtrace();
     return FreePBX::Disa()->get($id);
 }
 
 function disa_get_recording($id) {
-    FreePBX::Modules()->deprecatedFunction();
+    _disa_backtrace();
     return FreePBX::Disa()->getRecording($id);
 }
 
 function disa_put_recording($id, $recording = "dontcare") {
-    FreePBX::Modules()->deprecatedFunction();
+    _disa_backtrace();
 	return FreePBX::Disa()->putRecording($id, $recording);
 }
 
 
 function disa_add($post) {
-    FreePBX::Modules()->deprecatedFunction();
+    _disa_backtrace();
     return FreePBX::Disa()->add($post);    
 }
 
 function disa_del($id) {
-    FreePBX::Modules()->deprecatedFunction();
+    _disa_backtrace();
     return FreePBX::Disa()->delete($id);
 }
 
 function disa_edit($id, $post) {
-    FreePBX::Modules()->deprecatedFunction();
+    _disa_backtrace();
     return FreePBX::Disa()->edit($id, $post);
+}
+
+function _disa_backtrace(){
+	$trace = debug_backtrace();
+	$function = $trace[1]['function'];
+	$line = $trace[1]['line'];
+	$file = $trace[1]['file'];
+	freepbx_log(FPBX_LOG_WARNING, 'Depreciated Function ' . $function . ' detected in ' . $file . ' on line ' . $line);
 }
