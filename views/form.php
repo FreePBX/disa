@@ -45,7 +45,7 @@ foreach ($options as $disp => $name) {
 echo $subhead;
 echo $usagehtml;
 ?>
-<form autocomplete="off" name="edit" id="edit" class="fpbx-submit" action="" method="post" onsubmit="return edit_onsubmit();" data-fpbx-delete="<?php echo $delURL?>">
+<form autocomplete="off" name="edit" id="edit" class="fpbx-submit" action="?display=disa" method="post" onsubmit="return edit_onsubmit();" data-fpbx-delete="<?php echo $delURL?>">
 <input type="hidden" name="display" value="disa">
 <input type="hidden" name="action" value="<?php echo (isset($itemid) ? 'edit' : 'add') ?>">
 <!--DISA Name-->
