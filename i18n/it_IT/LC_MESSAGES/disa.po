@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-31 18:52-0400\n"
+"POT-Creation-Date: 2018-11-08 15:15-0500\n"
 "PO-Revision-Date: 2018-05-29 09:26+0000\n"
 "Last-Translator: Stell0 <stefano.fancello@nethesis.it>\n"
 "Language-Team: Italian <http://*/projects/freepbx/disa/it/>\n"
@@ -94,7 +94,7 @@ msgstr "Contesto"
 msgid "Context cannot be blank"
 msgstr "Il contesto non può essere lasciato vuoto"
 
-#: disa.i18n.php:4 /dev/shm/freepbx/disa/disa.i18n.php:10 page.disa.php:21
+#: disa.i18n.php:4 /usr/src/freepbx/disa/disa.i18n.php:10 page.disa.php:21
 #: views/bootnav.php:17 views/form.php:6 views/grid.php:10
 msgid "DISA"
 msgstr "DISA"
@@ -136,12 +136,12 @@ msgstr ""
 "password questo per impedire alle persone di effettuare chiamate e "
 "utilizzare il PBX per effettuare chiamate."
 
-#: Disa.class.php:202 functions.inc.php:40
+#: Disa.class.php:216 functions.inc.php:40
 #, php-format
 msgid "DISA: %s"
 msgstr "DISA: %s"
 
-#: Disa.class.php:52
+#: Disa.class.php:66
 msgid "Delete"
 msgstr "Elimina"
 
@@ -209,7 +209,7 @@ msgstr "Registrare le chiamate che utilizzano questo DISA"
 msgid "Require Confirmation"
 msgstr "Richiedi Conferma"
 
-#: Disa.class.php:57
+#: Disa.class.php:71
 msgid "Reset"
 msgstr "Azzerare"
 
@@ -221,7 +221,7 @@ msgstr "Timeout Risposta"
 msgid "Seconds"
 msgstr "Secondi"
 
-#: Disa.class.php:62
+#: Disa.class.php:76
 msgid "Submit"
 msgstr "Sottoscrivi"
 

@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-31 18:52-0400\n"
+"POT-Creation-Date: 2018-11-08 15:15-0500\n"
 "PO-Revision-Date: 2014-02-19 22:16+0200\n"
 "Last-Translator: Kenichi Fukaumi <k.fukaumi@qloog.com>\n"
 "Language-Team: Japanese <http://example.com/projects/freepbx/disa/ja/>\n"
@@ -107,7 +107,7 @@ msgstr "コンテキスト"
 msgid "Context cannot be blank"
 msgstr "コンテキストを空にすることはできません。"
 
-#: disa.i18n.php:4 /dev/shm/freepbx/disa/disa.i18n.php:10 page.disa.php:21
+#: disa.i18n.php:4 /usr/src/freepbx/disa/disa.i18n.php:10 page.disa.php:21
 #: views/bootnav.php:17 views/form.php:6 views/grid.php:10
 msgid "DISA"
 msgstr "DISA"
@@ -146,12 +146,12 @@ msgstr ""
 "行く時に便利な機能です。DISAに指すIVRの宛先またはDIDの設定ができます。他の人"
 "に自分のPBXを使われないようにパスワードを設定してください。"
 
-#: Disa.class.php:202 functions.inc.php:40
+#: Disa.class.php:216 functions.inc.php:40
 #, php-format
 msgid "DISA: %s"
 msgstr "DISA: %s"
 
-#: Disa.class.php:52
+#: Disa.class.php:66
 msgid "Delete"
 msgstr ""
 
@@ -217,7 +217,7 @@ msgstr ""
 msgid "Require Confirmation"
 msgstr "確認要求"
 
-#: Disa.class.php:57
+#: Disa.class.php:71
 msgid "Reset"
 msgstr ""
 
@@ -229,7 +229,7 @@ msgstr "応答タイムアウト"
 msgid "Seconds"
 msgstr ""
 
-#: Disa.class.php:62
+#: Disa.class.php:76
 msgid "Submit"
 msgstr ""
 

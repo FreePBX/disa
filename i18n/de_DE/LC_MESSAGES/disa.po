@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-31 18:52-0400\n"
+"POT-Creation-Date: 2018-11-08 15:15-0500\n"
 "PO-Revision-Date: 2018-07-31 15:00+0000\n"
 "Last-Translator: Bastian Mertgen <b.mertgen@bastian-mertgen.de>\n"
 "Language-Team: German <http://*/projects/freepbx/disa/de/>\n"
@@ -79,7 +79,7 @@ msgstr "Zusammenhang"
 msgid "Context cannot be blank"
 msgstr "Der Zusammenhang kann nicht leer bleiben"
 
-#: disa.i18n.php:4 /dev/shm/freepbx/disa/disa.i18n.php:10 page.disa.php:21
+#: disa.i18n.php:4 /usr/src/freepbx/disa/disa.i18n.php:10 page.disa.php:21
 #: views/bootnav.php:17 views/form.php:6 views/grid.php:10
 msgid "DISA"
 msgstr "DISA"
@@ -110,12 +110,12 @@ msgid ""
 "make calls out."
 msgstr ""
 
-#: Disa.class.php:202 functions.inc.php:40
+#: Disa.class.php:216 functions.inc.php:40
 #, php-format
 msgid "DISA: %s"
 msgstr ""
 
-#: Disa.class.php:52
+#: Disa.class.php:66
 msgid "Delete"
 msgstr "Löschen"
 
@@ -181,7 +181,7 @@ msgstr ""
 msgid "Require Confirmation"
 msgstr "Bestätigung erwartet"
 
-#: Disa.class.php:57
+#: Disa.class.php:71
 msgid "Reset"
 msgstr "zurücksetzen"
 
@@ -193,7 +193,7 @@ msgstr "Zeitüberschreitung bei der Antwort"
 msgid "Seconds"
 msgstr "Sekunden"
 
-#: Disa.class.php:62
+#: Disa.class.php:76
 msgid "Submit"
 msgstr "absenden"
 

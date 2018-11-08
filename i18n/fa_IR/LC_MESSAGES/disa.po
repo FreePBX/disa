@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-31 18:52-0400\n"
+"POT-Creation-Date: 2018-11-08 15:15-0500\n"
 "PO-Revision-Date: 2016-04-06 21:14+0200\n"
 "Last-Translator: Media <mousavi.media@gmail.com>\n"
 "Language-Team: Persian <http://weblate.freepbx.org/projects/freepbx/disa/fa/"
@@ -82,7 +82,7 @@ msgstr "محتوا"
 msgid "Context cannot be blank"
 msgstr "متن نمیتواند خالی باشد"
 
-#: disa.i18n.php:4 /dev/shm/freepbx/disa/disa.i18n.php:10 page.disa.php:21
+#: disa.i18n.php:4 /usr/src/freepbx/disa/disa.i18n.php:10 page.disa.php:21
 #: views/bootnav.php:17 views/form.php:6 views/grid.php:10
 msgid "DISA"
 msgstr "DISA"
@@ -123,12 +123,12 @@ msgstr ""
 "password protect this to keep people from dialing in and using your PBX to "
 "make calls out."
 
-#: Disa.class.php:202 functions.inc.php:40
+#: Disa.class.php:216 functions.inc.php:40
 #, php-format
 msgid "DISA: %s"
 msgstr "DISA:  %s"
 
-#: Disa.class.php:52
+#: Disa.class.php:66
 msgid "Delete"
 msgstr "حذف"
 
@@ -197,7 +197,7 @@ msgstr "ضبط تماس هایی که از این DISA استفاده کردند
 msgid "Require Confirmation"
 msgstr "نیاز به تاییدیه"
 
-#: Disa.class.php:57
+#: Disa.class.php:71
 msgid "Reset"
 msgstr "بازنشانی"
 
@@ -209,7 +209,7 @@ msgstr "وقفه پاسخ"
 msgid "Seconds"
 msgstr "ثانیه ها"
 
-#: Disa.class.php:62
+#: Disa.class.php:76
 msgid "Submit"
 msgstr "ارسال"
 

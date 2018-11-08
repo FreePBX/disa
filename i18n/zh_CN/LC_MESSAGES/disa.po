@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.5 Chinese Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-31 18:52-0400\n"
+"POT-Creation-Date: 2018-11-08 15:15-0500\n"
 "PO-Revision-Date: 2010-01-23 00:00+0800\n"
 "Last-Translator: 周征晟 <zhougongjizhe@163.com>\n"
 "Language-Team: EdwardBadBoy <zhougongjizhe@163.com>\n"
@@ -90,7 +90,7 @@ msgstr "上下文"
 msgid "Context cannot be blank"
 msgstr "上下文不能不填"
 
-#: disa.i18n.php:4 /dev/shm/freepbx/disa/disa.i18n.php:10 page.disa.php:21
+#: disa.i18n.php:4 /usr/src/freepbx/disa/disa.i18n.php:10 page.disa.php:21
 #: views/bootnav.php:17 views/form.php:6 views/grid.php:10
 msgid "DISA"
 msgstr ""
@@ -126,12 +126,12 @@ msgstr ""
 "号码。注意，如果设置DISA，切记对呼出的线路进行密码设置，保证公司IPPBX的安全，"
 "防止外部用户盗打电话。"
 
-#: Disa.class.php:202 functions.inc.php:40
+#: Disa.class.php:216 functions.inc.php:40
 #, php-format
 msgid "DISA: %s"
 msgstr "DISA：%s"
 
-#: Disa.class.php:52
+#: Disa.class.php:66
 msgid "Delete"
 msgstr ""
 
@@ -197,7 +197,7 @@ msgstr ""
 msgid "Require Confirmation"
 msgstr "需要确认"
 
-#: Disa.class.php:57
+#: Disa.class.php:71
 msgid "Reset"
 msgstr ""
 
@@ -209,7 +209,7 @@ msgstr "应答超时"
 msgid "Seconds"
 msgstr ""
 
-#: Disa.class.php:62
+#: Disa.class.php:76
 msgid "Submit"
 msgstr ""
 
