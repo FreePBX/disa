@@ -9,17 +9,17 @@ if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed'); }
 
 // This is the hook for 'destinations'
 function disa_destinations() {
-				$results = FreePBX::Disa()->listAll();
-				// return an associative array with destination and description
-				if ($results) {
-								$extens = array();
-								foreach($results as $result){
-												$extens[] = array('destination' => 'disa,'.$result['disa_id'].',1', 'description' => $result['displayname']);
-								}
-								return $extens;
-				} else {
-								return array();
-				}
+	$results = FreePBX::Disa()->listAll();
+	// return an associative array with destination and description
+	if ($results) {
+		$extens = array();
+		foreach($results as $result){
+			$extens[] = array('destination' => 'disa,'.$result['disa_id'].',1', 'description' => $result['displayname']);
+		}
+		return $extens;
+	} else {
+		return array();
+	}
 }
 
 function disa_getdest($exten) {
@@ -37,9 +37,10 @@ function disa_getdestinfo($dest) {
 			return array();
 		} else {
 			//$type = isset($active_modules['announcement']['type'])?$active_modules['announcement']['type']:'setup';
-			return array('description' => sprintf(_("DISA: %s"),$thisexten['displayname']),
-			             'edit_url' => 'config.php?display=disa&itemid='.urlencode($exten),
-								  );
+			return array(
+				'description' => sprintf(_("DISA: %s"),$thisexten['displayname']),
+				'edit_url' => 'config.php?display=disa&itemid='.urlencode($exten),
+			);
 		}
 	} else {
 		return false;
@@ -52,6 +53,10 @@ function disa_get_config($engine) {
 	global $amp_conf;
 	switch($engine) {
 	case "asterisk":
+		foreach(glob($amp_conf['ASTETCDIR'].'/disa-*.conf') as $filename) {
+			@unlink($filename);
+		}
+
 		$disalist = FreePBX::Disa()->listAll();
 		if(is_array($disalist)) {
 			foreach($disalist as $item) {
@@ -61,23 +66,20 @@ function disa_get_config($engine) {
 				// this should all be done properly in class, see pinsets, but for now ...
 				//
 				$filename = $amp_conf['ASTETCDIR'].'/disa-'.$item['disa_id'].'.conf';
-				if (file_exists($filename)) {
-					unlink($filename);
-				}
 				if (isset($item['pin']) && !empty($item['pin']) && (strtolower($item['pin']) != 'no-password')) {
+					$is_file = false;
 					// Create the disa-$id.conf file
-					$fh = fopen($filename, "w+");
-					$pinarr = explode(',' , $item['pin'] );
-					if (count($pinarr) > 1) {
+					$pinarr = explode(',', $item['pin'] );
+					$contents = '';
+					if (count($pinarr)) {
 						$is_file = true;
 						foreach($pinarr as $pin) {
 							// Don't support remote MWI, too easy for users to break.
-							fwrite($fh, "$pin\n");
+							$contents .= "$pin\n";
 						}
-						fclose($fh);
-						chmod($filename, 0660);
-					} else {
-						$is_file = false;
+					}
+					if(!empty($contents)) {
+						file_put_contents($filename, $contents);
 					}
 				} else {
 					$nopass = true;
@@ -109,7 +111,7 @@ function disa_get_config($engine) {
 					$ext->add('disa', $item['disa_id'], '', new ext_setvar('_HANGUP', '${TRUNK_OPTIONS}Hg'));
 				} else {
 					$ext->add('disa', $item['disa_id'], '', new ext_setvar('_HANGUP', '${TRUNK_OPTIONS}'));
-        }
+		}
 				$ext->add('disa', $item['disa_id'], '', new ext_setvar('TIMEOUT(digit)', $thisitem['digittimeout']));
 				$ext->add('disa', $item['disa_id'], '', new ext_setvar('TIMEOUT(response)', $thisitem['resptimeout']));
 
@@ -155,40 +157,40 @@ function disa_get_config($engine) {
 }
 
 function disa_list() {
-    _disa_backtrace();
-    return FreePBX::Disa()->listAll();
+	_disa_backtrace();
+	return FreePBX::Disa()->listAll();
 
 }
 
 function disa_get($id){
-    _disa_backtrace();
-    return FreePBX::Disa()->get($id);
+	_disa_backtrace();
+	return FreePBX::Disa()->get($id);
 }
 
 function disa_get_recording($id) {
-    _disa_backtrace();
-    return FreePBX::Disa()->getRecording($id);
+	_disa_backtrace();
+	return FreePBX::Disa()->getRecording($id);
 }
 
 function disa_put_recording($id, $recording = "dontcare") {
-    _disa_backtrace();
+	_disa_backtrace();
 	return FreePBX::Disa()->putRecording($id, $recording);
 }
 
 
 function disa_add($post) {
-    _disa_backtrace();
-    return FreePBX::Disa()->add($post);    
+	_disa_backtrace();
+	return FreePBX::Disa()->add($post);
 }
 
 function disa_del($id) {
-    _disa_backtrace();
-    return FreePBX::Disa()->delete($id);
+	_disa_backtrace();
+	return FreePBX::Disa()->delete($id);
 }
 
 function disa_edit($id, $post) {
-    _disa_backtrace();
-    return FreePBX::Disa()->edit($id, $post);
+	_disa_backtrace();
+	return FreePBX::Disa()->edit($id, $post);
 }
 
 function _disa_backtrace(){
