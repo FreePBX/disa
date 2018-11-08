@@ -15,7 +15,7 @@ class Disa extends FreePBX_Helpers implements BMO {
 		'digittimeout' => '',
 		'hangup' => '',
 	];
-	
+
 	public function __construct($freepbx = null){
 		$this->FreePBX = $freepbx;
 		$this->db = $freepbx->Database;
@@ -41,12 +41,12 @@ class Disa extends FreePBX_Helpers implements BMO {
 		break;
 	  }
 	}
-	
+
 	public function setDatabase($pdo){
 		$this->db = $pdo;
 		return $this;
 	}
-	
+
 	public function resetDatabase(){
 		$this->db = $this->FreePBX->Database;
 		return $this;
@@ -123,12 +123,12 @@ class Disa extends FreePBX_Helpers implements BMO {
 		foreach (self::DEFAULTS as $key => $value) {
 			$final[':'.$key] = isset($itemArray[$key])?$itemArray[$key]:$value;
 		}
-		
+
 		$sql = "INSERT INTO disa (displayname,pin,cid,context,resptimeout,digittimeout,needconf,hangup,keepcid) VALUES (:displayname, :pin, :cid, :context, :resptimeout, :digittimeout, :needconf, :hangup, :keepcid)";
 		$this->db->prepare($sql)
 		 ->execute($final);
-		$id = $this->db->lastInsertId('disa_id');
-		$this->putRecording($id, $post['recording']);
+		$id = $this->FreePBX->Database->lastInsertId('disa_id');
+		$this->putRecording($id, $itemArray['recording']);
 
 		return $id;
 	}
@@ -148,16 +148,16 @@ class Disa extends FreePBX_Helpers implements BMO {
 		$sql = "REPLACE INTO disa (disa_id, displayname,pin,cid,context,resptimeout,digittimeout,needconf,hangup,keepcid) VALUES (:disa_id, :displayname, :pin, :cid, :context, :resptimeout, :digittimeout, :needconf, :hangup, :keepcid)";
 		$this->db->prepare($sql)
 			->execute($final);
-		$this->putRecording($id, $post['recording']);
+		$this->putRecording($id, $itemArray['recording']);
 
 		return $this;
 	}
 
 	/**
-	 * Delete DISA item 
+	 * Delete DISA item
 	 * @param integer $id
 	 * @return object Self
-	 */	
+	 */
 	public function delete($id){
 		$sql = "DELETE FROM disa WHERE disa_id = :id";
 		$this->db->prepare($sql)
