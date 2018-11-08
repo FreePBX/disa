@@ -120,7 +120,7 @@ class Disa extends FreePBX_Helpers implements BMO {
 		$this->FreePBX->Database->prepare($sql)
 		 ->execute($final);
 		$id = $this->FreePBX->Database->lastInsertId('disa_id');
-		$this->putRecording($id, $post['recording']);
+		$this->putRecording($id, $itemArray['recording']);
 
 		return $id;
 	}
@@ -141,7 +141,7 @@ class Disa extends FreePBX_Helpers implements BMO {
 		$sql .= " ON DUPLICATE KEY UPDATE disa_id= VALUES(disa_id), displayname= VALUES(displayname),pin= VALUES(pin),cid= VALUES(cid),context= VALUES(context),resptimeout= VALUES(resptimeout),digittimeout= VALUES(digittimeout),needconf= VALUES(needconf),hangup= VALUES(hangup),keepcid= VALUES(keepcid)";
 		$this->FreePBX->Database->prepare($sql)
 			->execute($final);
-		$this->putRecording($id, $post['recording']);
+		$this->putRecording($id, $itemArray['recording']);
 
 		return $this;
 	}
