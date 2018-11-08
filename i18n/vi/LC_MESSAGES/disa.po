@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-08 15:15-0500\n"
+"POT-Creation-Date: 2018-11-08 15:55-0500\n"
 "PO-Revision-Date: 2017-07-04 08:40+0200\n"
 "Last-Translator: PETER <ftek@ymail.com>\n"
 "Language-Team: Vietnamese <http://weblate.freepbx.org/projects/freepbx/disa/"
@@ -124,7 +124,7 @@ msgstr ""
 "IVR trỏ đến DISA hay cài đặt một DID. Đảm bảo mật khẩu của bạn an toàn để "
 "tránh những người khác quay số vào hay sử dụng PBX của bạn để gọi ra ngoài."
 
-#: Disa.class.php:216 functions.inc.php:40
+#: Disa.class.php:216 functions.inc.php:41
 #, php-format
 msgid "DISA: %s"
 msgstr "DISA:%s"
