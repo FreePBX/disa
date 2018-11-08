@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-08 15:00-0500\n"
+"POT-Creation-Date: 2018-11-08 15:51-0500\n"
 "PO-Revision-Date: 2017-12-01 22:40+0200\n"
 "Last-Translator: CATTAN Jérémie <jeremie@famillecattan.com>\n"
 "Language-Team: French <http://weblate.freepbx.org/projects/freepbx/disa/"
@@ -82,7 +82,7 @@ msgstr "Contexte"
 msgid "Context cannot be blank"
 msgstr "Le contexte ne peut être vide"
 
-#: disa.i18n.php:4 /dev/shm/freepbx/disa/disa.i18n.php:10 page.disa.php:21
+#: disa.i18n.php:4 /usr/src/freepbx/disa/disa.i18n.php:10 page.disa.php:21
 #: views/bootnav.php:17 views/form.php:6 views/grid.php:10
 msgid "DISA"
 msgstr "DISA"
@@ -122,7 +122,7 @@ msgstr ""
 "SVI ou comme destination pour un SDA (DID). Assurez-vous de mettre un mot de "
 "passe pour protéger l'accès à celui-ci."
 
-#: Disa.class.php:209 functions.inc.php:40
+#: Disa.class.php:209 functions.inc.php:41
 #, php-format
 msgid "DISA: %s"
 msgstr "DISA : %s"
