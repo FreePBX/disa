@@ -45,9 +45,10 @@ foreach ($options as $disp => $name) {
 echo $subhead;
 echo $usagehtml;
 ?>
-<form autocomplete="off" name="edit" id="edit" class="fpbx-submit" action="?display=disa" method="post" onsubmit="return edit_onsubmit();" data-fpbx-delete="<?php echo $delURL?>">
+<form autocomplete="off" name="edit" id="edit" class="fpbx-submit" action="?display=disa" method="post" onsubmit="return edit_onsubmit(this);" data-fpbx-delete="<?php echo $delURL?>">
 <input type="hidden" name="display" value="disa">
 <input type="hidden" name="action" value="<?php echo (isset($itemid) ? 'edit' : 'add') ?>">
+<input type="hidden" name="itemid" value="<?php echo (isset($itemid) ? $itemid : '') ?>">
 <!--DISA Name-->
 <div class="element-container">
   <div class="row">
@@ -306,18 +307,27 @@ echo $usagehtml;
 </form>
 <script language="javascript">
 <!--
-
+var DisaNames = <?php print json_encode(\FreePBX::Disa()->getalldisa($itemid)); ?>;
 var theForm = document.edit;
 theForm.displayname.focus();
 
-function edit_onsubmit() {
+function edit_onsubmit(theForm) {
 	var msgInvalidDISAName = "<?php echo _('Please enter a valid DISA Name'); ?>";
 	var msgInvalidDISAPIN = "<?php echo _('Please enter a valid DISA PIN'); ?>";
 	var msgInvalidCID = "<?php echo _('Please enter a valid Caller ID or leave it blank'); ?>";
 	var msgInvalidContext = "<?php echo _('Context cannot be blank'); ?>";
-
+	var msgduplicate = "<?php echo _('DISA Name Duplicate'); ?>";
 	defaultEmptyOK = false;
 
+	if (DisaNames.indexOf(theForm.displayname.value) >= 0) {
+		 if(typeof theForm.disa_id === 'undefined'){
+			 return warnInvalid(theForm.displayname, msgduplicate);
+		 }else {
+			 if (DisaNames.indexOf(theForm.displayname.value) >= 0) {
+				return warnInvalid(theForm.displayname, _("Already exists DISA Name:"+theForm.displayname.value));
+			 }
+		 }
+	}
 	<?php if (function_exists('module_get_field_size')) { ?>
 		var sizeDisplayName = "<?php echo module_get_field_size('disa', 'displayname', 50); ?>";
 		if (!isCorrectLength(theForm.displayname.value, sizeDisplayName))
