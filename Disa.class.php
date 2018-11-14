@@ -83,6 +83,17 @@ class Disa extends FreePBX_Helpers implements BMO {
 		}
 		return $buttons;
 	}
+	public function getalldisa ($disa_id) {
+		$dbh = $this->FreePBX->Database;
+		$sql = "SELECT displayname FROM disa Where disa_id !='$disa_id'";
+		$stmt = $dbh->prepare($sql);
+		$stmt->execute();
+		$results = $stmt->fetchAll(\PDO::FETCH_COLUMN, 0);
+		if(is_array($results)){
+			return $results;
+		}
+		return array();
+	}
 	public function listAll() {
 		$sql = 'SELECT * FROM disa';
 		$stmt = $this->db->prepare($sql);
@@ -144,9 +155,12 @@ class Disa extends FreePBX_Helpers implements BMO {
 		foreach (self::DEFAULTS as $key => $value) {
 			$final[':' . $key] = isset($itemArray[$key]) ? $itemArray[$key] : $value;
 		}
-
-		$sql = "REPLACE INTO disa (disa_id, displayname,pin,cid,context,resptimeout,digittimeout,needconf,hangup,keepcid) VALUES (:disa_id, :displayname, :pin, :cid, :context, :resptimeout, :digittimeout, :needconf, :hangup, :keepcid)";
-		$this->db->prepare($sql)
+		if(isset($id)){
+			$final[':disa_id'] = $id;
+		}
+		$sql = "INSERT INTO disa (disa_id, displayname,pin,cid,context,resptimeout,digittimeout,needconf,hangup,keepcid) VALUES (:disa_id, :displayname, :pin, :cid, :context, :resptimeout, :digittimeout, :needconf, :hangup, :keepcid)";
+		$sql .= " ON DUPLICATE KEY UPDATE displayname=:displayname,pin=:pin,cid=:cid,context=:context,resptimeout=:resptimeout,digittimeout=:digittimeout,needconf=:needconf,hangup=:hangup,keepcid=:keepcid";
+		$this->FreePBX->Database->prepare($sql)
 			->execute($final);
 		$this->putRecording($id, $itemArray['recording']);
 
