@@ -115,7 +115,7 @@ function disa_get_config($engine) {
 				$ext->add('disa', $item['disa_id'], '', new ext_setvar('TIMEOUT(digit)', $thisitem['digittimeout']));
 				$ext->add('disa', $item['disa_id'], '', new ext_setvar('TIMEOUT(response)', $thisitem['resptimeout']));
 
-				if ($item['cid']) {
+				if ($item['cid'] && $item['keepcid']) {
 					$ext->add('disa', $item['disa_id'], '', new ext_setvar('CALLERID(all)', $item['cid']));
 					$ext->add('disa', $item['disa_id'], '', new ext_setvar('__REALCALLERIDNUM','${CALLERID(number):0:40}'));
 				}
