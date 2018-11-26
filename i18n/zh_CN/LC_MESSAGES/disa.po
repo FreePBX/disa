@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.5 Chinese Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-14 18:08-0500\n"
+"POT-Creation-Date: 2018-11-26 15:47+0530\n"
 "PO-Revision-Date: 2010-01-23 00:00+0800\n"
 "Last-Translator: 周征晟 <zhougongjizhe@163.com>\n"
 "Language-Team: EdwardBadBoy <zhougongjizhe@163.com>\n"
@@ -90,7 +90,7 @@ msgstr "上下文"
 msgid "Context cannot be blank"
 msgstr "上下文不能不填"
 
-#: disa.i18n.php:4 /dev/shm/freepbx/disa/disa.i18n.php:10 page.disa.php:21
+#: disa.i18n.php:4 /usr/src/freepbx/disa/disa.i18n.php:10 page.disa.php:21
 #: views/bootnav.php:17 views/form.php:6 views/grid.php:10
 msgid "DISA"
 msgstr ""
