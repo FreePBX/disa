@@ -39,7 +39,7 @@ function disa_getdestinfo($dest) {
 			//$type = isset($active_modules['announcement']['type'])?$active_modules['announcement']['type']:'setup';
 			return array(
 				'description' => sprintf(_("DISA: %s"),$thisexten['displayname']),
-				'edit_url' => 'config.php?display=disa&itemid='.urlencode($exten),
+				'edit_url' => 'config.php?display=disa&view=form&itemid='.urlencode($exten),
 			);
 		}
 	} else {
