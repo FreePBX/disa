@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-14 18:26-0500\n"
+"POT-Creation-Date: 2019-09-11 08:55+0530\n"
 "PO-Revision-Date: 2018-05-29 09:26+0000\n"
 "Last-Translator: Stell0 <stefano.fancello@nethesis.it>\n"
 "Language-Team: Italian <http://*/projects/freepbx/disa/it/>\n"
@@ -94,7 +94,7 @@ msgstr "Contesto"
 msgid "Context cannot be blank"
 msgstr "Il contesto non può essere lasciato vuoto"
 
-#: disa.i18n.php:4 /usr/src/freepbx/disa/disa.i18n.php:10 page.disa.php:21
+#: disa.i18n.php:4 /dev/shm/freepbx/disa/disa.i18n.php:10 page.disa.php:21
 #: views/bootnav.php:17 views/form.php:6 views/grid.php:10
 msgid "DISA"
 msgstr "DISA"

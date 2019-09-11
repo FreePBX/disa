@@ -2,7 +2,7 @@
 	<rawname>disa</rawname>
 	<repo>extended</repo>
 	<name>DISA</name>
-	<version>15.0.4.6</version>
+	<version>15.0.4.7</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>AGPLv3+</license>
 	<licenselink>https://www.gnu.org/licenses/agpl-3.0.txt</licenselink>
@@ -18,6 +18,7 @@
  	</popovers>
 	<description>DISA Allows you 'Direct Inward System Access'. This gives you the ability to have an option on an IVR that gives you a dial tone, and you're able to dial out from the FreePBX machine as if you were connected to a standard extension. It appears as a Destination.</description>
 	<changelog>
+		*15.0.4.7* Related to FREEPBX-20414: removed $jobid from runRestore() 
 		*15.0.4.6* Fixing FREEPBX-17867 
 		*15.0.4.5* fixing legacy restore 
 		*15.0.4.4* FREEPBX-18594 Caller ID Override option is broken under Disa 
