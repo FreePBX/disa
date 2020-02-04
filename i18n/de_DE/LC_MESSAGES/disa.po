@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-03-15 17:12-0700\n"
-"PO-Revision-Date: 2020-02-04 09:01+0000\n"
+"PO-Revision-Date: 2020-02-04 09:34+0000\n"
 "Last-Translator: florian alberts <alberts@ar-systems.de>\n"
 "Language-Team: German <http://*/projects/freepbx/disa/de/>\n"
 "Language: de_DE\n"
@@ -33,6 +33,8 @@ msgid ""
 "(Optional) When using this DISA, the users CallerID will be set to this. "
 "Format is \"User Name\" <5551234>"
 msgstr ""
+"(Optional) Wenn Sie diese DISA verwenden, wird die Anrufer-ID des Benutzers "
+"auf diese festgelegt. Das Format lautet \"Benutzername\" <5551234>"
 
 #: views/grid.php:11
 msgid "Actions"
@@ -124,7 +126,7 @@ msgstr ""
 #: Disa.class.php:113 functions.inc.php:40
 #, php-format
 msgid "DISA: %s"
-msgstr ""
+msgstr "DISA: %s"
 
 #: Disa.class.php:44
 msgid "Delete"
@@ -135,14 +137,16 @@ msgid ""
 "Determine if we keep the Caller ID being presented or if we override it. "
 "Default is No"
 msgstr ""
+"Legen Sie fest, ob die Anrufer-ID weiterhin angezeigt wird oder ob sie "
+"überschrieben wird. Standard ist Nein"
 
 #: views/form.php:133
 msgid "Digit Timeout"
-msgstr ""
+msgstr "Ziffern-Timeout"
 
 #: views/form.php:34
 msgid "Don't Care"
-msgstr ""
+msgstr "Ist mir egal"
 
 #: views/form.php:34
 msgid "Force"
@@ -151,14 +155,18 @@ msgstr "Erzwingen"
 #: views/form.php:70
 msgid "Give this DISA a brief name to help you identify it."
 msgstr ""
+"Geben Sie dieser DISA einen kurzen Namen, damit Sie sie leichter "
+"identifizieren können."
 
 #: views/form.php:301
 msgid "If you choose Yes the disa will pass the caller id set above."
 msgstr ""
+"Wenn Sie Ja wählen, wird die oben eingestellte Anrufer-ID vom Disa "
+"weitergeleitet."
 
 #: views/form.php:94
 msgid "If you wish to have multiple PIN's, separate them with commas"
-msgstr ""
+msgstr "Wenn Sie mehrere PINs haben möchten, trennen Sie diese durch Kommas"
 
 #: views/form.php:34
 msgid "Never"
@@ -174,19 +182,19 @@ msgstr "PIN"
 
 #: views/form.php:316
 msgid "Please enter a valid Caller ID or leave it blank"
-msgstr ""
+msgstr "Bitte geben Sie eine gültige Anrufer-ID ein oder lassen Sie diese leer"
 
 #: views/form.php:314
 msgid "Please enter a valid DISA Name"
-msgstr ""
+msgstr "Bitte geben Sie einen gültigen DISA-Namen ein"
 
 #: views/form.php:315
 msgid "Please enter a valid DISA PIN"
-msgstr ""
+msgstr "Bitte geben Sie eine gültige DISA-PIN ein"
 
 #: views/form.php:172
 msgid "Record calls that use this DISA"
-msgstr ""
+msgstr "Zeichnen Sie Anrufe auf, die diese DISA verwenden"
 
 #: views/form.php:184
 msgid "Require Confirmation"
