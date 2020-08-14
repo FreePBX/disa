@@ -17,6 +17,7 @@
 		</disa>
  	</popovers>
 	<description>DISA Allows you 'Direct Inward System Access'. This gives you the ability to have an option on an IVR that gives you a dial tone, and you're able to dial out from the FreePBX machine as if you were connected to a standard extension. It appears as a Destination.</description>
+  	<more-info>https://wiki.freepbx.org/display/F2/DISA+Module</more-info>
 	<changelog>
 		*13.0.6.12* Fixing FREEPBX-17867 
 		*13.0.6.11* Xml fixes
