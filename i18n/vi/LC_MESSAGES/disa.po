@@ -9,11 +9,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-15 17:12-0700\n"
+"POT-Creation-Date: 2019-03-28 07:39+0530\n"
 "PO-Revision-Date: 2017-07-04 08:40+0200\n"
 "Last-Translator: PETER <ftek@ymail.com>\n"
-"Language-Team: Vietnamese "
-"<http://weblate.freepbx.org/projects/freepbx/disa/vi/>\n"
+"Language-Team: Vietnamese <http://weblate.freepbx.org/projects/freepbx/disa/"
+"vi/>\n"
 "Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 2.4\n"
 
-#: views/form.php:247
+#: views/form.php:248
 msgid ""
 "(Experts Only) Sets the context that calls will originate from. Leave this "
 "as from-internal unless you know what you're doing."
@@ -29,7 +29,7 @@ msgstr ""
 "( Chỉ có chuyên gia) Cài đặt ngữ cảnh nơi mà các cuộc gọi sẽ bắt nguồn. Để "
 "nguyên là từ nội bộ trừ khi bạn biết bạn đang làm gì."
 
-#: views/form.php:223
+#: views/form.php:224
 msgid ""
 "(Optional) When using this DISA, the users CallerID will be set to this. "
 "Format is \"User Name\" <5551234>"
@@ -45,11 +45,11 @@ msgstr "Các thao tác"
 msgid "Add DISA"
 msgstr "Thêm DISA"
 
-#: views/form.php:259
+#: views/form.php:260
 msgid "Allow Hangup"
 msgstr "Cho phép cúp máy (hangup)"
 
-#: views/form.php:274
+#: views/form.php:275
 #, php-format
 msgid ""
 "Allow the current call to be disconnected and dial tone presented for a new "
@@ -63,28 +63,28 @@ msgstr ""
 msgid "Applications"
 msgstr "Các ứng dụng"
 
-#: views/form.php:160
+#: views/form.php:161
 msgid "Call Recording"
 msgstr "Ghi âm cuộc gọi"
 
-#: views/form.php:211
+#: views/form.php:212
 msgid "Caller ID"
 msgstr "Caller ID -Tính năng nhận dạng số gọi đến"
 
-#: views/form.php:286
+#: views/form.php:287
 msgid "Caller ID Override"
 msgstr "Ghi đè Caller ID"
 
-#: views/form.php:235
+#: views/form.php:236
 msgid "Context"
 msgstr "Ngữ cảnh"
 
-#: views/form.php:317
+#: views/form.php:318
 msgid "Context cannot be blank"
 msgstr "Ngữ cảnh không được để trống"
 
-#: disa.i18n.php:4 disa.i18n.php:10 page.disa.php:21 views/bootnav.php:17
-#: views/form.php:6 views/grid.php:10
+#: disa.i18n.php:4 /usr/src/freepbx/disa/disa.i18n.php:10 page.disa.php:21
+#: views/bootnav.php:17 views/form.php:6 views/grid.php:10
 msgid "DISA"
 msgstr ""
 "DISA( Direct inward system access- Hệ thống truy nhập trực tiếp thuê bao)"
@@ -105,9 +105,13 @@ msgstr ""
 msgid "DISA List"
 msgstr "Danh sách DISA"
 
-#: views/form.php:58
+#: views/form.php:59
 msgid "DISA Name"
 msgstr "Tên DISA"
+
+#: views/form.php:319
+msgid "DISA Name Duplicate"
+msgstr ""
 
 #: page.disa.php:18
 msgid ""
@@ -124,16 +128,16 @@ msgstr ""
 "IVR trỏ đến DISA hay cài đặt một DID. Đảm bảo mật khẩu của bạn an toàn để "
 "tránh những người khác quay số vào hay sử dụng PBX của bạn để gọi ra ngoài."
 
-#: Disa.class.php:113 functions.inc.php:40
+#: Disa.class.php:222 functions.inc.php:41
 #, php-format
 msgid "DISA: %s"
 msgstr "DISA:%s"
 
-#: Disa.class.php:44
+#: Disa.class.php:57
 msgid "Delete"
 msgstr "Xóa"
 
-#: views/form.php:301
+#: views/form.php:302
 msgid ""
 "Determine if we keep the Caller ID being presented or if we override it. "
 "Default is No"
@@ -141,7 +145,7 @@ msgstr ""
 "Quyết định liệu chúng ta có nên để Caller ID được hiển thị hay ghi đè lên "
 "nó. Mặc định là No"
 
-#: views/form.php:133
+#: views/form.php:134
 msgid "Digit Timeout"
 msgstr "Thời gian chờ nhập chữ số"
 
@@ -153,15 +157,15 @@ msgstr "Không quan tâm"
 msgid "Force"
 msgstr "Bắt buộc"
 
-#: views/form.php:70
+#: views/form.php:71
 msgid "Give this DISA a brief name to help you identify it."
 msgstr "Đặt cho DISA một tên ngắn gọn để giúp bạn nhận dạng nó."
 
-#: views/form.php:301
+#: views/form.php:302
 msgid "If you choose Yes the disa will pass the caller id set above."
 msgstr "Nếu bạn chọn Yes disa sẽ thông qua Caller ID đã cài đặt ở trên."
 
-#: views/form.php:94
+#: views/form.php:95
 msgid "If you wish to have multiple PIN's, separate them with commas"
 msgstr "Nếu bạn muốn có nhiều PIN, tách chúng bằng dấu phẩy"
 
@@ -169,55 +173,55 @@ msgstr "Nếu bạn muốn có nhiều PIN, tách chúng bằng dấu phẩy"
 msgid "Never"
 msgstr "Không bao giờ"
 
-#: views/form.php:34 views/form.php:191 views/form.php:266 views/form.php:293
+#: views/form.php:34 views/form.php:192 views/form.php:267 views/form.php:294
 msgid "No"
 msgstr "Không"
 
-#: views/form.php:82
+#: views/form.php:83
 msgid "PIN"
 msgstr "PIN"
 
-#: views/form.php:316
+#: views/form.php:317
 msgid "Please enter a valid Caller ID or leave it blank"
 msgstr "Vui lòng nhập một Caller ID hợp lệ hoặc để trống"
 
-#: views/form.php:314
+#: views/form.php:315
 msgid "Please enter a valid DISA Name"
 msgstr "Vui lòng nhập Tên DISA hợp lệ"
 
-#: views/form.php:315
+#: views/form.php:316
 msgid "Please enter a valid DISA PIN"
 msgstr "Vui lòng nhập một PIN DISA hợp lệ"
 
-#: views/form.php:172
+#: views/form.php:173
 msgid "Record calls that use this DISA"
 msgstr "Ghi âm các cuộc gọi sử dụng cho DISA này"
 
-#: views/form.php:184
+#: views/form.php:185
 msgid "Require Confirmation"
 msgstr "Thông tin yêu cầu"
 
-#: Disa.class.php:49
+#: Disa.class.php:62
 msgid "Reset"
 msgstr "Cài đặt lại"
 
-#: views/form.php:106
+#: views/form.php:107
 msgid "Response Timeout"
 msgstr "Thời gian chờ trả lời"
 
-#: views/form.php:112 views/form.php:139
+#: views/form.php:113 views/form.php:140
 msgid "Seconds"
 msgstr "giây"
 
-#: Disa.class.php:54
+#: Disa.class.php:67
 msgid "Submit"
 msgstr "Gửi đi"
 
-#: views/form.php:324
+#: views/form.php:334
 msgid "The DISA Name provided is too long."
 msgstr "Tên DISA quá dài."
 
-#: views/form.php:121
+#: views/form.php:122
 msgid ""
 "The maximum amount of time it will wait before hanging up if the user has "
 "dialed an incomplete or invalid number. Default of 10 seconds"
@@ -225,7 +229,7 @@ msgstr ""
 "Thời gian tối đa mà nó sẽ đợi trước khi cúp máy nếu người dùng vừa quay một "
 "số điện thoại không hợp lệ. Mặc định là 10 giây"
 
-#: views/form.php:148
+#: views/form.php:149
 msgid ""
 "The maximum amount of time permitted between digits when the user is typing "
 "in an extension. Default of 5 seconds"
@@ -233,15 +237,15 @@ msgstr ""
 "Thời gian tối đa cho phép giữa các chữ số khi người dùng gõ vào một máy "
 "nhánh. Mặc định là 5 giây"
 
-#: views/form.php:94
+#: views/form.php:95
 msgid "The user will be prompted for this number."
 msgstr "Người dùng sẽ được nhắc nhở về số này."
 
-#: views/form.php:34 views/form.php:189 views/form.php:264 views/form.php:291
+#: views/form.php:34 views/form.php:190 views/form.php:265 views/form.php:292
 msgid "Yes"
 msgstr "Có"
 
-#: views/form.php:199
+#: views/form.php:200
 msgid ""
 "equire Confirmation before prompting for password. Used when your PSTN "
 "connection appears to answer the call immediately"

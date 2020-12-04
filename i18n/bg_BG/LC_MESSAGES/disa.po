@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX v2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-15 17:12-0700\n"
+"POT-Creation-Date: 2019-03-28 07:39+0530\n"
 "PO-Revision-Date: 2018-07-18 19:11+0000\n"
 "Last-Translator: Chavdar Shtiliyanov <chavdar_75@yahoo.com>\n"
 "Language-Team: Bulgarian <http://*/projects/freepbx/disa/bg/>\n"
@@ -33,7 +33,7 @@ msgstr ""
 "X-Poedit-Country: BULGARIA\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: views/form.php:247
+#: views/form.php:248
 msgid ""
 "(Experts Only) Sets the context that calls will originate from. Leave this "
 "as from-internal unless you know what you're doing."
@@ -41,7 +41,7 @@ msgstr ""
 "(Само за Експерти) Установете контекст от който ще се извършват обажданията. "
 "Оставете from-internal освен ако знаете какво точно правите."
 
-#: views/form.php:223
+#: views/form.php:224
 msgid ""
 "(Optional) When using this DISA, the users CallerID will be set to this. "
 "Format is \"User Name\" <5551234>"
@@ -57,11 +57,11 @@ msgstr "Действия"
 msgid "Add DISA"
 msgstr "Добави DISA"
 
-#: views/form.php:259
+#: views/form.php:260
 msgid "Allow Hangup"
 msgstr "Позволи Прекъсване на Разговора"
 
-#: views/form.php:274
+#: views/form.php:275
 #, php-format
 msgid ""
 "Allow the current call to be disconnected and dial tone presented for a new "
@@ -75,28 +75,28 @@ msgstr ""
 msgid "Applications"
 msgstr "Приложения"
 
-#: views/form.php:160
+#: views/form.php:161
 msgid "Call Recording"
 msgstr "Запис на Разговор"
 
-#: views/form.php:211
+#: views/form.php:212
 msgid "Caller ID"
 msgstr "CallerID"
 
-#: views/form.php:286
+#: views/form.php:287
 msgid "Caller ID Override"
 msgstr "CallerID Замяна"
 
-#: views/form.php:235
+#: views/form.php:236
 msgid "Context"
 msgstr "Контекст"
 
-#: views/form.php:317
+#: views/form.php:318
 msgid "Context cannot be blank"
 msgstr "Трябва да има въведен контекст"
 
-#: disa.i18n.php:4 disa.i18n.php:10 page.disa.php:21 views/bootnav.php:17
-#: views/form.php:6 views/grid.php:10
+#: disa.i18n.php:4 /usr/src/freepbx/disa/disa.i18n.php:10 page.disa.php:21
+#: views/bootnav.php:17 views/form.php:6 views/grid.php:10
 msgid "DISA"
 msgstr "DISA"
 
@@ -117,9 +117,13 @@ msgstr ""
 msgid "DISA List"
 msgstr "DISA Списък"
 
-#: views/form.php:58
+#: views/form.php:59
 msgid "DISA Name"
 msgstr "Име на DISA"
+
+#: views/form.php:319
+msgid "DISA Name Duplicate"
+msgstr ""
 
 #: page.disa.php:18
 msgid ""
@@ -137,16 +141,16 @@ msgstr ""
 "насочва към DISA или да зададете DID. Убедете се че сте поставили парола за "
 "употреба за да се предпазите от неоторизиран достъп до услугата."
 
-#: Disa.class.php:113 functions.inc.php:40
+#: Disa.class.php:222 functions.inc.php:41
 #, php-format
 msgid "DISA: %s"
 msgstr "DISA: %s"
 
-#: Disa.class.php:44
+#: Disa.class.php:57
 msgid "Delete"
 msgstr "Изтрий"
 
-#: views/form.php:301
+#: views/form.php:302
 msgid ""
 "Determine if we keep the Caller ID being presented or if we override it. "
 "Default is No"
@@ -154,7 +158,7 @@ msgstr ""
 "Определете дали ще запазим Caller ID на обаждащия се или ще го заменим. По "
 "подразбиране е Не"
 
-#: views/form.php:133
+#: views/form.php:134
 msgid "Digit Timeout"
 msgstr "Време на Изчакване Между Цифрите"
 
@@ -166,15 +170,15 @@ msgstr "Без Значение"
 msgid "Force"
 msgstr "Винаги"
 
-#: views/form.php:70
+#: views/form.php:71
 msgid "Give this DISA a brief name to help you identify it."
 msgstr "Дайте на DISA описващо име за да ви помогне при идентифицирането."
 
-#: views/form.php:301
+#: views/form.php:302
 msgid "If you choose Yes the disa will pass the caller id set above."
 msgstr "Ако изберете Да, DISA ще пропусне въведения по-горе caller id."
 
-#: views/form.php:94
+#: views/form.php:95
 msgid "If you wish to have multiple PIN's, separate them with commas"
 msgstr "Ако искате да имате наколко PIN кода, разделете ги с запетая"
 
@@ -182,55 +186,55 @@ msgstr "Ако искате да имате наколко PIN кода, раз�
 msgid "Never"
 msgstr "Никога"
 
-#: views/form.php:34 views/form.php:191 views/form.php:266 views/form.php:293
+#: views/form.php:34 views/form.php:192 views/form.php:267 views/form.php:294
 msgid "No"
 msgstr "Не"
 
-#: views/form.php:82
+#: views/form.php:83
 msgid "PIN"
 msgstr "PIN"
 
-#: views/form.php:316
+#: views/form.php:317
 msgid "Please enter a valid Caller ID or leave it blank"
 msgstr "Моля въведете правилен CallerID или оставете празно"
 
-#: views/form.php:314
+#: views/form.php:315
 msgid "Please enter a valid DISA Name"
 msgstr "Моля въведете правилно DISA Име"
 
-#: views/form.php:315
+#: views/form.php:316
 msgid "Please enter a valid DISA PIN"
 msgstr "Моля въведете правилен DISA PIN"
 
-#: views/form.php:172
+#: views/form.php:173
 msgid "Record calls that use this DISA"
 msgstr "Запис на разговори които използват тази DISA"
 
-#: views/form.php:184
+#: views/form.php:185
 msgid "Require Confirmation"
 msgstr "Изисква Потвърждение"
 
-#: Disa.class.php:49
+#: Disa.class.php:62
 msgid "Reset"
 msgstr "Изчисти"
 
-#: views/form.php:106
+#: views/form.php:107
 msgid "Response Timeout"
 msgstr "Време на Изчакване на Отговор"
 
-#: views/form.php:112 views/form.php:139
+#: views/form.php:113 views/form.php:140
 msgid "Seconds"
 msgstr "Секунди"
 
-#: Disa.class.php:54
+#: Disa.class.php:67
 msgid "Submit"
 msgstr "Приеми"
 
-#: views/form.php:324
+#: views/form.php:334
 msgid "The DISA Name provided is too long."
 msgstr "Въведеното Име за DISA е прекалено дълго."
 
-#: views/form.php:121
+#: views/form.php:122
 msgid ""
 "The maximum amount of time it will wait before hanging up if the user has "
 "dialed an incomplete or invalid number. Default of 10 seconds"
@@ -238,7 +242,7 @@ msgstr ""
 "Максималното време за което да изчаква преди да затвори ако потребителят е "
 "набрал непълен или неправилен номер. По-подразбиране 10 секунди"
 
-#: views/form.php:148
+#: views/form.php:149
 msgid ""
 "The maximum amount of time permitted between digits when the user is typing "
 "in an extension. Default of 5 seconds"
@@ -246,15 +250,15 @@ msgstr ""
 "Максимално допустимото време между цифрите, когато потребителят набира във "
 "вътрешна линия. По подразбиране е 5 секунди"
 
-#: views/form.php:94
+#: views/form.php:95
 msgid "The user will be prompted for this number."
 msgstr "Потребителят ще бъде запитан за този номер."
 
-#: views/form.php:34 views/form.php:189 views/form.php:264 views/form.php:291
+#: views/form.php:34 views/form.php:190 views/form.php:265 views/form.php:292
 msgid "Yes"
 msgstr "Да"
 
-#: views/form.php:199
+#: views/form.php:200
 msgid ""
 "equire Confirmation before prompting for password. Used when your PSTN "
 "connection appears to answer the call immediately"

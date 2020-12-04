@@ -19,10 +19,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.5 Chinese Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-15 17:12-0700\n"
+"POT-Creation-Date: 2019-03-28 07:39+0530\n"
 "PO-Revision-Date: 2010-01-23 00:00+0800\n"
 "Last-Translator: 周征晟 <zhougongjizhe@163.com>\n"
 "Language-Team: EdwardBadBoy <zhougongjizhe@163.com>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -30,7 +31,7 @@ msgstr ""
 "X-Poedit-Country: CHINA\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: views/form.php:247
+#: views/form.php:248
 msgid ""
 "(Experts Only) Sets the context that calls will originate from. Leave this "
 "as from-internal unless you know what you're doing."
@@ -38,7 +39,7 @@ msgstr ""
 "（高级设置）设置发起呼叫的上下文。除非你知道自己在做什么，否则让这项设置保持"
 "为from-internal（从内部发起）"
 
-#: views/form.php:223
+#: views/form.php:224
 msgid ""
 "(Optional) When using this DISA, the users CallerID will be set to this. "
 "Format is \"User Name\" <5551234>"
@@ -54,11 +55,11 @@ msgstr ""
 msgid "Add DISA"
 msgstr "添加DISA"
 
-#: views/form.php:259
+#: views/form.php:260
 msgid "Allow Hangup"
 msgstr "允许挂断"
 
-#: views/form.php:274
+#: views/form.php:275
 #, php-format
 msgid ""
 "Allow the current call to be disconnected and dial tone presented for a new "
@@ -69,28 +70,28 @@ msgstr "允许在呼叫中按下挂断功能代码%s后，中断当前呼叫并�
 msgid "Applications"
 msgstr ""
 
-#: views/form.php:160
+#: views/form.php:161
 msgid "Call Recording"
 msgstr ""
 
-#: views/form.php:211
+#: views/form.php:212
 msgid "Caller ID"
 msgstr "主叫ID"
 
-#: views/form.php:286
+#: views/form.php:287
 msgid "Caller ID Override"
 msgstr "来电显示覆盖"
 
-#: views/form.php:235
+#: views/form.php:236
 msgid "Context"
 msgstr "上下文"
 
-#: views/form.php:317
+#: views/form.php:318
 msgid "Context cannot be blank"
 msgstr "上下文不能不填"
 
-#: disa.i18n.php:4 disa.i18n.php:10 page.disa.php:21 views/bootnav.php:17
-#: views/form.php:6 views/grid.php:10
+#: disa.i18n.php:4 /usr/src/freepbx/disa/disa.i18n.php:10 page.disa.php:21
+#: views/bootnav.php:17 views/form.php:6 views/grid.php:10
 msgid "DISA"
 msgstr ""
 
@@ -106,8 +107,12 @@ msgstr ""
 msgid "DISA List"
 msgstr ""
 
-#: views/form.php:58
+#: views/form.php:59
 msgid "DISA Name"
+msgstr ""
+
+#: views/form.php:319
+msgid "DISA Name Duplicate"
 msgstr ""
 
 #: page.disa.php:18
@@ -125,22 +130,22 @@ msgstr ""
 "号码。注意，如果设置DISA，切记对呼出的线路进行密码设置，保证公司IPPBX的安全，"
 "防止外部用户盗打电话。"
 
-#: Disa.class.php:113 functions.inc.php:40
+#: Disa.class.php:222 functions.inc.php:41
 #, php-format
 msgid "DISA: %s"
 msgstr "DISA：%s"
 
-#: Disa.class.php:44
+#: Disa.class.php:57
 msgid "Delete"
 msgstr ""
 
-#: views/form.php:301
+#: views/form.php:302
 msgid ""
 "Determine if we keep the Caller ID being presented or if we override it. "
 "Default is No"
 msgstr ""
 
-#: views/form.php:133
+#: views/form.php:134
 msgid "Digit Timeout"
 msgstr "按键超时"
 
@@ -152,15 +157,15 @@ msgstr ""
 msgid "Force"
 msgstr ""
 
-#: views/form.php:70
+#: views/form.php:71
 msgid "Give this DISA a brief name to help you identify it."
 msgstr "为此DISA起一个名字，以帮助你辨识它。"
 
-#: views/form.php:301
+#: views/form.php:302
 msgid "If you choose Yes the disa will pass the caller id set above."
 msgstr ""
 
-#: views/form.php:94
+#: views/form.php:95
 msgid "If you wish to have multiple PIN's, separate them with commas"
 msgstr "如果你想设置多个PIN码，请用逗号分隔它们"
 
@@ -168,55 +173,55 @@ msgstr "如果你想设置多个PIN码，请用逗号分隔它们"
 msgid "Never"
 msgstr ""
 
-#: views/form.php:34 views/form.php:191 views/form.php:266 views/form.php:293
+#: views/form.php:34 views/form.php:192 views/form.php:267 views/form.php:294
 msgid "No"
 msgstr ""
 
-#: views/form.php:82
+#: views/form.php:83
 msgid "PIN"
 msgstr "PIN码"
 
-#: views/form.php:316
+#: views/form.php:317
 msgid "Please enter a valid Caller ID or leave it blank"
 msgstr "请输入有效的主叫ID，或者不填"
 
-#: views/form.php:314
+#: views/form.php:315
 msgid "Please enter a valid DISA Name"
 msgstr "请输入有效的DISA名"
 
-#: views/form.php:315
+#: views/form.php:316
 msgid "Please enter a valid DISA PIN"
 msgstr "请输入有效的DISA的PIN码"
 
-#: views/form.php:172
+#: views/form.php:173
 msgid "Record calls that use this DISA"
 msgstr ""
 
-#: views/form.php:184
+#: views/form.php:185
 msgid "Require Confirmation"
 msgstr "需要确认"
 
-#: Disa.class.php:49
+#: Disa.class.php:62
 msgid "Reset"
 msgstr ""
 
-#: views/form.php:106
+#: views/form.php:107
 msgid "Response Timeout"
 msgstr "应答超时"
 
-#: views/form.php:112 views/form.php:139
+#: views/form.php:113 views/form.php:140
 msgid "Seconds"
 msgstr ""
 
-#: Disa.class.php:54
+#: Disa.class.php:67
 msgid "Submit"
 msgstr ""
 
-#: views/form.php:324
+#: views/form.php:334
 msgid "The DISA Name provided is too long."
 msgstr ""
 
-#: views/form.php:121
+#: views/form.php:122
 msgid ""
 "The maximum amount of time it will wait before hanging up if the user has "
 "dialed an incomplete or invalid number. Default of 10 seconds"
@@ -224,21 +229,21 @@ msgstr ""
 "如果用户拨打了不完整的或者无效的号码，系统在挂端前需要等待的最长的时间。默认"
 "设置是10秒。"
 
-#: views/form.php:148
+#: views/form.php:149
 msgid ""
 "The maximum amount of time permitted between digits when the user is typing "
 "in an extension. Default of 5 seconds"
 msgstr ""
 
-#: views/form.php:94
+#: views/form.php:95
 msgid "The user will be prompted for this number."
 msgstr "用户将被要求输入这个号码。"
 
-#: views/form.php:34 views/form.php:189 views/form.php:264 views/form.php:291
+#: views/form.php:34 views/form.php:190 views/form.php:265 views/form.php:292
 msgid "Yes"
 msgstr ""
 
-#: views/form.php:199
+#: views/form.php:200
 msgid ""
 "equire Confirmation before prompting for password. Used when your PSTN "
 "connection appears to answer the call immediately"
