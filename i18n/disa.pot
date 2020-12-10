@@ -3,28 +3,27 @@
 # For licensing information, please see the file named LICENSE located in the module directory
 #
 # FreePBX language template for disa
-# Copyright (C) 2008-2020 Sangoma Technologies, Inc.
+# Copyright (C) 2008-2017 Sangoma Technologies, Inc.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-17 02:43+0000\n"
+"POT-Creation-Date: 2017-03-15 17:12-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: views/form.php:248
+#: views/form.php:247
 msgid ""
 "(Experts Only) Sets the context that calls will originate from. Leave this "
 "as from-internal unless you know what you're doing."
 msgstr ""
 
-#: views/form.php:224
+#: views/form.php:223
 msgid ""
 "(Optional) When using this DISA, the users CallerID will be set to this. "
 "Format is \"User Name\" <5551234>"
@@ -40,11 +39,11 @@ msgstr ""
 msgid "Add DISA"
 msgstr ""
 
-#: views/form.php:260
+#: views/form.php:259
 msgid "Allow Hangup"
 msgstr ""
 
-#: views/form.php:275
+#: views/form.php:274
 #, php-format
 msgid ""
 "Allow the current call to be disconnected and dial tone presented for a new "
@@ -55,27 +54,28 @@ msgstr ""
 msgid "Applications"
 msgstr ""
 
-#: views/form.php:161
+#: views/form.php:160
 msgid "Call Recording"
 msgstr ""
 
-#: views/form.php:212
+#: views/form.php:211
 msgid "Caller ID"
 msgstr ""
 
-#: views/form.php:287
+#: views/form.php:286
 msgid "Caller ID Override"
 msgstr ""
 
-#: views/form.php:236
+#: views/form.php:235
 msgid "Context"
 msgstr ""
 
-#: views/form.php:318
+#: views/form.php:317
 msgid "Context cannot be blank"
 msgstr ""
 
-#: disa.i18n.php:4 /usr/src/freepbx/disa/disa.i18n.php:10
+#: disa.i18n.php:4
+#: disa.i18n.php:10
 #: page.disa.php:21
 #: views/bootnav.php:17
 #: views/form.php:6
@@ -95,12 +95,8 @@ msgstr ""
 msgid "DISA List"
 msgstr ""
 
-#: views/form.php:59
+#: views/form.php:58
 msgid "DISA Name"
-msgstr ""
-
-#: views/form.php:319
-msgid "DISA Name Duplicate"
 msgstr ""
 
 #: page.disa.php:18
@@ -113,23 +109,23 @@ msgid ""
 "make calls out."
 msgstr ""
 
-#: Disa.class.php:222
-#: functions.inc.php:41
+#: Disa.class.php:113
+#: functions.inc.php:40
 #, php-format
 msgid "DISA: %s"
 msgstr ""
 
-#: Disa.class.php:57
+#: Disa.class.php:44
 msgid "Delete"
 msgstr ""
 
-#: views/form.php:302
+#: views/form.php:301
 msgid ""
 "Determine if we keep the Caller ID being presented or if we override it. "
 "Default is No"
 msgstr ""
 
-#: views/form.php:134
+#: views/form.php:133
 msgid "Digit Timeout"
 msgstr ""
 
@@ -141,15 +137,15 @@ msgstr ""
 msgid "Force"
 msgstr ""
 
-#: views/form.php:71
+#: views/form.php:70
 msgid "Give this DISA a brief name to help you identify it."
 msgstr ""
 
-#: views/form.php:302
+#: views/form.php:301
 msgid "If you choose Yes the disa will pass the caller id set above."
 msgstr ""
 
-#: views/form.php:95
+#: views/form.php:94
 msgid "If you wish to have multiple PIN's, separate them with commas"
 msgstr ""
 
@@ -158,81 +154,81 @@ msgid "Never"
 msgstr ""
 
 #: views/form.php:34
-#: views/form.php:192
-#: views/form.php:267
-#: views/form.php:294
+#: views/form.php:191
+#: views/form.php:266
+#: views/form.php:293
 msgid "No"
 msgstr ""
 
-#: views/form.php:83
+#: views/form.php:82
 msgid "PIN"
 msgstr ""
 
-#: views/form.php:317
+#: views/form.php:316
 msgid "Please enter a valid Caller ID or leave it blank"
 msgstr ""
 
-#: views/form.php:315
+#: views/form.php:314
 msgid "Please enter a valid DISA Name"
 msgstr ""
 
-#: views/form.php:316
+#: views/form.php:315
 msgid "Please enter a valid DISA PIN"
 msgstr ""
 
-#: views/form.php:173
+#: views/form.php:172
 msgid "Record calls that use this DISA"
 msgstr ""
 
-#: views/form.php:185
+#: views/form.php:184
 msgid "Require Confirmation"
 msgstr ""
 
-#: Disa.class.php:62
+#: Disa.class.php:49
 msgid "Reset"
 msgstr ""
 
-#: views/form.php:107
+#: views/form.php:106
 msgid "Response Timeout"
 msgstr ""
 
-#: views/form.php:113
-#: views/form.php:140
+#: views/form.php:112
+#: views/form.php:139
 msgid "Seconds"
 msgstr ""
 
-#: Disa.class.php:67
+#: Disa.class.php:54
 msgid "Submit"
 msgstr ""
 
-#: views/form.php:334
+#: views/form.php:324
 msgid "The DISA Name provided is too long."
 msgstr ""
 
-#: views/form.php:122
+#: views/form.php:121
 msgid ""
 "The maximum amount of time it will wait before hanging up if the user has "
 "dialed an incomplete or invalid number. Default of 10 seconds"
 msgstr ""
 
-#: views/form.php:149
+#: views/form.php:148
 msgid ""
 "The maximum amount of time permitted between digits when the user is typing "
 "in an extension. Default of 5 seconds"
 msgstr ""
 
-#: views/form.php:95
+#: views/form.php:94
 msgid "The user will be prompted for this number."
 msgstr ""
 
 #: views/form.php:34
-#: views/form.php:190
-#: views/form.php:265
-#: views/form.php:292
+#: views/form.php:189
+#: views/form.php:264
+#: views/form.php:291
 msgid "Yes"
 msgstr ""
 
-#: views/form.php:200
+#: views/form.php:199
 msgid ""
 "equire Confirmation before prompting for password. Used when your PSTN "
 "connection appears to answer the call immediately"

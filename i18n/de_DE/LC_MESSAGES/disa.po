@@ -20,7 +20,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 3.0.1\n"
 
-#: views/form.php:248
+#: views/form.php:247
 msgid ""
 "(Experts Only) Sets the context that calls will originate from. Leave this "
 "as from-internal unless you know what you're doing."
@@ -28,7 +28,7 @@ msgstr ""
 "(Nur für Experten) Legt den Kontext fest, aus dem Anrufe stammen. Belassen "
 "Sie dies als von-intern, es sei denn, Sie wissen, was Sie tun."
 
-#: views/form.php:224
+#: views/form.php:223
 msgid ""
 "(Optional) When using this DISA, the users CallerID will be set to this. "
 "Format is \"User Name\" <5551234>"
@@ -44,11 +44,11 @@ msgstr "Aktionen"
 msgid "Add DISA"
 msgstr "füge DISA hinzu"
 
-#: views/form.php:260
+#: views/form.php:259
 msgid "Allow Hangup"
 msgstr "erlaube aufzulegen"
 
-#: views/form.php:275
+#: views/form.php:274
 #, php-format
 msgid ""
 "Allow the current call to be disconnected and dial tone presented for a new "
@@ -62,28 +62,28 @@ msgstr ""
 msgid "Applications"
 msgstr "Anwendungen"
 
-#: views/form.php:161
+#: views/form.php:160
 msgid "Call Recording"
 msgstr "Anfrufaufzeichnungen"
 
-#: views/form.php:212
+#: views/form.php:211
 msgid "Caller ID"
 msgstr "Anrufer-ID"
 
-#: views/form.php:287
+#: views/form.php:286
 msgid "Caller ID Override"
 msgstr "Anrufer-ID überschreiben"
 
-#: views/form.php:236
+#: views/form.php:235
 msgid "Context"
 msgstr "Kontext"
 
-#: views/form.php:318
+#: views/form.php:317
 msgid "Context cannot be blank"
 msgstr "Der Zusammenhang kann nicht leer bleiben"
 
-#: disa.i18n.php:4 /usr/src/freepbx/disa/disa.i18n.php:10 page.disa.php:21
-#: views/bootnav.php:17 views/form.php:6 views/grid.php:10
+#: disa.i18n.php:4 disa.i18n.php:10 page.disa.php:21 views/bootnav.php:17
+#: views/form.php:6 views/grid.php:10
 msgid "DISA"
 msgstr "DISA"
 
@@ -103,13 +103,9 @@ msgstr ""
 msgid "DISA List"
 msgstr "DISA-Liste"
 
-#: views/form.php:59
+#: views/form.php:58
 msgid "DISA Name"
 msgstr "DISA-Name"
-
-#: views/form.php:319
-msgid "DISA Name Duplicate"
-msgstr ""
 
 #: page.disa.php:18
 msgid ""
@@ -127,16 +123,16 @@ msgstr ""
 "Stellen Sie sicher, dass Sie dieses Kennwort schützen, um zu verhindern, "
 "dass sich Personen einwählen und mit Ihrer TK-Anlage Anrufe tätigen."
 
-#: Disa.class.php:222 functions.inc.php:41
+#: Disa.class.php:113 functions.inc.php:40
 #, php-format
 msgid "DISA: %s"
 msgstr "DISA: %s"
 
-#: Disa.class.php:57
+#: Disa.class.php:44
 msgid "Delete"
 msgstr "Löschen"
 
-#: views/form.php:302
+#: views/form.php:301
 msgid ""
 "Determine if we keep the Caller ID being presented or if we override it. "
 "Default is No"
@@ -144,7 +140,7 @@ msgstr ""
 "Legen Sie fest, ob die Anrufer-ID weiterhin angezeigt wird oder ob sie "
 "überschrieben wird. Standard ist Nein"
 
-#: views/form.php:134
+#: views/form.php:133
 msgid "Digit Timeout"
 msgstr "Ziffern-Timeout"
 
@@ -156,19 +152,19 @@ msgstr "Ist mir egal"
 msgid "Force"
 msgstr "Erzwingen"
 
-#: views/form.php:71
+#: views/form.php:70
 msgid "Give this DISA a brief name to help you identify it."
 msgstr ""
 "Geben Sie dieser DISA einen kurzen Namen, damit Sie sie leichter "
 "identifizieren können."
 
-#: views/form.php:302
+#: views/form.php:301
 msgid "If you choose Yes the disa will pass the caller id set above."
 msgstr ""
 "Wenn Sie Ja wählen, wird die oben eingestellte Anrufer-ID vom Disa "
 "weitergeleitet."
 
-#: views/form.php:95
+#: views/form.php:94
 msgid "If you wish to have multiple PIN's, separate them with commas"
 msgstr "Wenn Sie mehrere PINs haben möchten, trennen Sie diese durch Kommas"
 
@@ -176,55 +172,55 @@ msgstr "Wenn Sie mehrere PINs haben möchten, trennen Sie diese durch Kommas"
 msgid "Never"
 msgstr "Nie"
 
-#: views/form.php:34 views/form.php:192 views/form.php:267 views/form.php:294
+#: views/form.php:34 views/form.php:191 views/form.php:266 views/form.php:293
 msgid "No"
 msgstr "Nein"
 
-#: views/form.php:83
+#: views/form.php:82
 msgid "PIN"
 msgstr "PIN"
 
-#: views/form.php:317
+#: views/form.php:316
 msgid "Please enter a valid Caller ID or leave it blank"
 msgstr "Bitte geben Sie eine gültige Anrufer-ID ein oder lassen Sie diese leer"
 
-#: views/form.php:315
+#: views/form.php:314
 msgid "Please enter a valid DISA Name"
 msgstr "Bitte geben Sie einen gültigen DISA-Namen ein"
 
-#: views/form.php:316
+#: views/form.php:315
 msgid "Please enter a valid DISA PIN"
 msgstr "Bitte geben Sie eine gültige DISA-PIN ein"
 
-#: views/form.php:173
+#: views/form.php:172
 msgid "Record calls that use this DISA"
 msgstr "Zeichnen Sie Anrufe auf, die diese DISA verwenden"
 
-#: views/form.php:185
+#: views/form.php:184
 msgid "Require Confirmation"
 msgstr "Bestätigung erwartet"
 
-#: Disa.class.php:62
+#: Disa.class.php:49
 msgid "Reset"
 msgstr "Zurücksetzen"
 
-#: views/form.php:107
+#: views/form.php:106
 msgid "Response Timeout"
 msgstr "Zeitüberschreitung bei der Antwort"
 
-#: views/form.php:113 views/form.php:140
+#: views/form.php:112 views/form.php:139
 msgid "Seconds"
 msgstr "Sekunden"
 
-#: Disa.class.php:67
+#: Disa.class.php:54
 msgid "Submit"
 msgstr "Absenden"
 
-#: views/form.php:334
+#: views/form.php:324
 msgid "The DISA Name provided is too long."
 msgstr "Der angegebene DISA Name ist zu lang."
 
-#: views/form.php:122
+#: views/form.php:121
 msgid ""
 "The maximum amount of time it will wait before hanging up if the user has "
 "dialed an incomplete or invalid number. Default of 10 seconds"
@@ -233,7 +229,7 @@ msgstr ""
 "Benutzer eine unvollständige oder ungültige Nummer gewählt hat. "
 "Standardmäßig 10 Sekunden"
 
-#: views/form.php:149
+#: views/form.php:148
 msgid ""
 "The maximum amount of time permitted between digits when the user is typing "
 "in an extension. Default of 5 seconds"
@@ -241,15 +237,15 @@ msgstr ""
 "Die maximale Zeit, die zwischen zwei Ziffern erlaubt ist, wenn der Benutzer "
 "auf einer Erweiterung tippt. Standardmäßig 5 Sekunden"
 
-#: views/form.php:95
+#: views/form.php:94
 msgid "The user will be prompted for this number."
 msgstr "Die Eingabe dieser Nummer wird vom Benutzer erwartet."
 
-#: views/form.php:34 views/form.php:190 views/form.php:265 views/form.php:292
+#: views/form.php:34 views/form.php:189 views/form.php:264 views/form.php:291
 msgid "Yes"
 msgstr "Ja"
 
-#: views/form.php:200
+#: views/form.php:199
 msgid ""
 "equire Confirmation before prompting for password. Used when your PSTN "
 "connection appears to answer the call immediately"

@@ -37,24 +37,24 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-28 07:39+0530\n"
+"POT-Creation-Date: 2017-03-15 17:12-0700\n"
 "PO-Revision-Date: 2014-02-19 22:16+0200\n"
 "Last-Translator: Kenichi Fukaumi <k.fukaumi@qloog.com>\n"
 "Language-Team: Japanese <http://example.com/projects/freepbx/disa/ja/>\n"
-"Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 1.8\n"
 
-#: views/form.php:248
+#: views/form.php:247
 msgid ""
 "(Experts Only) Sets the context that calls will originate from. Leave this "
 "as from-internal unless you know what you're doing."
 msgstr "(上級者向け)"
 
-#: views/form.php:224
+#: views/form.php:223
 msgid ""
 "(Optional) When using this DISA, the users CallerID will be set to this. "
 "Format is \"User Name\" <5551234>"
@@ -70,11 +70,11 @@ msgstr ""
 msgid "Add DISA"
 msgstr "DISAを追加"
 
-#: views/form.php:260
+#: views/form.php:259
 msgid "Allow Hangup"
 msgstr "切断を許可"
 
-#: views/form.php:275
+#: views/form.php:274
 #, php-format
 msgid ""
 "Allow the current call to be disconnected and dial tone presented for a new "
@@ -87,28 +87,28 @@ msgstr ""
 msgid "Applications"
 msgstr "アプリケーション"
 
-#: views/form.php:161
+#: views/form.php:160
 msgid "Call Recording"
 msgstr ""
 
-#: views/form.php:212
+#: views/form.php:211
 msgid "Caller ID"
 msgstr "発信者ID"
 
-#: views/form.php:287
+#: views/form.php:286
 msgid "Caller ID Override"
 msgstr ""
 
-#: views/form.php:236
+#: views/form.php:235
 msgid "Context"
 msgstr "コンテキスト"
 
-#: views/form.php:318
+#: views/form.php:317
 msgid "Context cannot be blank"
 msgstr "コンテキストを空にすることはできません。"
 
-#: disa.i18n.php:4 /usr/src/freepbx/disa/disa.i18n.php:10 page.disa.php:21
-#: views/bootnav.php:17 views/form.php:6 views/grid.php:10
+#: disa.i18n.php:4 disa.i18n.php:10 page.disa.php:21 views/bootnav.php:17
+#: views/form.php:6 views/grid.php:10
 msgid "DISA"
 msgstr "DISA"
 
@@ -128,12 +128,8 @@ msgstr ""
 msgid "DISA List"
 msgstr ""
 
-#: views/form.php:59
+#: views/form.php:58
 msgid "DISA Name"
-msgstr ""
-
-#: views/form.php:319
-msgid "DISA Name Duplicate"
 msgstr ""
 
 #: page.disa.php:18
@@ -150,22 +146,22 @@ msgstr ""
 "行く時に便利な機能です。DISAに指すIVRの宛先またはDIDの設定ができます。他の人"
 "に自分のPBXを使われないようにパスワードを設定してください。"
 
-#: Disa.class.php:222 functions.inc.php:41
+#: Disa.class.php:113 functions.inc.php:40
 #, php-format
 msgid "DISA: %s"
 msgstr "DISA: %s"
 
-#: Disa.class.php:57
+#: Disa.class.php:44
 msgid "Delete"
 msgstr ""
 
-#: views/form.php:302
+#: views/form.php:301
 msgid ""
 "Determine if we keep the Caller ID being presented or if we override it. "
 "Default is No"
 msgstr ""
 
-#: views/form.php:134
+#: views/form.php:133
 msgid "Digit Timeout"
 msgstr "デジットタイムアウト"
 
@@ -177,15 +173,15 @@ msgstr ""
 msgid "Force"
 msgstr ""
 
-#: views/form.php:71
+#: views/form.php:70
 msgid "Give this DISA a brief name to help you identify it."
 msgstr "このDISAを識別しやすい簡潔な名前を入力。"
 
-#: views/form.php:302
+#: views/form.php:301
 msgid "If you choose Yes the disa will pass the caller id set above."
 msgstr ""
 
-#: views/form.php:95
+#: views/form.php:94
 msgid "If you wish to have multiple PIN's, separate them with commas"
 msgstr "もし複数のPINを入力したい場合はカンマで区切ります。"
 
@@ -193,55 +189,55 @@ msgstr "もし複数のPINを入力したい場合はカンマで区切ります
 msgid "Never"
 msgstr ""
 
-#: views/form.php:34 views/form.php:192 views/form.php:267 views/form.php:294
+#: views/form.php:34 views/form.php:191 views/form.php:266 views/form.php:293
 msgid "No"
 msgstr ""
 
-#: views/form.php:83
+#: views/form.php:82
 msgid "PIN"
 msgstr "PIN"
 
-#: views/form.php:317
+#: views/form.php:316
 msgid "Please enter a valid Caller ID or leave it blank"
 msgstr "有効な発信者IDを入力するか、空白のままにしてください。"
 
-#: views/form.php:315
+#: views/form.php:314
 msgid "Please enter a valid DISA Name"
 msgstr "有効なDISA名を入力してください。"
 
-#: views/form.php:316
+#: views/form.php:315
 msgid "Please enter a valid DISA PIN"
 msgstr "有効なDISA PINを入力してください。"
 
-#: views/form.php:173
+#: views/form.php:172
 msgid "Record calls that use this DISA"
 msgstr ""
 
-#: views/form.php:185
+#: views/form.php:184
 msgid "Require Confirmation"
 msgstr "確認要求"
 
-#: Disa.class.php:62
+#: Disa.class.php:49
 msgid "Reset"
 msgstr ""
 
-#: views/form.php:107
+#: views/form.php:106
 msgid "Response Timeout"
 msgstr "応答タイムアウト"
 
-#: views/form.php:113 views/form.php:140
+#: views/form.php:112 views/form.php:139
 msgid "Seconds"
 msgstr ""
 
-#: Disa.class.php:67
+#: Disa.class.php:54
 msgid "Submit"
 msgstr ""
 
-#: views/form.php:334
+#: views/form.php:324
 msgid "The DISA Name provided is too long."
 msgstr ""
 
-#: views/form.php:122
+#: views/form.php:121
 msgid ""
 "The maximum amount of time it will wait before hanging up if the user has "
 "dialed an incomplete or invalid number. Default of 10 seconds"
@@ -249,21 +245,21 @@ msgstr ""
 "ユーザーが不完全、間違えた番号を入力した際に、切断するまで待つ最大時間。デ"
 "フォルト10秒"
 
-#: views/form.php:149
+#: views/form.php:148
 msgid ""
 "The maximum amount of time permitted between digits when the user is typing "
 "in an extension. Default of 5 seconds"
 msgstr ""
 
-#: views/form.php:95
+#: views/form.php:94
 msgid "The user will be prompted for this number."
 msgstr "ユーザーが入力するPIN番号。"
 
-#: views/form.php:34 views/form.php:190 views/form.php:265 views/form.php:292
+#: views/form.php:34 views/form.php:189 views/form.php:264 views/form.php:291
 msgid "Yes"
 msgstr ""
 
-#: views/form.php:200
+#: views/form.php:199
 msgid ""
 "equire Confirmation before prompting for password. Used when your PSTN "
 "connection appears to answer the call immediately"
