@@ -53,8 +53,8 @@ echo $usagehtml;
 <div class="element-container">
   <div class="row">
     <div class="col-md-12">
-      <div class="row">
-        <div class="form-group">
+      <div class="">
+        <div class="form-group row">
           <div class="col-md-3">
             <label class="control-label" for="displayname"><?php echo _("DISA Name") ?></label>
             <i class="fa fa-question-circle fpbx-help-icon" data-for="displayname"></i>
@@ -77,8 +77,8 @@ echo $usagehtml;
 <div class="element-container">
   <div class="row">
     <div class="col-md-12">
-      <div class="row">
-        <div class="form-group">
+      <div class="">
+        <div class="form-group row">
           <div class="col-md-3">
             <label class="control-label" for="pin"><?php echo _("PIN") ?></label>
             <i class="fa fa-question-circle fpbx-help-icon" data-for="pin"></i>
@@ -101,8 +101,8 @@ echo $usagehtml;
 <div class="element-container">
   <div class="row">
     <div class="col-md-12">
-      <div class="row">
-        <div class="form-group">
+      <div class="">
+        <div class="form-group row">
           <div class="col-md-3">
             <label class="control-label" for="resptimeout"><?php echo _("Response Timeout") ?></label>
             <i class="fa fa-question-circle fpbx-help-icon" data-for="resptimeout"></i>
@@ -128,8 +128,8 @@ echo $usagehtml;
 <div class="element-container">
   <div class="row">
     <div class="col-md-12">
-      <div class="row">
-        <div class="form-group">
+      <div class="">
+        <div class="form-group row">
           <div class="col-md-3">
             <label class="control-label" for="digittimeout"><?php echo _("Digit Timeout") ?></label>
             <i class="fa fa-question-circle fpbx-help-icon" data-for="digittimeout"></i>
@@ -155,8 +155,8 @@ echo $usagehtml;
 <div class="element-container">
   <div class="row">
     <div class="col-md-12">
-      <div class="row">
-        <div class="form-group">
+      <div class="">
+        <div class="form-group row">
           <div class="col-md-3">
             <label class="control-label" for="id"><?php echo _("Call Recording") ?></label>
             <i class="fa fa-question-circle fpbx-help-icon" data-for="id"></i>
@@ -179,8 +179,8 @@ echo $usagehtml;
 <div class="element-container">
   <div class="row">
     <div class="col-md-12">
-      <div class="row">
-        <div class="form-group">
+      <div class="">
+        <div class="form-group row">
           <div class="col-md-3">
             <label class="control-label" for="needconf"><?php echo _("Require Confirmation") ?></label>
             <i class="fa fa-question-circle fpbx-help-icon" data-for="needconf"></i>
@@ -206,8 +206,8 @@ echo $usagehtml;
 <div class="element-container">
   <div class="row">
     <div class="col-md-12">
-      <div class="row">
-        <div class="form-group">
+      <div class="">
+        <div class="form-group row">
           <div class="col-md-3">
             <label class="control-label" for="cid"><?php echo _("Caller ID") ?></label>
             <i class="fa fa-question-circle fpbx-help-icon" data-for="cid"></i>
@@ -230,8 +230,8 @@ echo $usagehtml;
 <div class="element-container">
   <div class="row">
     <div class="col-md-12">
-      <div class="row">
-        <div class="form-group">
+      <div class="">
+        <div class="form-group row">
           <div class="col-md-3">
             <label class="control-label" for="context"><?php echo _("Context") ?></label>
             <i class="fa fa-question-circle fpbx-help-icon" data-for="context"></i>
@@ -254,8 +254,8 @@ echo $usagehtml;
 <div class="element-container">
   <div class="row">
     <div class="col-md-12">
-      <div class="row">
-        <div class="form-group">
+      <div class="">
+        <div class="form-group row">
           <div class="col-md-3">
             <label class="control-label" for="hangup"><?php echo _("Allow Hangup") ?></label>
             <i class="fa fa-question-circle fpbx-help-icon" data-for="hangup"></i>
@@ -281,8 +281,8 @@ echo $usagehtml;
 <div class="element-container">
   <div class="row">
     <div class="col-md-12">
-      <div class="row">
-        <div class="form-group">
+      <div class="">
+        <div class="form-group row">
           <div class="col-md-3">
             <label class="control-label" for="keepcid"><?php echo _("Caller ID Override") ?></label>
             <i class="fa fa-question-circle fpbx-help-icon" data-for="keepcid"></i>
