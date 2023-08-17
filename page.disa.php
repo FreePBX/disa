@@ -1,12 +1,12 @@
- <?php /* $Id */
+<?php /* $Id */
 if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed'); }
 //	License for all code of this FreePBX module can be found in the license file inside the module directory
 //	Copyright 2013-2015 Sangoma Technologies.
-$view = isset($_REQUEST['view'])?$_REQUEST['view']:'';
+$view = $_REQUEST['view'] ?? '';
 switch ($view) {
   case 'form':
     $content = load_view(__DIR__.'/views/form.php');
-    $bootnav = load_view(__DIR__.'/views/bootnav.php', array('view'=>$view));
+    $bootnav = load_view(__DIR__.'/views/bootnav.php', ['view'=>$view]);
   break;
 
   default:

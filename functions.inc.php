@@ -12,35 +12,32 @@ function disa_destinations() {
 	$results = FreePBX::Disa()->listAll();
 	// return an associative array with destination and description
 	if ($results) {
-		$extens = array();
+		$extens = [];
 		foreach($results as $result){
-			$extens[] = array('destination' => 'disa,'.$result['disa_id'].',1', 'description' => $result['displayname']);
+			$extens[] = ['destination' => 'disa,'.$result['disa_id'].',1', 'description' => $result['displayname']];
 		}
 		return $extens;
 	} else {
-		return array();
+		return [];
 	}
 }
 
 function disa_getdest($exten) {
-	return array('disa,'.$exten.',1');
+	return ['disa,'.$exten.',1'];
 }
 
 function disa_getdestinfo($dest) {
 	global $active_modules;
 
-	if (substr(trim($dest),0,5) == 'disa,') {
-		$exten = explode(',',$dest);
+	if (str_starts_with(trim((string) $dest), 'disa,')) {
+		$exten = explode(',',(string) $dest);
 		$exten = $exten[1];
 		$thisexten = FreePBX::Disa()->get($exten);
 		if (empty($thisexten)) {
-			return array();
+			return [];
 		} else {
 			//$type = isset($active_modules['announcement']['type'])?$active_modules['announcement']['type']:'setup';
-			return array(
-				'description' => sprintf(_("DISA: %s"),$thisexten['displayname']),
-				'edit_url' => 'config.php?display=disa&view=form&itemid='.urlencode($exten),
-			);
+			return ['description' => sprintf(_("DISA: %s"),$thisexten['displayname']), 'edit_url' => 'config.php?display=disa&view=form&itemid='.urlencode($exten)];
 		}
 	} else {
 		return false;
@@ -66,10 +63,10 @@ function disa_get_config($engine) {
 				// this should all be done properly in class, see pinsets, but for now ...
 				//
 				$filename = $amp_conf['ASTETCDIR'].'/disa-'.$item['disa_id'].'.conf';
-				if (isset($item['pin']) && !empty($item['pin']) && (strtolower($item['pin']) != 'no-password')) {
+				if (isset($item['pin']) && !empty($item['pin']) && (strtolower((string) $item['pin']) != 'no-password')) {
 					$is_file = false;
 					// Create the disa-$id.conf file
-					$pinarr = explode(',', $item['pin'] );
+					$pinarr = explode(',', (string) $item['pin'] );
 					$contents = '';
 					if (count($pinarr)) {
 						$is_file = true;
@@ -85,7 +82,7 @@ function disa_get_config($engine) {
 					$nopass = true;
 				}
 
-				$thisitem = disa_get(ltrim($item['disa_id']));
+				$thisitem = disa_get(ltrim((string) $item['disa_id']));
 				// add dialplan
 
 				if ($thisitem['needconf'] == 'CHECKED') {
@@ -127,7 +124,7 @@ function disa_get_config($engine) {
 
 			$context = 'disa-dial';
 
-			foreach (array('_[0-9a-zA-Z]','_[0-9a-zA-Z*#].') as $exten) {
+			foreach (['_[0-9a-zA-Z]', '_[0-9a-zA-Z*#].'] as $exten) {
 				$ext->add($context, $exten, '', new ext_noop('called ${EXTEN} in ${DISACONTEXT} by ID: ${CUT(DISA,^,2)}'));
 				$ext->add($context, $exten, '', new ext_dial('Local/${EXTEN}@${DISACONTEXT}', '300,${HANGUP}'));  // Regular Trunk Dial
 				$ext->add($context, $exten, '', new ext_gosub('1', 's-${DIALSTATUS}'));

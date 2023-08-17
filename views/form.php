@@ -13,10 +13,7 @@ if(isset($_REQUEST['itemid'])){
     $usagehtml .= '</div>';
   }
 }else{
-  $thisItem = array(
-    'needconf' => '',
-    'hangup' => '',
-  );
+  $thisItem = ['needconf' => '', 'hangup' => ''];
   $subhead = '<h2>'._("Add DISA").'</h2>';
   $delURL = '';
 }
@@ -31,7 +28,7 @@ if (isset($thisItem['recording'])) {
 } else {
   $recording = "dontcare";
 }
-$options = array(_("Force") => "force", _("Yes") => "yes", _("Don't Care") => "dontcare", _("No") => "no", _("Never") => "never");
+$options = [_("Force") => "force", _("Yes") => "yes", _("Don't Care") => "dontcare", _("No") => "no", _("Never") => "never"];
 $rechtml = "";
 foreach ($options as $disp => $name) {
   if ($recording == $name) {
@@ -48,7 +45,7 @@ echo $usagehtml;
 <form autocomplete="off" name="edit" id="edit" class="fpbx-submit" action="?display=disa" method="post" onsubmit="return edit_onsubmit(this);" data-fpbx-delete="<?php echo $delURL?>">
 <input type="hidden" name="display" value="disa">
 <input type="hidden" name="action" value="<?php echo (isset($itemid) ? 'edit' : 'add') ?>">
-<input type="hidden" name="itemid" value="<?php echo (isset($itemid) ? $itemid : '') ?>">
+<input type="hidden" name="itemid" value="<?php echo ($itemid ?? '') ?>">
 <!--DISA Name-->
 <div class="element-container">
   <div class="row">
@@ -60,7 +57,7 @@ echo $usagehtml;
             <i class="fa fa-question-circle fpbx-help-icon" data-for="displayname"></i>
           </div>
           <div class="col-md-9">
-            <input type="text" class="form-control" id="displayname" name="displayname" value="<?php echo htmlspecialchars(isset($thisItem['displayname']) ? $thisItem['displayname'] : ''); ?>">
+            <input type="text" class="form-control" id="displayname" name="displayname" value="<?php echo htmlspecialchars($thisItem['displayname'] ?? ''); ?>">
           </div>
         </div>
       </div>
@@ -84,7 +81,7 @@ echo $usagehtml;
             <i class="fa fa-question-circle fpbx-help-icon" data-for="pin"></i>
           </div>
           <div class="col-md-9">
-            <input type="text" class="form-control" id="pin" name="pin" value="<?php echo htmlspecialchars(isset($thisItem['pin']) ? $thisItem['pin'] : ''); ?>">
+            <input type="text" class="form-control" id="pin" name="pin" value="<?php echo htmlspecialchars($thisItem['pin'] ?? ''); ?>">
           </div>
         </div>
       </div>
@@ -109,7 +106,7 @@ echo $usagehtml;
           </div>
           <div class="col-md-9">
             <div class="input-group">
-              <input type="number" class="form-control" id="resptimeout" name="resptimeout" value="<?php echo htmlspecialchars(isset($thisItem['resptimeout']) ? $thisItem['resptimeout'] : '10'); ?>">
+              <input type="number" class="form-control" id="resptimeout" name="resptimeout" value="<?php echo htmlspecialchars($thisItem['resptimeout'] ?? '10'); ?>">
               <span class="input-group-addon" id="disatimeout-addon"><?php echo _("Seconds")?></span>
             </div>
           </div>
@@ -136,7 +133,7 @@ echo $usagehtml;
           </div>
           <div class="col-md-9">
             <div class="input-group">
-              <input type="number" class="form-control" id="digittimeout" name="digittimeout" value="<?php echo htmlspecialchars(isset($thisItem['digittimeout']) ? $thisItem['digittimeout'] : '5'); ?>">
+              <input type="number" class="form-control" id="digittimeout" name="digittimeout" value="<?php echo htmlspecialchars($thisItem['digittimeout'] ?? '5'); ?>">
               <span class="input-group-addon" id="disadigittimeout-addon"><?php echo _("Seconds")?></span>
             </div>
           </div>
@@ -213,7 +210,7 @@ echo $usagehtml;
             <i class="fa fa-question-circle fpbx-help-icon" data-for="cid"></i>
           </div>
           <div class="col-md-9">
-            <input type="text" class="form-control" id="cid" name="cid" value="<?php echo htmlspecialchars(isset($thisItem['cid']) ? $thisItem['cid'] : ''); ?>">
+            <input type="text" class="form-control" id="cid" name="cid" value="<?php echo htmlspecialchars($thisItem['cid'] ?? ''); ?>">
           </div>
         </div>
       </div>
@@ -237,7 +234,7 @@ echo $usagehtml;
             <i class="fa fa-question-circle fpbx-help-icon" data-for="context"></i>
           </div>
           <div class="col-md-9">
-            <input type="text" class="form-control" id="context" name="context" value="<?php echo htmlspecialchars(isset($thisItem['context']) ? $thisItem['context'] : 'from-internal'); ?>">
+            <input type="text" class="form-control" id="context" name="context" value="<?php echo htmlspecialchars($thisItem['context'] ?? 'from-internal'); ?>">
           </div>
         </div>
       </div>
@@ -307,7 +304,7 @@ echo $usagehtml;
 </form>
 <script language="javascript">
 <!--
-var DisaNames = <?php print json_encode(\FreePBX::Disa()->getalldisa($itemid)); ?>;
+var DisaNames = <?php $itemid??=''; print json_encode(\FreePBX::Disa()->getalldisa($itemid), JSON_THROW_ON_ERROR); ?>;
 var theForm = document.edit;
 theForm.displayname.focus();
 

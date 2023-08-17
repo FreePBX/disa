@@ -4,7 +4,7 @@ use PDO;
 use BMO;
 use FreePBX_Helpers;
 class Disa extends FreePBX_Helpers implements BMO {
-	const DEFAULTS = [
+	final public const DEFAULTS = [
 		'needconf' => '',
 		'displayname' => 'unnamed',
 		'keepcid' => 0,
@@ -24,8 +24,8 @@ class Disa extends FreePBX_Helpers implements BMO {
 	public function install() {}
 	public function uninstall() {}
 	public function doConfigPageInit($page) {
-	  $action = isset($_REQUEST['action'])?$_REQUEST['action']:'';
-	  $itemid = isset($_REQUEST['itemid'])?$_REQUEST['itemid']:'';
+	  $action = $_REQUEST['action'] ?? '';
+	  $itemid = $_REQUEST['itemid'] ?? '';
 	  switch ($action) {
 		case "add":
 			$this->add($_POST);
@@ -53,29 +53,13 @@ class Disa extends FreePBX_Helpers implements BMO {
 	}
 
 	public function getActionBar($request) {
-		$buttons = array();
+		$buttons = [];
 		if (!isset($_GET['view'])){
 			return $buttons;
 		}
 		switch($_GET['display']) {
 			case 'disa':
-				$buttons = array(
-					'delete' => array(
-						'name' => 'delete',
-						'id' => 'delete',
-						'value' => _('Delete')
-					),
-					'reset' => array(
-						'name' => 'reset',
-						'id' => 'reset',
-						'value' => _('Reset')
-					),
-					'submit' => array(
-						'name' => 'submit',
-						'id' => 'submit',
-						'value' => _('Submit')
-					)
-				);
+				$buttons = ['delete' => ['name' => 'delete', 'id' => 'delete', 'value' => _('Delete')], 'reset' => ['name' => 'reset', 'id' => 'reset', 'value' => _('Reset')], 'submit' => ['name' => 'submit', 'id' => 'submit', 'value' => _('Submit')]];
 				if (empty($request['itemid'])) {
 					unset($buttons['delete']);
 				}
@@ -92,7 +76,7 @@ class Disa extends FreePBX_Helpers implements BMO {
 		if(is_array($results)){
 			return $results;
 		}
-		return array();
+		return [];
 	}
 	public function listAll() {
 		$sql = 'SELECT * FROM disa';
@@ -114,7 +98,7 @@ class Disa extends FreePBX_Helpers implements BMO {
 	public function get($id){
 		$sql = 'SELECT * FROM disa WHERE disa_id = :id LIMIT 1';
 		$stmt = $this->db->prepare($sql);
-		$stmt->execute(array(':id' => $id));
+		$stmt->execute([':id' => $id]);
 		$result = $stmt->fetch(PDO::FETCH_ASSOC);
 		if(is_array($result)){
 			$result['recording'] = $this->getRecording($id);
@@ -132,7 +116,7 @@ class Disa extends FreePBX_Helpers implements BMO {
 	public function add($itemArray){
 		$final = [];
 		foreach (self::DEFAULTS as $key => $value) {
-			$final[':'.$key] = isset($itemArray[$key])?$itemArray[$key]:$value;
+			$final[':'.$key] = $itemArray[$key] ?? $value;
 		}
 
 		$sql = "INSERT INTO disa (displayname,pin,cid,context,resptimeout,digittimeout,needconf,hangup,keepcid) VALUES (:displayname, :pin, :cid, :context, :resptimeout, :digittimeout, :needconf, :hangup, :keepcid)";
@@ -151,9 +135,10 @@ class Disa extends FreePBX_Helpers implements BMO {
 	 * @return object self
 	 */
 	public function edit($id, $itemArray){
-		$final[':disa_id'] = $id;
+		$final = [];
+  $final[':disa_id'] = $id;
 		foreach (self::DEFAULTS as $key => $value) {
-			$final[':' . $key] = isset($itemArray[$key]) ? $itemArray[$key] : $value;
+			$final[':' . $key] = $itemArray[$key] ?? $value;
 		}
 		if(isset($id)){
 			$final[':disa_id'] = $id;
@@ -175,7 +160,7 @@ class Disa extends FreePBX_Helpers implements BMO {
 	public function delete($id){
 		$sql = "DELETE FROM disa WHERE disa_id = :id";
 		$this->db->prepare($sql)
-			->execute(array(':id' => $id));
+			->execute([':id' => $id]);
 		@unlink($this->FreePBX->Config->get('ASTETCDIR') . '/disa-{$id}.conf');
 		return $this;
 	}
@@ -220,14 +205,14 @@ class Disa extends FreePBX_Helpers implements BMO {
 	}
 	public function getRightNav($request) {
 		if($request['view'] === 'form'){
-			return load_view(__DIR__."/views/bootnav.php",array());
+			return load_view(__DIR__."/views/bootnav.php",[]);
 		}
 		return '';
 	}
 	public function search($query, &$results) {
 		$disas = $this->listAll();
 		foreach($disas as $disa){
-			$results[] = array("text" => sprintf(_("DISA: %s"), $disa['displayname']), "type" => "get", "dest" => "?display=disa&view=form&itemid=".$disa['disa_id']);
+			$results[] = ["text" => sprintf(_("DISA: %s"), $disa['displayname']), "type" => "get", "dest" => "?display=disa&view=form&itemid=".$disa['disa_id']];
 		}
 	}
 }
