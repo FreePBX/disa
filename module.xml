@@ -22,8 +22,8 @@
 		*17.0.1* 17.0 release
 	</changelog>
 	<depends>
-		<version>callrecording ge 12.0.1</version>
-		<version>13.0.5</version>
+		<version>callrecording ge 17.0.1</version>
+		<version>17.0.1</version>
 	</depends>
     <database>
         <table name="disa">
