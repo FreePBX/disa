@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX disa\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-22 05:55-0400\n"
+"POT-Creation-Date: 2024-08-20 23:45-0400\n"
 "PO-Revision-Date: 2011-03-20 00:00+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
@@ -129,7 +129,7 @@ msgid ""
 "make calls out."
 msgstr ""
 
-#: Disa.class.php:215 functions.inc.php:40
+#: Disa.class.php:217 functions.inc.php:40
 #, php-format
 msgid "DISA: %s"
 msgstr "DISA: %s"
