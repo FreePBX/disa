@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-17 02:44+0000\n"
+"POT-Creation-Date: 2024-08-29 11:28+0000\n"
 "PO-Revision-Date: 2018-05-29 09:26+0000\n"
 "Last-Translator: Stell0 <stefano.fancello@nethesis.it>\n"
 "Language-Team: Italian <http://*/projects/freepbx/disa/it/>\n"
@@ -70,10 +70,6 @@ msgstr ""
 "di libero per effettuare una nuova chiamata premendo durante la chiamata il "
 "Codice Servizio di Riaggancio: %s"
 
-#: disa.i18n.php:6
-msgid "Applications"
-msgstr "Applicazioni"
-
 #: views/form.php:161
 msgid "Call Recording"
 msgstr "Registrazione chiamata"
@@ -94,22 +90,9 @@ msgstr "Contesto"
 msgid "Context cannot be blank"
 msgstr "Il contesto non può essere lasciato vuoto"
 
-#: disa.i18n.php:4 /usr/src/freepbx/disa/disa.i18n.php:10 page.disa.php:21
-#: views/bootnav.php:17 views/form.php:6 views/grid.php:10
+#: page.disa.php:21 views/bootnav.php:17 views/form.php:6 views/grid.php:10
 msgid "DISA"
 msgstr "DISA"
-
-#: disa.i18n.php:8
-msgid ""
-"DISA Allows you 'Direct Inward System Access'. This gives you the ability to "
-"have an option on an IVR that gives you a dial tone, and you're able to dial "
-"out from the FreePBX machine as if you were connected to a standard "
-"extension. It appears as a Destination."
-msgstr ""
-"DISA Ti consente \"Accesso diretto al sistema in entrata\". Questo ti dà la "
-"possibilità di avere un'opzione su un IVR che ti dà un segnale di linea, e "
-"sei in grado di chiamare dal dispositivo FreePBX come se fossi connesso a "
-"un'estensione standard. Appare come una destinazione."
 
 #: views/bootnav.php:6
 msgid "DISA List"
@@ -140,7 +123,7 @@ msgstr ""
 "password questo per impedire alle persone di effettuare chiamate e "
 "utilizzare il PBX per effettuare chiamate."
 
-#: Disa.class.php:230 functions.inc.php:41
+#: Disa.class.php:233 functions.inc.php:41
 #, php-format
 msgid "DISA: %s"
 msgstr "DISA: %s"
@@ -264,6 +247,20 @@ msgid ""
 msgstr ""
 "richiede la conferma prima di richiedere la password. Utilizzato quando la "
 "connessione PSTN sembra rispondere immediatamente alla chiamata"
+
+#~ msgid "Applications"
+#~ msgstr "Applicazioni"
+
+#~ msgid ""
+#~ "DISA Allows you 'Direct Inward System Access'. This gives you the ability "
+#~ "to have an option on an IVR that gives you a dial tone, and you're able "
+#~ "to dial out from the FreePBX machine as if you were connected to a "
+#~ "standard extension. It appears as a Destination."
+#~ msgstr ""
+#~ "DISA Ti consente \"Accesso diretto al sistema in entrata\". Questo ti dà "
+#~ "la possibilità di avere un'opzione su un IVR che ti dà un segnale di "
+#~ "linea, e sei in grado di chiamare dal dispositivo FreePBX come se fossi "
+#~ "connesso a un'estensione standard. Appare come una destinazione."
 
 #~ msgid "DISA name:"
 #~ msgstr "Nome DISA:"

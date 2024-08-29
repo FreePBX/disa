@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.5 Chinese Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-17 02:44+0000\n"
+"POT-Creation-Date: 2024-08-29 11:28+0000\n"
 "PO-Revision-Date: 2010-01-23 00:00+0800\n"
 "Last-Translator: 周征晟 <zhougongjizhe@163.com>\n"
 "Language-Team: EdwardBadBoy <zhougongjizhe@163.com>\n"
@@ -66,10 +66,6 @@ msgid ""
 "call by pressing the Hangup feature code: %s while in a call"
 msgstr "允许在呼叫中按下挂断功能代码%s后，中断当前呼叫并播送新呼叫的提示音"
 
-#: disa.i18n.php:6
-msgid "Applications"
-msgstr ""
-
 #: views/form.php:161
 msgid "Call Recording"
 msgstr ""
@@ -90,17 +86,8 @@ msgstr "上下文"
 msgid "Context cannot be blank"
 msgstr "上下文不能不填"
 
-#: disa.i18n.php:4 /usr/src/freepbx/disa/disa.i18n.php:10 page.disa.php:21
-#: views/bootnav.php:17 views/form.php:6 views/grid.php:10
+#: page.disa.php:21 views/bootnav.php:17 views/form.php:6 views/grid.php:10
 msgid "DISA"
-msgstr ""
-
-#: disa.i18n.php:8
-msgid ""
-"DISA Allows you 'Direct Inward System Access'. This gives you the ability to "
-"have an option on an IVR that gives you a dial tone, and you're able to dial "
-"out from the FreePBX machine as if you were connected to a standard "
-"extension. It appears as a Destination."
 msgstr ""
 
 #: views/bootnav.php:6
@@ -130,7 +117,7 @@ msgstr ""
 "号码。注意，如果设置DISA，切记对呼出的线路进行密码设置，保证公司IPPBX的安全，"
 "防止外部用户盗打电话。"
 
-#: Disa.class.php:230 functions.inc.php:41
+#: Disa.class.php:233 functions.inc.php:41
 #, php-format
 msgid "DISA: %s"
 msgstr "DISA：%s"

@@ -3,13 +3,13 @@
 # For licensing information, please see the file named LICENSE located in the module directory
 #
 # FreePBX language template for disa
-# Copyright (C) 2008-2022 Sangoma Technologies, Inc.
+# Copyright (C) 2008-2024 Sangoma Technologies, Inc.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-23 04:33+0000\n"
+"POT-Creation-Date: 2024-08-29 11:28+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -51,10 +51,6 @@ msgid ""
 "call by pressing the Hangup feature code: %s while in a call"
 msgstr ""
 
-#: disa.i18n.php:6
-msgid "Applications"
-msgstr ""
-
 #: views/form.php:161
 msgid "Call Recording"
 msgstr ""
@@ -75,20 +71,11 @@ msgstr ""
 msgid "Context cannot be blank"
 msgstr ""
 
-#: disa.i18n.php:4 /usr/src/freepbx/disa/disa.i18n.php:10
 #: page.disa.php:21
 #: views/bootnav.php:17
 #: views/form.php:6
 #: views/grid.php:10
 msgid "DISA"
-msgstr ""
-
-#: disa.i18n.php:8
-msgid ""
-"DISA Allows you 'Direct Inward System Access'. This gives you the ability to "
-"have an option on an IVR that gives you a dial tone, and you're able to dial "
-"out from the FreePBX machine as if you were connected to a standard "
-"extension. It appears as a Destination."
 msgstr ""
 
 #: views/bootnav.php:6
@@ -113,7 +100,7 @@ msgid ""
 "make calls out."
 msgstr ""
 
-#: Disa.class.php:230
+#: Disa.class.php:233
 #: functions.inc.php:41
 #, php-format
 msgid "DISA: %s"
