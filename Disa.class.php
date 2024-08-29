@@ -136,18 +136,19 @@ class Disa extends FreePBX_Helpers implements BMO {
 	 */
 	public function edit($id, $itemArray){
 		$final = [];
-  $final[':disa_id'] = $id;
+		$final[':disa_id'] = $id;
 		foreach (self::DEFAULTS as $key => $value) {
 			$final[':' . $key] = $itemArray[$key] ?? $value;
 		}
 		if(isset($id)){
 			$final[':disa_id'] = $id;
 		}
+		$sql = "INSERT INTO disa (disa_id, displayname,pin,cid,context,resptimeout,digittimeout,needconf,hangup,keepcid) VALUES (:disa_id, :displayname, :pin, :cid, :context, :resptimeout, :digittimeout, :needconf, :hangup, :keepcid)";
+		$sql .= " ON DUPLICATE KEY UPDATE displayname=:displayname,pin=:pin,cid=:cid,context=:context,resptimeout=:resptimeout,digittimeout=:digittimeout,needconf=:needconf,hangup=:hangup,keepcid=:keepcid";
+		$this->FreePBX->Database->prepare($sql)
+			->execute($final);
+			   
 		if (isset($itemArray['recording'])) {
-			$sql = "INSERT INTO disa (disa_id, displayname,pin,cid,context,resptimeout,digittimeout,needconf,hangup,keepcid) VALUES (:disa_id, :displayname, :pin, :cid, :context, :resptimeout, :digittimeout, :needconf, :hangup, :keepcid)";
-			$sql .= " ON DUPLICATE KEY UPDATE displayname=:displayname,pin=:pin,cid=:cid,context=:context,resptimeout=:resptimeout,digittimeout=:digittimeout,needconf=:needconf,hangup=:hangup,keepcid=:keepcid";
-			$this->FreePBX->Database->prepare($sql)
-			   ->execute($final);
 			$this->putRecording($id, $itemArray['recording']);
 		}
 
