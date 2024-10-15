@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-29 07:28-0400\n"
+"POT-Creation-Date: 2024-10-15 00:04-0400\n"
 "PO-Revision-Date: 2016-04-06 21:14+0200\n"
 "Last-Translator: Media <mousavi.media@gmail.com>\n"
 "Language-Team: Persian <http://weblate.freepbx.org/projects/freepbx/disa/fa/"
@@ -201,6 +201,12 @@ msgstr "ضبط تماس هایی که از این DISA استفاده کردند
 msgid "Require Confirmation"
 msgstr "نیاز به تاییدیه"
 
+#: views/form.php:197
+msgid ""
+"Require Confirmation before prompting for password. Used when your PSTN "
+"connection appears to answer the call immediately"
+msgstr ""
+
 #: Disa.class.php:62
 msgid "Reset"
 msgstr "بازنشانی"
@@ -245,10 +251,9 @@ msgstr "اختصاص این شماره به کاربر."
 msgid "Yes"
 msgstr "بله"
 
-#: views/form.php:197
-msgid ""
-"equire Confirmation before prompting for password. Used when your PSTN "
-"connection appears to answer the call immediately"
-msgstr ""
-"equire Confirmation before  prompting for password. Used when your PSTN "
-"connection appears to answer the call immediately"
+#~ msgid ""
+#~ "equire Confirmation before prompting for password. Used when your PSTN "
+#~ "connection appears to answer the call immediately"
+#~ msgstr ""
+#~ "equire Confirmation before  prompting for password. Used when your PSTN "
+#~ "connection appears to answer the call immediately"

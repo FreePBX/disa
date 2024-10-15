@@ -22,7 +22,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-29 07:28-0400\n"
+"POT-Creation-Date: 2024-10-15 00:04-0400\n"
 "PO-Revision-Date: 2010-01-23 00:00+0300\n"
 "Last-Translator: Shimi <shimi@shimi.net>\n"
 "MIME-Version: 1.0\n"
@@ -194,6 +194,13 @@ msgstr ""
 msgid "Require Confirmation"
 msgstr "דרוש אישור"
 
+#: views/form.php:197
+msgid ""
+"Require Confirmation before prompting for password. Used when your PSTN "
+"connection appears to answer the call immediately"
+msgstr ""
+"דרוש אישור לפני בקשת סיסמא. נמצא בשימוש כאשר נראה שהשיחה נענתה באופן מיידי"
+
 #: Disa.class.php:62
 msgid "Reset"
 msgstr ""
@@ -236,12 +243,6 @@ msgstr "המשתמש יתבקש להכניס מספר זה"
 msgid "Yes"
 msgstr ""
 
-#: views/form.php:197
-msgid ""
-"equire Confirmation before prompting for password. Used when your PSTN "
-"connection appears to answer the call immediately"
-msgstr ""
-
 #, fuzzy
 #~ msgid "DISA name:"
 #~ msgstr "שם:"
@@ -253,12 +254,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Edit DISA"
 #~ msgstr "ערוך"
-
-#~ msgid ""
-#~ "Require Confirmation before prompting for password. Used when your PSTN "
-#~ "connection appears to answer the call immediately"
-#~ msgstr ""
-#~ "דרוש אישור לפני בקשת סיסמא. נמצא בשימוש כאשר נראה שהשיחה נענתה באופן מיידי"
 
 #~ msgid ""
 #~ "The maximum amount of time permitted between digits when the user is "

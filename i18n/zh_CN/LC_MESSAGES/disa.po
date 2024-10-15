@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.5 Chinese Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-29 07:28-0400\n"
+"POT-Creation-Date: 2024-10-15 00:04-0400\n"
 "PO-Revision-Date: 2010-01-23 00:00+0800\n"
 "Last-Translator: 周征晟 <zhougongjizhe@163.com>\n"
 "Language-Team: EdwardBadBoy <zhougongjizhe@163.com>\n"
@@ -201,6 +201,14 @@ msgstr ""
 msgid "Require Confirmation"
 msgstr "需要确认"
 
+#: views/form.php:197
+msgid ""
+"Require Confirmation before prompting for password. Used when your PSTN "
+"connection appears to answer the call immediately"
+msgstr ""
+"在提示用户输入密码前，要求用户确认，在你的PSTN连接总是立即接听呼叫的情况下可"
+"以使用此设置。"
+
 #: Disa.class.php:62
 msgid "Reset"
 msgstr ""
@@ -243,12 +251,6 @@ msgstr "用户将被要求输入这个号码。"
 msgid "Yes"
 msgstr ""
 
-#: views/form.php:197
-msgid ""
-"equire Confirmation before prompting for password. Used when your PSTN "
-"connection appears to answer the call immediately"
-msgstr ""
-
 #~ msgid "DISA name:"
 #~ msgstr "DISA名称："
 
@@ -257,13 +259,6 @@ msgstr ""
 
 #~ msgid "Edit DISA"
 #~ msgstr "编辑DISA"
-
-#~ msgid ""
-#~ "Require Confirmation before prompting for password. Used when your PSTN "
-#~ "connection appears to answer the call immediately"
-#~ msgstr ""
-#~ "在提示用户输入密码前，要求用户确认，在你的PSTN连接总是立即接听呼叫的情况下"
-#~ "可以使用此设置。"
 
 #~ msgid "Submit Changes"
 #~ msgstr "提交更改"
