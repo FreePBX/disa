@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX disa\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-29 07:28-0400\n"
+"POT-Creation-Date: 2024-10-15 00:04-0400\n"
 "PO-Revision-Date: 2011-03-20 00:00+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
@@ -200,6 +200,14 @@ msgstr ""
 msgid "Require Confirmation"
 msgstr "Kräver bekräftelse"
 
+#: views/form.php:197
+msgid ""
+"Require Confirmation before prompting for password. Used when your PSTN "
+"connection appears to answer the call immediately"
+msgstr ""
+"Kräver bekräftelse innan fråga om lösenord. Används när din koppling mot "
+"telenätet verkar svara omedelbart på samtalet."
+
 #: Disa.class.php:62
 msgid "Reset"
 msgstr ""
@@ -242,12 +250,6 @@ msgstr "Användaren kommer att få en fråga om detta nummer"
 msgid "Yes"
 msgstr ""
 
-#: views/form.php:197
-msgid ""
-"equire Confirmation before prompting for password. Used when your PSTN "
-"connection appears to answer the call immediately"
-msgstr ""
-
 #~ msgid "DISA name:"
 #~ msgstr "Namn på DISA:"
 
@@ -256,13 +258,6 @@ msgstr ""
 
 #~ msgid "Edit DISA"
 #~ msgstr "Redigera DISA"
-
-#~ msgid ""
-#~ "Require Confirmation before prompting for password. Used when your PSTN "
-#~ "connection appears to answer the call immediately"
-#~ msgstr ""
-#~ "Kräver bekräftelse innan fråga om lösenord. Används när din koppling mot "
-#~ "telenätet verkar svara omedelbart på samtalet."
 
 #~ msgid "Submit Changes"
 #~ msgstr "Spara ändringar"

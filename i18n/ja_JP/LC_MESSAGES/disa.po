@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-29 07:28-0400\n"
+"POT-Creation-Date: 2024-10-15 00:04-0400\n"
 "PO-Revision-Date: 2014-02-19 22:16+0200\n"
 "Last-Translator: Kenichi Fukaumi <k.fukaumi@qloog.com>\n"
 "Language-Team: Japanese <http://example.com/projects/freepbx/disa/ja/>\n"
@@ -221,6 +221,14 @@ msgstr ""
 msgid "Require Confirmation"
 msgstr "確認要求"
 
+#: views/form.php:197
+msgid ""
+"Require Confirmation before prompting for password. Used when your PSTN "
+"connection appears to answer the call immediately"
+msgstr ""
+"パスワード入力を促す前に確認を要求する。PSTN接続がコールに対して即座に応答す"
+"るような場合に使用します。"
+
 #: Disa.class.php:62
 msgid "Reset"
 msgstr ""
@@ -263,12 +271,6 @@ msgstr "ユーザーが入力するPIN番号。"
 msgid "Yes"
 msgstr ""
 
-#: views/form.php:197
-msgid ""
-"equire Confirmation before prompting for password. Used when your PSTN "
-"connection appears to answer the call immediately"
-msgstr ""
-
 #~ msgid "DISA name:"
 #~ msgstr "DISA名："
 
@@ -277,13 +279,6 @@ msgstr ""
 
 #~ msgid "Edit DISA"
 #~ msgstr "DISAを編集"
-
-#~ msgid ""
-#~ "Require Confirmation before prompting for password. Used when your PSTN "
-#~ "connection appears to answer the call immediately"
-#~ msgstr ""
-#~ "パスワード入力を促す前に確認を要求する。PSTN接続がコールに対して即座に応答"
-#~ "するような場合に使用します。"
 
 #~ msgid "Submit Changes"
 #~ msgstr "変更を適用"
