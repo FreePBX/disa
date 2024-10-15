@@ -194,7 +194,7 @@ echo $usagehtml;
   </div>
   <div class="row">
     <div class="col-md-12">
-      <span id="needconf-help" class="help-block fpbx-help-block"><?php echo _("equire Confirmation before prompting for password. Used when your PSTN connection appears to answer the call immediately")?></span>
+      <span id="needconf-help" class="help-block fpbx-help-block"><?php echo _("Require Confirmation before prompting for password. Used when your PSTN connection appears to answer the call immediately")?></span>
     </div>
   </div>
 </div>
