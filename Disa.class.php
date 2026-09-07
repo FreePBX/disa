@@ -4,6 +4,12 @@ use PDO;
 use BMO;
 use FreePBX_Helpers;
 class Disa extends FreePBX_Helpers implements BMO {
+	/** @var \FreePBX */
+	public $FreePBX;
+
+	/** @var PDO */
+	public $db;
+
 	final public const DEFAULTS = [
 		'needconf' => '',
 		'displayname' => 'unnamed',
@@ -54,10 +60,10 @@ class Disa extends FreePBX_Helpers implements BMO {
 
 	public function getActionBar($request) {
 		$buttons = [];
-		if (!isset($_GET['view'])){
+		if (!isset($request['view'])){
 			return $buttons;
 		}
-		switch($_GET['display']) {
+		switch($request['display'] ?? '') {
 			case 'disa':
 				$buttons = ['delete' => ['name' => 'delete', 'id' => 'delete', 'value' => _('Delete')], 'reset' => ['name' => 'reset', 'id' => 'reset', 'value' => _('Reset')], 'submit' => ['name' => 'submit', 'id' => 'submit', 'value' => _('Submit')]];
 				if (empty($request['itemid'])) {
@@ -69,9 +75,9 @@ class Disa extends FreePBX_Helpers implements BMO {
 	}
 	public function getalldisa ($disa_id) {
 		$dbh = $this->FreePBX->Database;
-		$sql = "SELECT displayname FROM disa Where disa_id !='$disa_id'";
+		$sql = 'SELECT displayname FROM disa WHERE disa_id != :disa_id';
 		$stmt = $dbh->prepare($sql);
-		$stmt->execute();
+		$stmt->execute([':disa_id' => $disa_id]);
 		$results = $stmt->fetchAll(\PDO::FETCH_COLUMN, 0);
 		if(is_array($results)){
 			return $results;
@@ -123,7 +129,7 @@ class Disa extends FreePBX_Helpers implements BMO {
 		$this->db->prepare($sql)
 		 ->execute($final);
 		$id = $this->FreePBX->Database->lastInsertId('disa_id');
-		$this->putRecording($id, $itemArray['recording']);
+		$this->putRecording($id, $itemArray['recording'] ?? 'dontcare');
 
 		return $id;
 	}
@@ -164,7 +170,7 @@ class Disa extends FreePBX_Helpers implements BMO {
 		$sql = "DELETE FROM disa WHERE disa_id = :id";
 		$this->db->prepare($sql)
 			->execute([':id' => $id]);
-		@unlink($this->FreePBX->Config->get('ASTETCDIR') . '/disa-{$id}.conf');
+		@unlink($this->FreePBX->Config->get('ASTETCDIR') . "/disa-{$id}.conf");
 		return $this;
 	}
 
@@ -201,13 +207,13 @@ class Disa extends FreePBX_Helpers implements BMO {
 	}
 
 	public function ajaxHandler(){
-		if ('getJSON' === $_REQUEST['command'] && 'grid' === $_REQUEST['jdata']) {
+		if ('getJSON' === ($_REQUEST['command'] ?? '') && 'grid' === ($_REQUEST['jdata'] ?? '')) {
 			return array_values($this->listAll());
 		}
 		return false;
 	}
 	public function getRightNav($request) {
-		if($request['view'] === 'form'){
+		if(($request['view'] ?? '') === 'form'){
 			return load_view(__DIR__."/views/bootnav.php",[]);
 		}
 		return '';

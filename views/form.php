@@ -36,7 +36,7 @@ foreach ($options as $disp => $name) {
   } else {
     $checked = "";
   }
-  $rechtml .= "<input type='radio' id='record_${name}' name='recording' value='$name' $checked><label for='record_${name}'>$disp</label>";
+  $rechtml .= "<input type='radio' id='record_{$name}' name='recording' value='$name' $checked><label for='record_{$name}'>$disp</label>";
 }
 
 echo $subhead;
